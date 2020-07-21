@@ -16,6 +16,7 @@
 		4AD323FC24C4971200E46767 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD323FB24C4971200E46767 /* HistoryListView.swift */; };
 		4AD323FE24C49C0E00E46767 /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD323FD24C49C0E00E46767 /* HistoryRow.swift */; };
 		4AD3240024C4AB7E00E46767 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD323FF24C4AB7E00E46767 /* Stopwatch.swift */; };
+		4AD3240224C709FB00E46767 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3240124C709FB00E46767 /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4AD323FB24C4971200E46767 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		4AD323FD24C49C0E00E46767 /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
 		4AD323FF24C4AB7E00E46767 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		4AD3240124C709FB00E46767 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */,
 				4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */,
+				4AD3240124C709FB00E46767 /* Activity.swift */,
 				4AD323FF24C4AB7E00E46767 /* Stopwatch.swift */,
 				4A81C0A224C4904C0042D6B7 /* ContentView.swift */,
 				4AD323FB24C4971200E46767 /* HistoryListView.swift */,
@@ -157,6 +160,7 @@
 			files = (
 				4AD323FE24C49C0E00E46767 /* HistoryRow.swift in Sources */,
 				4AD3240024C4AB7E00E46767 /* Stopwatch.swift in Sources */,
+				4AD3240224C709FB00E46767 /* Activity.swift in Sources */,
 				4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */,
 				4AD323FC24C4971200E46767 /* HistoryListView.swift in Sources */,
 				4A81C0A124C4904C0042D6B7 /* SceneDelegate.swift in Sources */,
@@ -298,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clockwork/Preview Content\"";
+				DEVELOPMENT_TEAM = D6A65JZT22;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Clockwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clockwork/Preview Content\"";
+				DEVELOPMENT_TEAM = D6A65JZT22;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Clockwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

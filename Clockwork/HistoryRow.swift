@@ -9,11 +9,12 @@
 import SwiftUI
 
 struct HistoryRow: View {
+    var activity: Activity
     var body: some View {
         HStack() {
-            Text("Interview Practice")
+            Text(activity.name)
             Spacer()
-            Text("00:00")
+            Text(String(format: "%02d", activity.hours) + ":" + String(format: "%02d", activity.minutes))
         }
         .padding()
     }
@@ -21,7 +22,7 @@ struct HistoryRow: View {
 
 struct HistoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryRow()
+        HistoryRow(activity: Activity(hours: 1, minutes: 59, seconds: 20))
         .previewLayout(.fixed(width: 300, height: 70))
     }
 }

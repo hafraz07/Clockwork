@@ -9,16 +9,20 @@
 import SwiftUI
 
 struct HistoryListView: View {
+    //Environment Object
+    @EnvironmentObject var userData: UserData
     var body: some View {
         NavigationView {
             VStack(alignment: .trailing) {
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    NavigationLink(destination: ContentView()) {
-                        HistoryRow()
+                if (!userData.activities.isEmpty) {
+                    List(userData.activities) { activity in
+                        HistoryRow(activity: activity)
                     }
+                    .navigationBarTitle(Text("Work History"))
                 }
-                .navigationBarTitle(Text("Work History"))
-                
+                else {
+                    Text("No Activities")
+                }
                 NavigationLink(destination: ContentView()) {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -35,5 +39,6 @@ struct HistoryListView: View {
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryListView()
+        .environmentObject(UserData())
     }
 }
