@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct HistoryListView: View {
-    //Environment Object
     @EnvironmentObject var userData: UserData
-//    @State private var showModal = false
+    @State private var showModal = false
+    @State private var newViewShowing = false
+    @State private var activityName = ""
     var body: some View {
         NavigationView {
             VStack(alignment: .trailing) {
@@ -24,20 +25,24 @@ struct HistoryListView: View {
                 else {
                     Text("No Activities")
                 }
-                NavigationLink(destination: ContentView()) {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50)
                         .padding()
-                        .foregroundColor(.green)
-//                        .onTapGesture {
-//                            self.showModal = true
-//                        }
-//                    .sheet(isPresented: $showModal) {
-//                        NameModalView()
-                }
+                        .foregroundColor(.pink)
+                        .onTapGesture {
+                            self.showModal.toggle()
+                        }
+                
+                NavigationLink(destination: ContentView(activityName: activityName), isActive: $newViewShowing)
+                {
+                    EmptyView()
+                }.hidden()
             }
+        }
+        .sheet(isPresented: $showModal) {
+            NameModalView(activityName: self.$activityName, newViewShowing: self.$newViewShowing)
         }
     }
 }

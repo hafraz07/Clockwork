@@ -30,7 +30,7 @@ struct HistoryRow: View {
 
 struct HistoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryRow(activity: Activity(hours: 1, minutes: 59, seconds: 20))
+        HistoryRow(activity: Activity(name: "Interview", hours: 1, minutes: 59, seconds: 20))
         .previewLayout(.fixed(width: 300, height: 70))
     }
 }

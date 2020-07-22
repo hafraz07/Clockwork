@@ -9,10 +9,9 @@
 import SwiftUI
 
 struct NameModalView: View {
-//    @Binding var activity: Activity
-//    @Binding var showSheet
-    @State var activityName = ""
+    @Binding var activityName: String
     @Environment(\.presentationMode) private var presentationMode
+    @Binding var newViewShowing: Bool
     var body: some View {
         NavigationView {
             Form {
@@ -21,8 +20,9 @@ struct NameModalView: View {
                         .keyboardType(.default)
                         .navigationBarTitle(Text("Add New Activity"))
                         .navigationBarItems(trailing: Text("Done")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.pink)
                             .onTapGesture {
+                                self.newViewShowing.toggle()
                                 self.presentationMode.wrappedValue.dismiss()
                     })
                 }
@@ -31,8 +31,9 @@ struct NameModalView: View {
     }
 }
 
-struct NameModalView_Previews: PreviewProvider {
-    static var previews: some View {
-        NameModalView()
-    }
-}
+//struct NameModalView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        @Binding let boolean = true
+//        NameModalView(newViewShowing: rt)
+//    }
+//}

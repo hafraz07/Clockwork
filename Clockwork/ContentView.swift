@@ -12,11 +12,17 @@ struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var stopWatch = StopwatchManager();
     @EnvironmentObject var userData: UserData
-    @State private var showModal = true
-
+    var activityName: String
+//    @State private var showModal = true
+    func addActivity() {
+        self.userData.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+    }
+    
     var body: some View {
-        
         VStack {
+            Text(activityName)
+                .font(.headline)
+            
             DisplayTime(displayHours: String(format: "%02d", self.stopWatch.hours), displayMinutes: String(format: "%02d", self.stopWatch.minutes), displaySeconds: String(self.stopWatch.secondsElapsed))
             
             if (stopWatch.mode == .stopped) {
@@ -31,13 +37,13 @@ struct ContentView: View {
                 }
                 .offset(y:400)
                     Button(action: {
-                        self.userData.activities.append(Activity(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+                        self.addActivity()
                         self.stopWatch.stop()
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
                         TimerButton(label: "Stop", buttonColor: Color.red)
                     }
-                    .offset(y:400)
+                    .offset(y:200)
                     .padding(.top, 30)
             }
             else if (stopWatch.mode == .paused) {
@@ -46,26 +52,26 @@ struct ContentView: View {
                 }
                 .offset(y:400)
                 Button(action: {
-                    self.userData.activities.append(Activity(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+                    self.addActivity()
                     self.stopWatch.stop()
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     TimerButton(label: "Stop", buttonColor: Color.red)
                 }
-                .offset(y:400)
+                .offset(y:200)
                 .padding(.top, 30)
             }
             Spacer()
         }
-        .sheet(isPresented: $showModal) {
-            NameModalView()
-        }
+//        .sheet(isPresented: $showModal) {
+//            NameModalView()
+//        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(activityName: "Interview")
         .environmentObject(UserData())
     }
 }

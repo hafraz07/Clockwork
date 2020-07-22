@@ -16,14 +16,15 @@ class UserData: ObservableObject {
 
 
 class Activity: ObservableObject, Identifiable {
-    var name: String = "Placeholder"
+    var name: String
     var hours: Int
     var minutes: Int
     var seconds: Int
     static var id: Int = -1
     
     
-    init(hours: Int, minutes: Int, seconds: Int) {
+    init(name: String, hours: Int, minutes: Int, seconds: Int) {
+        self.name = name
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
