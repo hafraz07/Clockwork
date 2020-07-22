@@ -20,12 +20,13 @@ class Activity: ObservableObject, Identifiable {
     var hours: Int
     var minutes: Int
     var seconds: Int
-    var id: Int
+    static var id: Int = -1
+    
     
     init(hours: Int, minutes: Int, seconds: Int) {
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
-        self.id = 0
+        Activity.self.id += 1
     }
 }

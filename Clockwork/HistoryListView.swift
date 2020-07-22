@@ -11,6 +11,7 @@ import SwiftUI
 struct HistoryListView: View {
     //Environment Object
     @EnvironmentObject var userData: UserData
+//    @State private var showModal = false
     var body: some View {
         NavigationView {
             VStack(alignment: .trailing) {
@@ -30,6 +31,11 @@ struct HistoryListView: View {
                         .frame(width: 50, height: 50)
                         .padding()
                         .foregroundColor(.green)
+//                        .onTapGesture {
+//                            self.showModal = true
+//                        }
+//                    .sheet(isPresented: $showModal) {
+//                        NameModalView()
                 }
             }
         }

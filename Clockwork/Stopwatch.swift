@@ -27,7 +27,6 @@ class StopwatchManager: ObservableObject {
     @Published var hours = 0
     @Published var minutes = 0
     @Published var secondsElapsed = 0
-//    @EnvironmentObject var userData: UserData
         
     func start() {
         mode = .running

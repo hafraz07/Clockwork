@@ -12,7 +12,10 @@ struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var stopWatch = StopwatchManager();
     @EnvironmentObject var userData: UserData
+    @State private var showModal = true
+
     var body: some View {
+        
         VStack {
             DisplayTime(displayHours: String(format: "%02d", self.stopWatch.hours), displayMinutes: String(format: "%02d", self.stopWatch.minutes), displaySeconds: String(self.stopWatch.secondsElapsed))
             
@@ -53,6 +56,9 @@ struct ContentView: View {
                 .padding(.top, 30)
             }
             Spacer()
+        }
+        .sheet(isPresented: $showModal) {
+            NameModalView()
         }
     }
 }

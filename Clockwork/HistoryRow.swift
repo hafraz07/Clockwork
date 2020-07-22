@@ -14,7 +14,15 @@ struct HistoryRow: View {
         HStack() {
             Text(activity.name)
             Spacer()
-            Text(String(format: "%02d", activity.hours) + ":" + String(format: "%02d", activity.minutes))
+            if (activity.hours > 0) {
+                Text(String(format: "%02d", activity.hours) + ":" + String(format: "%02d", activity.minutes))
+            }
+            else if (activity.minutes > 0) {
+                Text(String(activity.minutes) + " minutes")
+            }
+            else if (activity.seconds >= 0) {
+                Text(String(activity.seconds) + " seconds")
+            }
         }
         .padding()
     }
