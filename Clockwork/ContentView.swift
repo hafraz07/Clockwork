@@ -17,6 +17,7 @@ struct ContentView: View {
     
     func addActivity() {
         self.day.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+        self.day.calculateTotalTime(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
     }
     
     var body: some View {

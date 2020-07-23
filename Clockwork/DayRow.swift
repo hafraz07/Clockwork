@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct DayRow: View {
-    var day: Day
+    @ObservedObject var day: Day
     var body: some View {
         HStack() {
-            Text(day.date)
+            Text(day.displayDate)
             Spacer()
             if (day.totalHours > 0) {
                 Text(String(format: "%02d", day.totalHours) + ":" + String(format: "%02d", day.totalMinutes))

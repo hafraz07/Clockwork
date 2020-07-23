@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct HistoryListView: View {
-    @EnvironmentObject var userData: UserData
     @ObservedObject var day: Day
     @State private var showModal = false
     @State private var newViewShowing = false
@@ -53,6 +52,5 @@ struct HistoryListView: View {
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryListView(day: Day())
-        .environmentObject(UserData())
     }
 }

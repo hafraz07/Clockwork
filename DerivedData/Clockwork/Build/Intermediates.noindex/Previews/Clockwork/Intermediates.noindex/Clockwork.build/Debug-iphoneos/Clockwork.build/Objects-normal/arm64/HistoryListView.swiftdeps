@@ -16,7 +16,6 @@ depends-top-level:
 - !private "ContentView"
 - "Day"
 - !private "EmptyView"
-- "EnvironmentObject"
 - "FloatLiteralType"
 - "HistoryListView"
 - "HistoryListView_Previews"
@@ -31,7 +30,6 @@ depends-top-level:
 - "State"
 - "StringLiteralType"
 - !private "Text"
-- "UserData"
 - !private "VStack"
 - "View"
 depends-member:
@@ -67,7 +65,6 @@ depends-member:
 - !private ["SE", "isEmpty"]
 - !private ["SE", "pink"]
 - !private ["SE", "toggle"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "pink"]
@@ -86,12 +83,10 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "$day"]
 - !private ["9Clockwork15HistoryListViewV", "$newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "$showModal"]
-- ["9Clockwork15HistoryListViewV", "$userData"]
 - ["9Clockwork15HistoryListViewV", "Body"]
 - !private ["9Clockwork15HistoryListViewV", "ContentView"]
 - ["9Clockwork15HistoryListViewV", "Day"]
 - !private ["9Clockwork15HistoryListViewV", "EmptyView"]
-- ["9Clockwork15HistoryListViewV", "EnvironmentObject"]
 - !private ["9Clockwork15HistoryListViewV", "HistoryRow"]
 - !private ["9Clockwork15HistoryListViewV", "Image"]
 - !private ["9Clockwork15HistoryListViewV", "List"]
@@ -100,7 +95,6 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "ObservedObject"]
 - ["9Clockwork15HistoryListViewV", "State"]
 - !private ["9Clockwork15HistoryListViewV", "Text"]
-- ["9Clockwork15HistoryListViewV", "UserData"]
 - !private ["9Clockwork15HistoryListViewV", "VStack"]
 - ["9Clockwork15HistoryListViewV", "View"]
 - ["9Clockwork15HistoryListViewV", "_Default_Body"]
@@ -110,20 +104,16 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "_makeViewList"]
 - !private ["9Clockwork15HistoryListViewV", "_newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "_showModal"]
-- !private ["9Clockwork15HistoryListViewV", "_userData"]
 - !private ["9Clockwork15HistoryListViewV", "activityName"]
 - ["9Clockwork15HistoryListViewV", "body"]
 - ["9Clockwork15HistoryListViewV", "day"]
 - ["9Clockwork15HistoryListViewV", "deinit"]
-- !private ["9Clockwork15HistoryListViewV", "environmentObject"]
 - ["9Clockwork15HistoryListViewV", "init"]
 - !private ["9Clockwork15HistoryListViewV", "newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "showModal"]
-- ["9Clockwork15HistoryListViewV", "userData"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "Day"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "HistoryListView"]
 - ["9Clockwork24HistoryListView_PreviewsV", "Previews"]
-- !private ["9Clockwork24HistoryListView_PreviewsV", "UserData"]
 - ["9Clockwork24HistoryListView_PreviewsV", "View"]
 - ["9Clockwork24HistoryListView_PreviewsV", "_Default_Previews"]
 - ["9Clockwork24HistoryListView_PreviewsV", "_platform"]
@@ -157,7 +147,6 @@ depends-member:
 - !private ["7SwiftUI15PreviewProviderP", "Day"]
 - !private ["7SwiftUI15PreviewProviderP", "HistoryListView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "UserData"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "_platform"]
@@ -171,8 +160,6 @@ depends-member:
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["7SwiftUI4TextV", "init"]
-- ["9Clockwork8UserDataC", "deinit"]
-- !private ["9Clockwork8UserDataC", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI6VStackV", "sheet"]
 - !private ["7SwiftUI4ViewP", "$activityName"]
@@ -181,7 +168,6 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ContentView"]
 - !private ["7SwiftUI4ViewP", "EmptyView"]
-- ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "HistoryRow"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
@@ -198,7 +184,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "activityName"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "day"]
-- !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "hidden"]
@@ -226,7 +211,6 @@ depends-member:
 - !private ["7SwiftUI16_PreviewProviderP", "Day"]
 - !private ["7SwiftUI16_PreviewProviderP", "HistoryListView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "UserData"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "_platform"]
@@ -252,7 +236,6 @@ depends-nominal:
 - "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI9EmptyViewV"
 - !private "SE"
-- "7SwiftUI17EnvironmentObjectV"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -281,7 +264,6 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - "7SwiftUI5StateV"
 - !private "7SwiftUI4TextV"
-- "9Clockwork8UserDataC"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -326,4 +308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "acdae83c3794a19226f32a6f3fae95b0"
+interface-hash: "4eab304a48f0d20b3e1a6583381b61b2"

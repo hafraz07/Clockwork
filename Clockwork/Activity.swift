@@ -18,10 +18,35 @@ class UserData: ObservableObject {
 class Day: ObservableObject, Identifiable {
     let uuid = UUID().uuidString
     @Published var activities: [Activity] = []
-    var date: String = "07/10/99"
-    var totalHours: Int = 5
-    var totalMinutes: Int = 29
-    var totalSeconds: Int = 0
+    var displayDate: String
+    @Published var totalHours: Int = 0
+    @Published var totalMinutes: Int = 0
+    @Published var totalSeconds: Int = 0
+    
+    init() {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        self.displayDate = formatter.string(from: date)
+    }
+    
+    func calculateTotalTime(hours: Int, minutes: Int, seconds: Int) {
+            totalHours += hours
+            totalMinutes += minutes
+            totalSeconds += seconds
+        adjustTime()
+    }
+    
+    func adjustTime() {
+        if (self.totalSeconds >= 60) {
+            totalMinutes += totalSeconds / 60
+            totalSeconds += totalSeconds % 60
+        }
+        if (self.totalMinutes >= 60) {
+            totalHours += totalMinutes / 60
+            totalMinutes += totalMinutes % 60
+        }
+    }
 }
 
 

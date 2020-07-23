@@ -10,6 +10,7 @@ import SwiftUI
 
 struct DayListView: View {
     @EnvironmentObject var userData: UserData
+    @State private var newViewShowing = false
     
     var body: some View {
         NavigationView {
@@ -27,7 +28,12 @@ struct DayListView: View {
                 else {
                     Text("No Days")
                 }
-//                NavigationLink(destination: HistoryListView()) {
+                
+//                NavigationLink(destination: HistoryListView(day: day), isActive: $newViewShowing)
+//                {
+//                    EmptyView()
+//                }.hidden()
+                
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .scaledToFit()
@@ -35,9 +41,9 @@ struct DayListView: View {
                         .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
+                            self.newViewShowing.toggle()
                             self.userData.days.append(Day())
                     }
-//                }
             }
         }
     }
@@ -46,5 +52,6 @@ struct DayListView: View {
 struct DayListView_Previews: PreviewProvider {
     static var previews: some View {
         DayListView()
+        .environmentObject(UserData())
     }
 }
