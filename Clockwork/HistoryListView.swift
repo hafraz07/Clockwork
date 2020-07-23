@@ -10,15 +10,15 @@ import SwiftUI
 
 struct HistoryListView: View {
     @EnvironmentObject var userData: UserData
+    @ObservedObject var day: Day
     @State private var showModal = false
     @State private var newViewShowing = false
     @State private var activityName = ""
     
     var body: some View {
-        NavigationView {
             VStack(alignment: .trailing) {
-                if (!userData.activities.isEmpty) {
-                    List(userData.activities) { activity in
+                if (!day.activities.isEmpty) {
+                    List(day.activities) { activity in
                         HistoryRow(activity: activity)
                     }
                     .navigationBarTitle(Text("Work History"))
@@ -36,12 +36,11 @@ struct HistoryListView: View {
                             self.showModal.toggle()
                         }
                 
-                NavigationLink(destination: ContentView(activityName: activityName), isActive: $newViewShowing)
+                NavigationLink(destination: ContentView(activityName: activityName, day: self.day), isActive: $newViewShowing)
                 {
                     EmptyView()
                 }.hidden()
             }
-        }
         .sheet(isPresented: $showModal) {
             NameModalView(activityName: self.$activityName, newViewShowing: self.$newViewShowing)
                 .onAppear {
@@ -53,7 +52,7 @@ struct HistoryListView: View {
 
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryListView()
+        HistoryListView(day: Day())
         .environmentObject(UserData())
     }
 }

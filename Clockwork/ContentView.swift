@@ -11,11 +11,12 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var stopWatch = StopwatchManager();
-    @EnvironmentObject var userData: UserData
+//    @EnvironmentObject var userData: UserData
     var activityName: String
-//    @State private var showModal = true
+    @ObservedObject var day: Day
+    
     func addActivity() {
-        self.userData.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+        self.day.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
     }
     
     var body: some View {
@@ -63,15 +64,12 @@ struct ContentView: View {
             }
             Spacer()
         }
-//        .sheet(isPresented: $showModal) {
-//            NameModalView()
-//        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(activityName: "Interview")
+        ContentView(activityName: "Interview", day: Day())
         .environmentObject(UserData())
     }
 }

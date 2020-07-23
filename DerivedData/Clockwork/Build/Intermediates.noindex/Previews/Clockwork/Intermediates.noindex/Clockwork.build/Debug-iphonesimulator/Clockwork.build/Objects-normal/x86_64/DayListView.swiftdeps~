@@ -11,6 +11,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
+- !private "Day"
 - "DayListView"
 - "DayListView_Previews"
 - !private "DayRow"
@@ -30,22 +31,33 @@ depends-top-level:
 - !private "VStack"
 - "View"
 depends-member:
+- !private ["Sa", "append"]
 - !private ["Sa", "isEmpty"]
+- !private ["SK", "append"]
 - !private ["SK", "isEmpty"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "isEmpty"]
+- !private ["Sl", "append"]
 - !private ["Sl", "isEmpty"]
 - !private ["7SwiftUI5ColorV", "pink"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "pink"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "pink"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "pink"]
+- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "isEmpty"]
 - !private ["9Clockwork3DayC", "deinit"]
+- !private ["9Clockwork3DayC", "init"]
 - ["9Clockwork11DayListViewV", "$userData"]
 - ["9Clockwork11DayListViewV", "Body"]
+- !private ["9Clockwork11DayListViewV", "Day"]
 - !private ["9Clockwork11DayListViewV", "DayRow"]
 - ["9Clockwork11DayListViewV", "EnvironmentObject"]
 - !private ["9Clockwork11DayListViewV", "ForEach"]
@@ -78,38 +90,47 @@ depends-member:
 - ["9Clockwork20DayListView_PreviewsV", "previews"]
 - !private ["9Clockwork6DayRowV", "deinit"]
 - !private ["9Clockwork6DayRowV", "init"]
+- !private ["Se", "append"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "pink"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["SE", "append"]
 - !private ["SE", "isEmpty"]
 - !private ["SE", "pink"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
+- !private ["SQ", "append"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "pink"]
 - !private ["SQ", "resizable"]
 - !private ["SQ", "scaledToFit"]
 - !private ["SQ", "trailing"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
 - !private ["s23ExpressibleByNilLiteralP", "pink"]
 - !private ["7SwiftUI7ForEachV", "init"]
 - !private ["7SwiftUI7GestureP", "pink"]
+- !private ["SH", "append"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "pink"]
 - !private ["9Clockwork15HistoryListViewV", "deinit"]
 - !private ["9Clockwork15HistoryListViewV", "init"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "trailing"]
+- !private ["s12IdentifiableP", "init"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI5ImageV", "scaledToFit"]
 - !private ["7SwiftUI4ListV", "init"]
 - !private ["7SwiftUI4ListV", "navigationBarTitle"]
+- !private ["SM", "append"]
 - !private ["SM", "isEmpty"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["7Combine16ObservableObjectP", "days"]
+- !private ["7Combine16ObservableObjectP", "init"]
 - !private ["Sq", "pink"]
 - !private ["7SwiftUI15PreviewProviderP", "DayListView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -119,8 +140,11 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "append"]
 - !private ["Sk", "isEmpty"]
+- !private ["Sm", "append"]
 - !private ["Sm", "isEmpty"]
+- !private ["ST", "append"]
 - !private ["ST", "isEmpty"]
 - !private ["7SwiftUI10ShapeStyleP", "pink"]
 - !private ["7SwiftUI4TextV", "init"]
@@ -128,6 +152,7 @@ depends-member:
 - ["9Clockwork8UserDataC", "deinit"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Day"]
 - !private ["7SwiftUI4ViewP", "DayRow"]
 - ["7SwiftUI4ViewP", "EnvironmentObject"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
@@ -147,6 +172,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "pink"]
 - !private ["7SwiftUI4ViewP", "resizable"]
@@ -154,10 +180,15 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "userData"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
+- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "pink"]
 - !private ["7SwiftUI16_PreviewProviderP", "DayListView"]
@@ -196,6 +227,7 @@ depends-nominal:
 - !private "SH"
 - !private "9Clockwork15HistoryListViewV"
 - !private "7SwiftUI19HorizontalAlignmentV"
+- !private "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI4ListV"
 - !private "SM"
@@ -233,7 +265,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"

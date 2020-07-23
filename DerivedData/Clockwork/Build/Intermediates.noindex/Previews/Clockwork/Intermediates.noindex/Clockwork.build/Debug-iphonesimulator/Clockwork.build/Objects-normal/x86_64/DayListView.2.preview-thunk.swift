@@ -18,7 +18,7 @@ extension DayListView {
                 if (!userData.days.isEmpty) {
                     List {
                         ForEach(userData.days) { day in
-                            NavigationLink(destination: HistoryListView()) {
+                            NavigationLink(destination: HistoryListView(day: day)) {
                                 DayRow(day: day)
                             }
                         }
@@ -28,17 +28,17 @@ extension DayListView {
                 else {
                     Text(__designTimeString("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Days"))
                 }
-                NavigationLink(destination: HistoryListView()) {
-                    Image(systemName: __designTimeString("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].arg[0].value.[0].value", fallback: "plus.circle.fill"))
+//                NavigationLink(destination: HistoryListView()) {
+                    Image(systemName: __designTimeString("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[0].value.[0].value", fallback: "plus.circle.fill"))
                         .resizable()
                         .scaledToFit()
-                        .frame(width: __designTimeInteger("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[2].arg[0].value", fallback: 50), height: __designTimeInteger("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value.[0].modifier[2].arg[1].value", fallback: 50))
+                        .frame(width: __designTimeInteger("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].modifier[2].arg[0].value", fallback: 50), height: __designTimeInteger("#5204.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[1].modifier[2].arg[1].value", fallback: 50))
                         .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
                             self.userData.days.append(Day())
                     }
-                }
+//                }
             }
         })
 #sourceLocation()

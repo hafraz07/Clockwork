@@ -24,9 +24,9 @@ depends-top-level:
 - "Color"
 - "ContentView"
 - "ContentView_Previews"
+- "Day"
 - "DisplayTime"
 - "Environment"
-- "EnvironmentObject"
 - "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "ObservedObject"
@@ -39,7 +39,7 @@ depends-top-level:
 - !private "Text"
 - "TimerButton"
 - !private "UnicodeScalarType"
-- "UserData"
+- !private "UserData"
 - !private "VStack"
 - "View"
 depends-member:
@@ -58,16 +58,16 @@ depends-member:
 - !private ["7SwiftUI5ColorV", "red"]
 - !private ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "init"]
+- ["9Clockwork11ContentViewV", "$day"]
 - ["9Clockwork11ContentViewV", "$stopWatch"]
-- ["9Clockwork11ContentViewV", "$userData"]
 - !private ["9Clockwork11ContentViewV", "Activity"]
 - ["9Clockwork11ContentViewV", "Binding"]
 - ["9Clockwork11ContentViewV", "Body"]
 - !private ["9Clockwork11ContentViewV", "Button"]
 - !private ["9Clockwork11ContentViewV", "Color"]
+- ["9Clockwork11ContentViewV", "Day"]
 - !private ["9Clockwork11ContentViewV", "DisplayTime"]
 - ["9Clockwork11ContentViewV", "Environment"]
-- ["9Clockwork11ContentViewV", "EnvironmentObject"]
 - ["9Clockwork11ContentViewV", "ObservedObject"]
 - ["9Clockwork11ContentViewV", "PresentationMode"]
 - !private ["9Clockwork11ContentViewV", "Spacer"]
@@ -75,25 +75,25 @@ depends-member:
 - ["9Clockwork11ContentViewV", "String"]
 - !private ["9Clockwork11ContentViewV", "Text"]
 - !private ["9Clockwork11ContentViewV", "TimerButton"]
-- ["9Clockwork11ContentViewV", "UserData"]
 - !private ["9Clockwork11ContentViewV", "VStack"]
 - ["9Clockwork11ContentViewV", "View"]
 - ["9Clockwork11ContentViewV", "_Default_Body"]
+- !private ["9Clockwork11ContentViewV", "_day"]
 - ["9Clockwork11ContentViewV", "_makeView"]
 - ["9Clockwork11ContentViewV", "_makeViewList"]
 - !private ["9Clockwork11ContentViewV", "_presentationMode"]
 - !private ["9Clockwork11ContentViewV", "_stopWatch"]
-- !private ["9Clockwork11ContentViewV", "_userData"]
 - ["9Clockwork11ContentViewV", "activityName"]
 - ["9Clockwork11ContentViewV", "addActivity"]
 - ["9Clockwork11ContentViewV", "body"]
+- ["9Clockwork11ContentViewV", "day"]
 - ["9Clockwork11ContentViewV", "deinit"]
 - !private ["9Clockwork11ContentViewV", "environmentObject"]
 - ["9Clockwork11ContentViewV", "init"]
 - ["9Clockwork11ContentViewV", "presentationMode"]
 - ["9Clockwork11ContentViewV", "stopWatch"]
-- ["9Clockwork11ContentViewV", "userData"]
 - !private ["9Clockwork20ContentView_PreviewsV", "ContentView"]
+- !private ["9Clockwork20ContentView_PreviewsV", "Day"]
 - ["9Clockwork20ContentView_PreviewsV", "Previews"]
 - !private ["9Clockwork20ContentView_PreviewsV", "UserData"]
 - ["9Clockwork20ContentView_PreviewsV", "View"]
@@ -126,6 +126,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["10Foundation12DataProtocolP", "append"]
+- !private ["9Clockwork3DayC", "activities"]
+- ["9Clockwork3DayC", "deinit"]
+- !private ["9Clockwork3DayC", "init"]
 - !private ["Se", "append"]
 - !private ["Se", "headline"]
 - !private ["Se", "init"]
@@ -157,7 +160,6 @@ depends-member:
 - !private ["SE", "white"]
 - ["7SwiftUI11EnvironmentV", "init"]
 - ["7SwiftUI11EnvironmentV", "wrappedValue"]
-- ["7SwiftUI17EnvironmentObjectV", "init"]
 - ["7SwiftUI17EnvironmentValuesV", "presentationMode"]
 - !private ["SQ", "append"]
 - !private ["SQ", "blue"]
@@ -210,6 +212,7 @@ depends-member:
 - !private ["SH", "some"]
 - !private ["SH", "stopped"]
 - !private ["SH", "white"]
+- !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -236,6 +239,7 @@ depends-member:
 - !private ["Sq", "white"]
 - !private ["7SwiftUI16PresentationModeV", "dismiss"]
 - !private ["7SwiftUI15PreviewProviderP", "ContentView"]
+- !private ["7SwiftUI15PreviewProviderP", "Day"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "UserData"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -297,8 +301,7 @@ depends-member:
 - ["9Clockwork11TimerButtonV", "deinit"]
 - ["9Clockwork11TimerButtonV", "init"]
 - ["9Clockwork11TimerButtonV", "label"]
-- !private ["9Clockwork8UserDataC", "activities"]
-- ["9Clockwork8UserDataC", "deinit"]
+- !private ["9Clockwork8UserDataC", "deinit"]
 - !private ["9Clockwork8UserDataC", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "Activity"]
@@ -307,7 +310,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "DisplayTime"]
 - ["7SwiftUI4ViewP", "Environment"]
-- ["7SwiftUI4ViewP", "EnvironmentObject"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - ["7SwiftUI4ViewP", "StopwatchManager"]
@@ -326,6 +328,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "buttonColor"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
+- !private ["7SwiftUI4ViewP", "day"]
 - !private ["7SwiftUI4ViewP", "displayHours"]
 - !private ["7SwiftUI4ViewP", "displayMinutes"]
 - !private ["7SwiftUI4ViewP", "displaySeconds"]
@@ -343,7 +346,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "red"]
 - !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "stopWatch"]
-- !private ["7SwiftUI4ViewP", "userData"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
@@ -365,6 +367,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
+- !private ["7SwiftUI16_PreviewProviderP", "Day"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "UserData"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -390,12 +393,12 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
+- "9Clockwork3DayC"
 - !private "Se"
 - "9Clockwork11DisplayTimeV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "7SwiftUI11EnvironmentV"
-- "7SwiftUI17EnvironmentObjectV"
 - "7SwiftUI17EnvironmentValuesV"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -434,7 +437,7 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "9Clockwork11TimerButtonV"
-- "9Clockwork8UserDataC"
+- !private "9Clockwork8UserDataC"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -481,4 +484,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3b4fa395a6ffef54be37f4ccc7d460a6"
+interface-hash: "969e1f36d8eb03cae3c2e787432df7ec"

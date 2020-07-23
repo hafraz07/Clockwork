@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DisplayTime {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 100)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 98)
         AnyView(__designTimeSelection(Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
             .font(.largeTitle)
             .offset(y:__designTimeInteger("#5822.[4].[3].property.[0].[0].modifier[1].arg[0].value", fallback: 300)), "#5822.[4].[3].property.[0].[0]"))
@@ -14,7 +14,7 @@ extension DisplayTime {
 
 extension TimerButton {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 84)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 82)
         AnyView(__designTimeSelection(Text(__designTimeSelection(label, "#5822.[3].[2].property.[0].[0].arg[0].value"))
             .foregroundColor(.white)
             .padding(.vertical, __designTimeInteger("#5822.[3].[2].property.[0].[0].modifier[1].arg[1].value", fallback: 20))
@@ -27,8 +27,8 @@ extension TimerButton {
 
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 74)
-        AnyView(__designTimeSelection(ContentView(activityName: __designTimeString("#5822.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"))
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 72)
+        AnyView(__designTimeSelection(ContentView(activityName: __designTimeString("#5822.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: __designTimeSelection(Day(), "#5822.[2].[0].property.[0].[0].arg[1].value"))
         .environmentObject(__designTimeSelection(UserData(), "#5822.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#5822.[2].[0].property.[0].[0]"))
 #sourceLocation()
     }
@@ -36,7 +36,7 @@ extension ContentView_Previews {
 
 extension ContentView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 22)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 23)
         AnyView(__designTimeSelection(VStack {
             __designTimeSelection(Text(__designTimeSelection(activityName, "#5822.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value"))
                 .font(.headline), "#5822.[1].[5].property.[0].[0].arg[0].value.[0]")
@@ -82,16 +82,13 @@ extension ContentView {
             __designTimeSelection(Spacer(), "#5822.[1].[5].property.[0].[0].arg[0].value.[3]")
         }, "#5822.[1].[5].property.[0].[0]"))
 #sourceLocation()
-//        .sheet(isPresented: $showModal) {
-//            NameModalView()
-//        }
     }
 }
 
 extension ContentView {
     @_dynamicReplacement(for: addActivity()) private func __preview__addActivity() {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 18)
-        __designTimeSelection(self.userData.activities.append(__designTimeSelection(Activity(name: __designTimeSelection(self.activityName, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[0].value"), hours: __designTimeSelection(self.stopWatch.hours, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[1].value"), minutes: __designTimeSelection(self.stopWatch.minutes, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[2].value"), seconds: __designTimeSelection(self.stopWatch.secondsElapsed, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[3].value")), "#5822.[1].[4].[0].modifier[0].arg[0].value")), "#5822.[1].[4].[0]")
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 19)
+        __designTimeSelection(self.day.activities.append(__designTimeSelection(Activity(name: __designTimeSelection(self.activityName, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[0].value"), hours: __designTimeSelection(self.stopWatch.hours, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[1].value"), minutes: __designTimeSelection(self.stopWatch.minutes, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[2].value"), seconds: __designTimeSelection(self.stopWatch.secondsElapsed, "#5822.[1].[4].[0].modifier[0].arg[0].value.arg[3].value")), "#5822.[1].[4].[0].modifier[0].arg[0].value")), "#5822.[1].[4].[0]")
 #sourceLocation()
     }
 }

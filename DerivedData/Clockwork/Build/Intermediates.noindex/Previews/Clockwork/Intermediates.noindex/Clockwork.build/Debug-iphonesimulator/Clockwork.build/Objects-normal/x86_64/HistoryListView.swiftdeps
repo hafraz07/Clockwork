@@ -14,6 +14,7 @@ depends-top-level:
 - !private "AssignmentPrecedence"
 - "BooleanLiteralType"
 - !private "ContentView"
+- "Day"
 - !private "EmptyView"
 - "EnvironmentObject"
 - "FloatLiteralType"
@@ -25,7 +26,7 @@ depends-top-level:
 - !private "List"
 - !private "NameModalView"
 - !private "NavigationLink"
-- !private "NavigationView"
+- "ObservedObject"
 - "PreviewProvider"
 - "State"
 - "StringLiteralType"
@@ -54,6 +55,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "pink"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
 - !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["9Clockwork3DayC", "activities"]
+- ["9Clockwork3DayC", "deinit"]
+- !private ["9Clockwork3DayC", "init"]
 - !private ["Se", "isEmpty"]
 - !private ["Se", "pink"]
 - !private ["Se", "toggle"]
@@ -79,11 +83,13 @@ depends-member:
 - !private ["SH", "pink"]
 - !private ["SH", "toggle"]
 - !private ["9Clockwork15HistoryListViewV", "$activityName"]
+- ["9Clockwork15HistoryListViewV", "$day"]
 - !private ["9Clockwork15HistoryListViewV", "$newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "$showModal"]
 - ["9Clockwork15HistoryListViewV", "$userData"]
 - ["9Clockwork15HistoryListViewV", "Body"]
 - !private ["9Clockwork15HistoryListViewV", "ContentView"]
+- ["9Clockwork15HistoryListViewV", "Day"]
 - !private ["9Clockwork15HistoryListViewV", "EmptyView"]
 - ["9Clockwork15HistoryListViewV", "EnvironmentObject"]
 - !private ["9Clockwork15HistoryListViewV", "HistoryRow"]
@@ -91,7 +97,7 @@ depends-member:
 - !private ["9Clockwork15HistoryListViewV", "List"]
 - !private ["9Clockwork15HistoryListViewV", "NameModalView"]
 - !private ["9Clockwork15HistoryListViewV", "NavigationLink"]
-- !private ["9Clockwork15HistoryListViewV", "NavigationView"]
+- ["9Clockwork15HistoryListViewV", "ObservedObject"]
 - ["9Clockwork15HistoryListViewV", "State"]
 - !private ["9Clockwork15HistoryListViewV", "Text"]
 - ["9Clockwork15HistoryListViewV", "UserData"]
@@ -99,6 +105,7 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "View"]
 - ["9Clockwork15HistoryListViewV", "_Default_Body"]
 - !private ["9Clockwork15HistoryListViewV", "_activityName"]
+- !private ["9Clockwork15HistoryListViewV", "_day"]
 - ["9Clockwork15HistoryListViewV", "_makeView"]
 - ["9Clockwork15HistoryListViewV", "_makeViewList"]
 - !private ["9Clockwork15HistoryListViewV", "_newViewShowing"]
@@ -106,12 +113,14 @@ depends-member:
 - !private ["9Clockwork15HistoryListViewV", "_userData"]
 - !private ["9Clockwork15HistoryListViewV", "activityName"]
 - ["9Clockwork15HistoryListViewV", "body"]
+- ["9Clockwork15HistoryListViewV", "day"]
 - ["9Clockwork15HistoryListViewV", "deinit"]
 - !private ["9Clockwork15HistoryListViewV", "environmentObject"]
 - ["9Clockwork15HistoryListViewV", "init"]
 - !private ["9Clockwork15HistoryListViewV", "newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "showModal"]
 - ["9Clockwork15HistoryListViewV", "userData"]
+- !private ["9Clockwork24HistoryListView_PreviewsV", "Day"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "HistoryListView"]
 - ["9Clockwork24HistoryListView_PreviewsV", "Previews"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "UserData"]
@@ -126,6 +135,8 @@ depends-member:
 - !private ["9Clockwork10HistoryRowV", "deinit"]
 - !private ["9Clockwork10HistoryRowV", "init"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "trailing"]
+- !private ["s12IdentifiableP", "activities"]
+- !private ["s12IdentifiableP", "init"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI5ImageV", "scaledToFit"]
@@ -139,11 +150,11 @@ depends-member:
 - !private ["9Clockwork13NameModalViewV", "onAppear"]
 - !private ["7SwiftUI14NavigationLinkV", "hidden"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
-- !private ["7SwiftUI14NavigationViewV", "init"]
-- !private ["7SwiftUI14NavigationViewV", "sheet"]
 - !private ["7Combine16ObservableObjectP", "activities"]
 - !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["Sq", "pink"]
+- !private ["7SwiftUI15PreviewProviderP", "Day"]
 - !private ["7SwiftUI15PreviewProviderP", "HistoryListView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "UserData"]
@@ -160,10 +171,10 @@ depends-member:
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["9Clockwork8UserDataC", "activities"]
 - ["9Clockwork8UserDataC", "deinit"]
 - !private ["9Clockwork8UserDataC", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI6VStackV", "sheet"]
 - !private ["7SwiftUI4ViewP", "$activityName"]
 - !private ["7SwiftUI4ViewP", "$newViewShowing"]
 - !private ["7SwiftUI4ViewP", "$showModal"]
@@ -176,7 +187,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "List"]
 - !private ["7SwiftUI4ViewP", "NameModalView"]
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
-- !private ["7SwiftUI4ViewP", "NavigationView"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - ["7SwiftUI4ViewP", "State"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
@@ -186,6 +197,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - !private ["7SwiftUI4ViewP", "activityName"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "day"]
 - !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
@@ -200,7 +212,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
 - !private ["7SwiftUI4ViewP", "sheet"]
 - !private ["7SwiftUI4ViewP", "showModal"]
-- !private ["7SwiftUI4ViewP", "userData"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["s14_ArrayProtocolP", "isEmpty"]
@@ -212,6 +223,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "pink"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
+- !private ["7SwiftUI16_PreviewProviderP", "Day"]
 - !private ["7SwiftUI16_PreviewProviderP", "HistoryListView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "UserData"]
@@ -235,6 +247,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
+- "9Clockwork3DayC"
 - !private "Se"
 - "7SwiftUI15DynamicPropertyP"
 - !private "7SwiftUI9EmptyViewV"
@@ -250,6 +263,7 @@ depends-nominal:
 - "9Clockwork24HistoryListView_PreviewsV"
 - !private "9Clockwork10HistoryRowV"
 - !private "7SwiftUI19HorizontalAlignmentV"
+- !private "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI4ListV"
 - !private "s25LosslessStringConvertibleP"
@@ -257,8 +271,8 @@ depends-nominal:
 - !private "10Foundation19MutableDataProtocolP"
 - !private "9Clockwork13NameModalViewV"
 - !private "7SwiftUI14NavigationLinkV"
-- !private "7SwiftUI14NavigationViewV"
 - !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - !private "Sk"
@@ -281,8 +295,22 @@ depends-nominal:
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -298,4 +326,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "87970a2180e0a251ad277f803eee701a"
+interface-hash: "acdae83c3794a19226f32a6f3fae95b0"

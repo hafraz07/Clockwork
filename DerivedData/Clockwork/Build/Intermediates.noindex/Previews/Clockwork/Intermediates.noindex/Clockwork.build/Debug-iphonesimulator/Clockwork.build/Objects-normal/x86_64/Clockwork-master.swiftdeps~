@@ -1,14 +1,14 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "749721e331f649261ae2a7fbbbdcd314"
-build_time: [1595485866, 544745000]
+build_time: [1595488570, 221104000]
 inputs:
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryRow.swift": [1595440402, 506427398]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Stopwatch.swift": [1595388987, 367615299]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Activity.swift": [1595485297, 952081187]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/AppDelegate.swift": [1595168972, 766032736]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift": [1595480147, 797329364]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift": [1595488570, 98978311]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/SceneDelegate.swift": [1595485519, 531507797]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift": [1595440587, 626266274]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift": [1595488570, 89643341]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/NameModalView.swift": [1595481798, 991309221]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift": [1595485805, 943433126]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift": [1595487218, 733364223]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayRow.swift": [1595484954, 762257050]

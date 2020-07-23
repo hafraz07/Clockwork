@@ -17,7 +17,7 @@ struct DayListView: View {
                 if (!userData.days.isEmpty) {
                     List {
                         ForEach(userData.days) { day in
-                            NavigationLink(destination: HistoryListView()) {
+                            NavigationLink(destination: HistoryListView(day: day)) {
                                 DayRow(day: day)
                             }
                         }
