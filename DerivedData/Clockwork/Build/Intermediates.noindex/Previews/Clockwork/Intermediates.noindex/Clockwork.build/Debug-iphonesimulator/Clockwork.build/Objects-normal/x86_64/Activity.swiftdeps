@@ -1,0 +1,202 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "UserData"
+- "Day"
+- "Activity"
+provides-nominal:
+- "9Clockwork8UserDataC"
+- "9Clockwork3DayC"
+- "9Clockwork8ActivityC"
+provides-member:
+- ["9Clockwork8UserDataC", ""]
+- ["9Clockwork3DayC", ""]
+- ["9Clockwork8ActivityC", ""]
+provides-dynamic-lookup:
+- "$activities"
+- "$days"
+- "_activities"
+- "_days"
+- "activities"
+- "date"
+- "days"
+- "hours"
+- "id"
+- "minutes"
+- "name"
+- "seconds"
+- "totalHours"
+- "totalMinutes"
+- "totalSeconds"
+- "uuid"
+depends-top-level:
+- !private "+="
+- "Activity"
+- "AssignmentPrecedence"
+- "Day"
+- "FloatLiteralType"
+- "Identifiable"
+- "Int"
+- "IntegerLiteralType"
+- "ObservableObject"
+- "Published"
+- "String"
+- "StringLiteralType"
+- "UUID"
+- "UserData"
+depends-member:
+- !private ["9Clockwork8ActivityC", "Activity"]
+- ["9Clockwork8ActivityC", "ID"]
+- ["9Clockwork8ActivityC", "Int"]
+- ["9Clockwork8ActivityC", "ObjectWillChangePublisher"]
+- ["9Clockwork8ActivityC", "String"]
+- ["9Clockwork8ActivityC", "_Default_ID"]
+- ["9Clockwork8ActivityC", "_Default_ObjectWillChangePublisher"]
+- ["9Clockwork8ActivityC", "deinit"]
+- ["9Clockwork8ActivityC", "hours"]
+- ["9Clockwork8ActivityC", "id"]
+- ["9Clockwork8ActivityC", "init"]
+- ["9Clockwork8ActivityC", "minutes"]
+- ["9Clockwork8ActivityC", "name"]
+- ["9Clockwork8ActivityC", "objectWillChange"]
+- ["9Clockwork8ActivityC", "seconds"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "uuidString"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "uuidString"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "uuidString"]
+- ["9Clockwork3DayC", "$activities"]
+- ["9Clockwork3DayC", "Activity"]
+- ["9Clockwork3DayC", "ID"]
+- ["9Clockwork3DayC", "Int"]
+- ["9Clockwork3DayC", "ObjectWillChangePublisher"]
+- ["9Clockwork3DayC", "Published"]
+- ["9Clockwork3DayC", "String"]
+- ["9Clockwork3DayC", "UUID"]
+- ["9Clockwork3DayC", "_Default_ID"]
+- ["9Clockwork3DayC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork3DayC", "_activities"]
+- ["9Clockwork3DayC", "activities"]
+- ["9Clockwork3DayC", "date"]
+- ["9Clockwork3DayC", "deinit"]
+- ["9Clockwork3DayC", "id"]
+- ["9Clockwork3DayC", "init"]
+- ["9Clockwork3DayC", "objectWillChange"]
+- ["9Clockwork3DayC", "totalHours"]
+- ["9Clockwork3DayC", "totalMinutes"]
+- ["9Clockwork3DayC", "totalSeconds"]
+- ["9Clockwork3DayC", "uuid"]
+- ["Se", "init"]
+- ["Se", "uuidString"]
+- ["SE", "init"]
+- ["SE", "uuidString"]
+- ["SQ", "init"]
+- ["SQ", "uuidString"]
+- ["SH", "init"]
+- ["SH", "uuidString"]
+- !private ["s12IdentifiableP", "Activity"]
+- ["s12IdentifiableP", "ID"]
+- ["s12IdentifiableP", "ObjectWillChangePublisher"]
+- ["s12IdentifiableP", "Published"]
+- ["s12IdentifiableP", "UUID"]
+- ["s12IdentifiableP", ""]
+- ["s12IdentifiableP", "_Default_ID"]
+- ["s12IdentifiableP", "_Default_ObjectWillChangePublisher"]
+- !private ["s12IdentifiableP", "_activities"]
+- !private ["s12IdentifiableP", "activities"]
+- !private ["s12IdentifiableP", "hours"]
+- ["s12IdentifiableP", "id"]
+- !private ["s12IdentifiableP", "minutes"]
+- !private ["s12IdentifiableP", "name"]
+- ["s12IdentifiableP", "objectWillChange"]
+- !private ["s12IdentifiableP", "seconds"]
+- !private ["7Combine16ObservableObjectP", "Activity"]
+- ["7Combine16ObservableObjectP", "ID"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "Published"]
+- ["7Combine16ObservableObjectP", "UUID"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ID"]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "_activities"]
+- !private ["7Combine16ObservableObjectP", "_days"]
+- !private ["7Combine16ObservableObjectP", "activities"]
+- !private ["7Combine16ObservableObjectP", "days"]
+- !private ["7Combine16ObservableObjectP", "hours"]
+- ["7Combine16ObservableObjectP", "id"]
+- !private ["7Combine16ObservableObjectP", "minutes"]
+- !private ["7Combine16ObservableObjectP", "name"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
+- !private ["7Combine16ObservableObjectP", "seconds"]
+- ["7Combine9PublishedV", "init"]
+- ["7Combine9PublishedV", "wrappedValue"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["10Foundation20ReferenceConvertibleP", "uuidString"]
+- ["10Foundation4UUIDV", "init"]
+- ["10Foundation4UUIDV", "uuidString"]
+- ["9Clockwork8UserDataC", "$activities"]
+- ["9Clockwork8UserDataC", "$days"]
+- ["9Clockwork8UserDataC", "Activity"]
+- ["9Clockwork8UserDataC", "Day"]
+- ["9Clockwork8UserDataC", "ObjectWillChangePublisher"]
+- ["9Clockwork8UserDataC", "Published"]
+- ["9Clockwork8UserDataC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork8UserDataC", "_activities"]
+- !private ["9Clockwork8UserDataC", "_days"]
+- ["9Clockwork8UserDataC", "activities"]
+- ["9Clockwork8UserDataC", "days"]
+- ["9Clockwork8UserDataC", "deinit"]
+- ["9Clockwork8UserDataC", "init"]
+- ["9Clockwork8UserDataC", "objectWillChange"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "uuidString"]
+depends-nominal:
+- "9Clockwork8ActivityC"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "9Clockwork3DayC"
+- "Se"
+- "SE"
+- "SQ"
+- "SH"
+- "s12IdentifiableP"
+- "7Combine16ObservableObjectP"
+- "7Combine9PublishedV"
+- "10Foundation20ReferenceConvertibleP"
+- "10Foundation4UUIDV"
+- "9Clockwork8UserDataC"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d73f6c899b1fa6b3ef4c5ea3d8aaf47f"

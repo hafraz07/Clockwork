@@ -1,0 +1,484 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ContentView"
+- "ContentView_Previews"
+- "TimerButton"
+- "DisplayTime"
+provides-nominal:
+- "9Clockwork11ContentViewV"
+- "9Clockwork20ContentView_PreviewsV"
+- "9Clockwork11TimerButtonV"
+- "9Clockwork11DisplayTimeV"
+provides-member:
+- ["9Clockwork11ContentViewV", ""]
+- ["9Clockwork20ContentView_PreviewsV", ""]
+- ["9Clockwork11TimerButtonV", ""]
+- ["9Clockwork11DisplayTimeV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "=="
+- !private "Activity"
+- "Binding"
+- !private "Button"
+- "Color"
+- "ContentView"
+- "ContentView_Previews"
+- "DisplayTime"
+- "Environment"
+- "EnvironmentObject"
+- "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "ObservedObject"
+- "PresentationMode"
+- "PreviewProvider"
+- !private "Spacer"
+- "StopwatchManager"
+- "String"
+- !private "StringLiteralType"
+- !private "Text"
+- "TimerButton"
+- !private "UnicodeScalarType"
+- "UserData"
+- !private "VStack"
+- "View"
+depends-member:
+- !private ["9Clockwork8ActivityC", "init"]
+- !private ["Sa", "append"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["7SwiftUI7BindingV", "wrappedValue"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["7SwiftUI6ButtonV", "offset"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["7SwiftUI5ColorV", "blue"]
+- !private ["7SwiftUI5ColorV", "red"]
+- !private ["7SwiftUI5ColorV", "white"]
+- !private ["SL", "init"]
+- ["9Clockwork11ContentViewV", "$stopWatch"]
+- ["9Clockwork11ContentViewV", "$userData"]
+- !private ["9Clockwork11ContentViewV", "Activity"]
+- ["9Clockwork11ContentViewV", "Binding"]
+- ["9Clockwork11ContentViewV", "Body"]
+- !private ["9Clockwork11ContentViewV", "Button"]
+- !private ["9Clockwork11ContentViewV", "Color"]
+- !private ["9Clockwork11ContentViewV", "DisplayTime"]
+- ["9Clockwork11ContentViewV", "Environment"]
+- ["9Clockwork11ContentViewV", "EnvironmentObject"]
+- ["9Clockwork11ContentViewV", "ObservedObject"]
+- ["9Clockwork11ContentViewV", "PresentationMode"]
+- !private ["9Clockwork11ContentViewV", "Spacer"]
+- ["9Clockwork11ContentViewV", "StopwatchManager"]
+- ["9Clockwork11ContentViewV", "String"]
+- !private ["9Clockwork11ContentViewV", "Text"]
+- !private ["9Clockwork11ContentViewV", "TimerButton"]
+- ["9Clockwork11ContentViewV", "UserData"]
+- !private ["9Clockwork11ContentViewV", "VStack"]
+- ["9Clockwork11ContentViewV", "View"]
+- ["9Clockwork11ContentViewV", "_Default_Body"]
+- ["9Clockwork11ContentViewV", "_makeView"]
+- ["9Clockwork11ContentViewV", "_makeViewList"]
+- !private ["9Clockwork11ContentViewV", "_presentationMode"]
+- !private ["9Clockwork11ContentViewV", "_stopWatch"]
+- !private ["9Clockwork11ContentViewV", "_userData"]
+- ["9Clockwork11ContentViewV", "activityName"]
+- ["9Clockwork11ContentViewV", "addActivity"]
+- ["9Clockwork11ContentViewV", "body"]
+- ["9Clockwork11ContentViewV", "deinit"]
+- !private ["9Clockwork11ContentViewV", "environmentObject"]
+- ["9Clockwork11ContentViewV", "init"]
+- ["9Clockwork11ContentViewV", "presentationMode"]
+- ["9Clockwork11ContentViewV", "stopWatch"]
+- ["9Clockwork11ContentViewV", "userData"]
+- !private ["9Clockwork20ContentView_PreviewsV", "ContentView"]
+- ["9Clockwork20ContentView_PreviewsV", "Previews"]
+- !private ["9Clockwork20ContentView_PreviewsV", "UserData"]
+- ["9Clockwork20ContentView_PreviewsV", "View"]
+- ["9Clockwork20ContentView_PreviewsV", "_Default_Previews"]
+- ["9Clockwork20ContentView_PreviewsV", "_platform"]
+- ["9Clockwork20ContentView_PreviewsV", "_previews"]
+- ["9Clockwork20ContentView_PreviewsV", "deinit"]
+- ["9Clockwork20ContentView_PreviewsV", "init"]
+- ["9Clockwork20ContentView_PreviewsV", "platform"]
+- ["9Clockwork20ContentView_PreviewsV", "previews"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "headline"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "largeTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "headline"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "largeTitle"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "some"]
+- !private ["s17CustomReflectableP", "white"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "blue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "presentationMode"]
+- !private ["s23CustomStringConvertibleP", "red"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "append"]
+- !private ["Se", "headline"]
+- !private ["Se", "init"]
+- !private ["Se", "largeTitle"]
+- !private ["Se", "none"]
+- !private ["Se", "some"]
+- !private ["Se", "white"]
+- ["9Clockwork11DisplayTimeV", "Body"]
+- ["9Clockwork11DisplayTimeV", "String"]
+- !private ["9Clockwork11DisplayTimeV", "Text"]
+- ["9Clockwork11DisplayTimeV", "View"]
+- ["9Clockwork11DisplayTimeV", "_Default_Body"]
+- ["9Clockwork11DisplayTimeV", "_makeView"]
+- ["9Clockwork11DisplayTimeV", "_makeViewList"]
+- ["9Clockwork11DisplayTimeV", "body"]
+- ["9Clockwork11DisplayTimeV", "deinit"]
+- ["9Clockwork11DisplayTimeV", "displayHours"]
+- ["9Clockwork11DisplayTimeV", "displayMinutes"]
+- ["9Clockwork11DisplayTimeV", "displaySeconds"]
+- ["9Clockwork11DisplayTimeV", "init"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["SE", "append"]
+- !private ["SE", "headline"]
+- !private ["SE", "init"]
+- !private ["SE", "largeTitle"]
+- !private ["SE", "none"]
+- !private ["SE", "some"]
+- !private ["SE", "white"]
+- ["7SwiftUI11EnvironmentV", "init"]
+- ["7SwiftUI11EnvironmentV", "wrappedValue"]
+- ["7SwiftUI17EnvironmentObjectV", "init"]
+- ["7SwiftUI17EnvironmentValuesV", "presentationMode"]
+- !private ["SQ", "append"]
+- !private ["SQ", "blue"]
+- !private ["SQ", "font"]
+- !private ["SQ", "foregroundColor"]
+- !private ["SQ", "headline"]
+- !private ["SQ", "horizontal"]
+- !private ["SQ", "init"]
+- !private ["SQ", "largeTitle"]
+- !private ["SQ", "none"]
+- !private ["SQ", "offset"]
+- !private ["SQ", "padding"]
+- !private ["SQ", "paused"]
+- !private ["SQ", "red"]
+- !private ["SQ", "running"]
+- !private ["SQ", "some"]
+- !private ["SQ", "stopped"]
+- !private ["SQ", "top"]
+- !private ["SQ", "vertical"]
+- !private ["SQ", "white"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
+- !private ["s25ExpressibleByArrayLiteralP", "top"]
+- !private ["s25ExpressibleByArrayLiteralP", "vertical"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "headline"]
+- !private ["s23ExpressibleByNilLiteralP", "largeTitle"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s23ExpressibleByNilLiteralP", "white"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI4FontV", "headline"]
+- !private ["7SwiftUI4FontV", "largeTitle"]
+- !private ["7SwiftUI7GestureP", "headline"]
+- !private ["7SwiftUI7GestureP", "largeTitle"]
+- !private ["7SwiftUI7GestureP", "none"]
+- !private ["7SwiftUI7GestureP", "some"]
+- !private ["7SwiftUI7GestureP", "white"]
+- !private ["SH", "append"]
+- !private ["SH", "blue"]
+- !private ["SH", "headline"]
+- !private ["SH", "init"]
+- !private ["SH", "largeTitle"]
+- !private ["SH", "none"]
+- !private ["SH", "paused"]
+- !private ["SH", "red"]
+- !private ["SH", "running"]
+- !private ["SH", "some"]
+- !private ["SH", "stopped"]
+- !private ["SH", "white"]
+- !private ["s12IdentifiableP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["7Combine16ObservableObjectP", "activities"]
+- !private ["7Combine16ObservableObjectP", "hours"]
+- ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "minutes"]
+- !private ["7Combine16ObservableObjectP", "mode"]
+- !private ["7Combine16ObservableObjectP", "pause"]
+- !private ["7Combine16ObservableObjectP", "secondsElapsed"]
+- !private ["7Combine16ObservableObjectP", "start"]
+- !private ["7Combine16ObservableObjectP", "stop"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
+- !private ["s9OptionSetP", "horizontal"]
+- !private ["s9OptionSetP", "top"]
+- !private ["s9OptionSetP", "vertical"]
+- !private ["Sq", "headline"]
+- !private ["Sq", "largeTitle"]
+- !private ["Sq", "none"]
+- !private ["Sq", "some"]
+- !private ["Sq", "white"]
+- !private ["7SwiftUI16PresentationModeV", "dismiss"]
+- !private ["7SwiftUI15PreviewProviderP", "ContentView"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "UserData"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["SY", "horizontal"]
+- !private ["SY", "top"]
+- !private ["SY", "vertical"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
+- !private ["7SwiftUI4EdgeO3SetV", "top"]
+- !private ["7SwiftUI4EdgeO3SetV", "vertical"]
+- !private ["s10SetAlgebraP", "horizontal"]
+- !private ["s10SetAlgebraP", "top"]
+- !private ["s10SetAlgebraP", "vertical"]
+- !private ["7SwiftUI10ShapeStyleP", "blue"]
+- !private ["7SwiftUI10ShapeStyleP", "red"]
+- !private ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["7SwiftUI6SpacerV", "init"]
+- ["9Clockwork16StopwatchManagerC", "deinit"]
+- !private ["9Clockwork16StopwatchManagerC", "hours"]
+- ["9Clockwork16StopwatchManagerC", "init"]
+- !private ["9Clockwork16StopwatchManagerC", "minutes"]
+- !private ["9Clockwork16StopwatchManagerC", "mode"]
+- !private ["9Clockwork16StopwatchManagerC", "pause"]
+- !private ["9Clockwork16StopwatchManagerC", "secondsElapsed"]
+- !private ["9Clockwork16StopwatchManagerC", "start"]
+- !private ["9Clockwork16StopwatchManagerC", "stop"]
+- !private ["9Clockwork13StopwatchModeO", "deinit"]
+- !private ["9Clockwork13StopwatchModeO", "paused"]
+- !private ["9Clockwork13StopwatchModeO", "running"]
+- !private ["9Clockwork13StopwatchModeO", "stopped"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["7SwiftUI4TextV", "font"]
+- !private ["7SwiftUI4TextV", "foregroundColor"]
+- !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI4TextV", "offset"]
+- !private ["7SwiftUI4TextV", "padding"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["9Clockwork11TimerButtonV", "Body"]
+- ["9Clockwork11TimerButtonV", "Color"]
+- ["9Clockwork11TimerButtonV", "String"]
+- !private ["9Clockwork11TimerButtonV", "Text"]
+- ["9Clockwork11TimerButtonV", "View"]
+- ["9Clockwork11TimerButtonV", "_Default_Body"]
+- ["9Clockwork11TimerButtonV", "_makeView"]
+- ["9Clockwork11TimerButtonV", "_makeViewList"]
+- ["9Clockwork11TimerButtonV", "body"]
+- ["9Clockwork11TimerButtonV", "buttonColor"]
+- ["9Clockwork11TimerButtonV", "deinit"]
+- ["9Clockwork11TimerButtonV", "init"]
+- ["9Clockwork11TimerButtonV", "label"]
+- !private ["9Clockwork8UserDataC", "activities"]
+- ["9Clockwork8UserDataC", "deinit"]
+- !private ["9Clockwork8UserDataC", "init"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "Activity"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "DisplayTime"]
+- ["7SwiftUI4ViewP", "Environment"]
+- ["7SwiftUI4ViewP", "EnvironmentObject"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Spacer"]
+- ["7SwiftUI4ViewP", "StopwatchManager"]
+- !private ["7SwiftUI4ViewP", "String"]
+- !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "TimerButton"]
+- !private ["7SwiftUI4ViewP", "VStack"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- !private ["7SwiftUI4ViewP", "activityName"]
+- !private ["7SwiftUI4ViewP", "addActivity"]
+- !private ["7SwiftUI4ViewP", "background"]
+- !private ["7SwiftUI4ViewP", "blue"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "buttonColor"]
+- !private ["7SwiftUI4ViewP", "cornerRadius"]
+- !private ["7SwiftUI4ViewP", "displayHours"]
+- !private ["7SwiftUI4ViewP", "displayMinutes"]
+- !private ["7SwiftUI4ViewP", "displaySeconds"]
+- !private ["7SwiftUI4ViewP", "environmentObject"]
+- !private ["7SwiftUI4ViewP", "font"]
+- !private ["7SwiftUI4ViewP", "foregroundColor"]
+- !private ["7SwiftUI4ViewP", "headline"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "label"]
+- !private ["7SwiftUI4ViewP", "largeTitle"]
+- !private ["7SwiftUI4ViewP", "none"]
+- !private ["7SwiftUI4ViewP", "offset"]
+- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "presentationMode"]
+- !private ["7SwiftUI4ViewP", "red"]
+- !private ["7SwiftUI4ViewP", "some"]
+- !private ["7SwiftUI4ViewP", "stopWatch"]
+- !private ["7SwiftUI4ViewP", "userData"]
+- !private ["7SwiftUI4ViewP", "white"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI11ViewBuilderV", "buildEither"]
+- !private ["7SwiftUI11ViewBuilderV", "buildIf"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "headline"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "some"]
+- !private ["s21_ObjectiveCBridgeableP", "white"]
+- !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "UserData"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+depends-nominal:
+- !private "9Clockwork8ActivityC"
+- !private "Sa"
+- !private "SK"
+- !private "7SwiftUI7BindingV"
+- !private "7SwiftUI6ButtonV"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "7SwiftUI5ColorV"
+- !private "SL"
+- "9Clockwork11ContentViewV"
+- "9Clockwork20ContentView_PreviewsV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- "9Clockwork11DisplayTimeV"
+- "7SwiftUI15DynamicPropertyP"
+- !private "SE"
+- "7SwiftUI11EnvironmentV"
+- "7SwiftUI17EnvironmentObjectV"
+- "7SwiftUI17EnvironmentValuesV"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "7SwiftUI4FontV"
+- !private "7SwiftUI7GestureP"
+- !private "SH"
+- !private "s12IdentifiableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
+- !private "s9OptionSetP"
+- !private "Sq"
+- !private "7SwiftUI16PresentationModeV"
+- "7SwiftUI15PreviewProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
+- !private "7SwiftUI10ShapeStyleP"
+- !private "7SwiftUI6SpacerV"
+- "9Clockwork16StopwatchManagerC"
+- !private "9Clockwork13StopwatchModeO"
+- !private "SS"
+- !private "Sy"
+- !private "7SwiftUI4TextV"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "9Clockwork11TimerButtonV"
+- "9Clockwork8UserDataC"
+- !private "7SwiftUI6VStackV"
+- "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3b4fa395a6ffef54be37f4ccc7d460a6"

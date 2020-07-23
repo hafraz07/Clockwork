@@ -11,6 +11,17 @@ import SwiftUI
 
 class UserData: ObservableObject {
     @Published var activities: [Activity] = []
+//    @Published var days = Dictionary<String, [Activity]>()
+    @Published var days: [Day] = []
+}
+
+class Day: ObservableObject, Identifiable {
+    let uuid = UUID().uuidString
+    @Published var activities: [Activity] = []
+    var date: String = "07/10/99"
+    var totalHours: Int = 5
+    var totalMinutes: Int = 29
+    var totalSeconds: Int = 0
 }
 
 

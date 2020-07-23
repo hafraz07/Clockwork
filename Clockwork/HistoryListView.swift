@@ -13,6 +13,7 @@ struct HistoryListView: View {
     @State private var showModal = false
     @State private var newViewShowing = false
     @State private var activityName = ""
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .trailing) {
@@ -43,6 +44,9 @@ struct HistoryListView: View {
         }
         .sheet(isPresented: $showModal) {
             NameModalView(activityName: self.$activityName, newViewShowing: self.$newViewShowing)
+                .onAppear {
+                    self.activityName = ""
+            }
         }
     }
 }

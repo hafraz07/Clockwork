@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>E4ED12E8-9E8C-48D3-A97B-02E20BD40799</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>E4ED12E8-9E8C-48D3-A97B-02E20BD40799.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
+			<key>timeStartedRecording</key>
+			<real>617178978.05275905</real>
+			<key>timeStoppedRecording</key>
+			<real>617178979.34800899</real>
+			<key>title</key>
+			<string>Build target Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>E4ED12E8-9E8C-48D3-A97B-02E20BD40799</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

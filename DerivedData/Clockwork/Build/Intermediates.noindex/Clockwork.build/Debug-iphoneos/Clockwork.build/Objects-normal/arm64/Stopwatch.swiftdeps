@@ -1,0 +1,210 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StopwatchMode"
+- "TimeBreakdown"
+- "StopwatchManager"
+provides-nominal:
+- "9Clockwork13StopwatchModeO"
+- "9Clockwork13TimeBreakdownC"
+- "9Clockwork16StopwatchManagerC"
+provides-member:
+- ["9Clockwork13StopwatchModeO", ""]
+- ["9Clockwork13TimeBreakdownC", ""]
+- ["9Clockwork16StopwatchManagerC", ""]
+provides-dynamic-lookup:
+- "$hours"
+- "$minutes"
+- "$mode"
+- "$secondsElapsed"
+- "_hours"
+- "_minutes"
+- "_mode"
+- "_secondsElapsed"
+- "hours"
+- "minutes"
+- "mode"
+- "pause"
+- "reset"
+- "secondsElapsed"
+- "start"
+- "stop"
+- "timer"
+depends-top-level:
+- !private "+="
+- "=="
+- !private ">"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "ObservableObject"
+- "Published"
+- "StopwatchManager"
+- "StopwatchMode"
+- "TimeBreakdown"
+- "Timer"
+depends-member:
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "invalidate"]
+- !private ["s7CVarArgP", "scheduledTimer"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidate"]
+- !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "invalidate"]
+- !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- ["SQ", "=="]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "invalidate"]
+- !private ["SQ", "paused"]
+- !private ["SQ", "running"]
+- !private ["SQ", "scheduledTimer"]
+- ["SQ", "stopped"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "invalidate"]
+- !private ["SH", "paused"]
+- !private ["SH", "running"]
+- !private ["SH", "scheduledTimer"]
+- ["SH", "stopped"]
+- !private ["s6HasherV", "combine"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "invalidate"]
+- !private ["So8NSObjectC", "scheduledTimer"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "invalidate"]
+- !private ["So8NSObjectP", "scheduledTimer"]
+- ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
+- ["7Combine16ObservableObjectP", "Published"]
+- ["7Combine16ObservableObjectP", "Timer"]
+- ["7Combine16ObservableObjectP", ""]
+- ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
+- !private ["7Combine16ObservableObjectP", "_hours"]
+- !private ["7Combine16ObservableObjectP", "_minutes"]
+- !private ["7Combine16ObservableObjectP", "_mode"]
+- !private ["7Combine16ObservableObjectP", "_secondsElapsed"]
+- !private ["7Combine16ObservableObjectP", "hours"]
+- !private ["7Combine16ObservableObjectP", "minutes"]
+- !private ["7Combine16ObservableObjectP", "mode"]
+- ["7Combine16ObservableObjectP", "objectWillChange"]
+- !private ["7Combine16ObservableObjectP", "reset"]
+- !private ["7Combine16ObservableObjectP", "secondsElapsed"]
+- !private ["7Combine16ObservableObjectP", "timer"]
+- ["7Combine9PublishedV", "init"]
+- ["7Combine9PublishedV", "wrappedValue"]
+- ["9Clockwork16StopwatchManagerC", "$hours"]
+- ["9Clockwork16StopwatchManagerC", "$minutes"]
+- ["9Clockwork16StopwatchManagerC", "$mode"]
+- ["9Clockwork16StopwatchManagerC", "$secondsElapsed"]
+- ["9Clockwork16StopwatchManagerC", "ObjectWillChangePublisher"]
+- ["9Clockwork16StopwatchManagerC", "Published"]
+- ["9Clockwork16StopwatchManagerC", "StopwatchMode"]
+- ["9Clockwork16StopwatchManagerC", "Timer"]
+- ["9Clockwork16StopwatchManagerC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork16StopwatchManagerC", "_hours"]
+- !private ["9Clockwork16StopwatchManagerC", "_minutes"]
+- !private ["9Clockwork16StopwatchManagerC", "_mode"]
+- !private ["9Clockwork16StopwatchManagerC", "_secondsElapsed"]
+- ["9Clockwork16StopwatchManagerC", "deinit"]
+- ["9Clockwork16StopwatchManagerC", "hours"]
+- ["9Clockwork16StopwatchManagerC", "init"]
+- ["9Clockwork16StopwatchManagerC", "minutes"]
+- ["9Clockwork16StopwatchManagerC", "mode"]
+- ["9Clockwork16StopwatchManagerC", "objectWillChange"]
+- ["9Clockwork16StopwatchManagerC", "pause"]
+- ["9Clockwork16StopwatchManagerC", "reset"]
+- ["9Clockwork16StopwatchManagerC", "secondsElapsed"]
+- ["9Clockwork16StopwatchManagerC", "start"]
+- ["9Clockwork16StopwatchManagerC", "stop"]
+- ["9Clockwork16StopwatchManagerC", "timer"]
+- ["9Clockwork13StopwatchModeO", "=="]
+- ["9Clockwork13StopwatchModeO", "__derived_enum_equals"]
+- ["9Clockwork13StopwatchModeO", "_rawHashValue"]
+- ["9Clockwork13StopwatchModeO", "deinit"]
+- ["9Clockwork13StopwatchModeO", "hash"]
+- ["9Clockwork13StopwatchModeO", "hashValue"]
+- ["9Clockwork13StopwatchModeO", "paused"]
+- ["9Clockwork13StopwatchModeO", "running"]
+- ["9Clockwork13StopwatchModeO", "stopped"]
+- ["9Clockwork13TimeBreakdownC", "$hours"]
+- ["9Clockwork13TimeBreakdownC", "$minutes"]
+- ["9Clockwork13TimeBreakdownC", "$secondsElapsed"]
+- ["9Clockwork13TimeBreakdownC", "ObjectWillChangePublisher"]
+- ["9Clockwork13TimeBreakdownC", "Published"]
+- ["9Clockwork13TimeBreakdownC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork13TimeBreakdownC", "_hours"]
+- !private ["9Clockwork13TimeBreakdownC", "_minutes"]
+- !private ["9Clockwork13TimeBreakdownC", "_secondsElapsed"]
+- ["9Clockwork13TimeBreakdownC", "deinit"]
+- ["9Clockwork13TimeBreakdownC", "hours"]
+- ["9Clockwork13TimeBreakdownC", "init"]
+- ["9Clockwork13TimeBreakdownC", "minutes"]
+- ["9Clockwork13TimeBreakdownC", "objectWillChange"]
+- ["9Clockwork13TimeBreakdownC", "secondsElapsed"]
+- ["So7NSTimerC", "init"]
+- !private ["So7NSTimerC", "invalidate"]
+- !private ["So7NSTimerC", "scheduledTimer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "invalidate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scheduledTimer"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "7Combine16ObservableObjectP"
+- "7Combine9PublishedV"
+- "9Clockwork16StopwatchManagerC"
+- "9Clockwork13StopwatchModeO"
+- "9Clockwork13TimeBreakdownC"
+- "So7NSTimerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "21dbb2558dc160fc5d0fffc12c8bab19"

@@ -12,6 +12,7 @@ struct NameModalView: View {
     @Binding var activityName: String
     @Environment(\.presentationMode) private var presentationMode
     @Binding var newViewShowing: Bool
+
     var body: some View {
         NavigationView {
             Form {
@@ -20,6 +21,7 @@ struct NameModalView: View {
                         .keyboardType(.default)
                         .navigationBarTitle(Text("Add New Activity"))
                         .navigationBarItems(trailing: Text("Done")
+                            .disabled(self.activityName.isEmpty)
                             .foregroundColor(.pink)
                             .onTapGesture {
                                 self.newViewShowing.toggle()
