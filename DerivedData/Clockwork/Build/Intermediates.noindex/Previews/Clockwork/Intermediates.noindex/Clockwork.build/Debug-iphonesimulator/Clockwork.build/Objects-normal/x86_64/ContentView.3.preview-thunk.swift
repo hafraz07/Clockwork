@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DisplayTime {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 99)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 98)
         AnyView(__designTimeSelection(Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
             .font(.largeTitle)
             .offset(y:__designTimeInteger("#9424.[4].[3].property.[0].[0].modifier[1].arg[0].value", fallback: 300)), "#9424.[4].[3].property.[0].[0]"))
@@ -14,7 +14,7 @@ extension DisplayTime {
 
 extension TimerButton {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 83)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 82)
         AnyView(__designTimeSelection(Text(__designTimeSelection(label, "#9424.[3].[2].property.[0].[0].arg[0].value"))
             .foregroundColor(.white)
             .padding(.vertical, __designTimeInteger("#9424.[3].[2].property.[0].[0].modifier[1].arg[1].value", fallback: 20))
@@ -28,8 +28,7 @@ extension TimerButton {
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
         #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 73)
-        AnyView(__designTimeSelection(ContentView(activityName: __designTimeString("#9424.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: __designTimeSelection(Day(), "#9424.[2].[0].property.[0].[0].arg[1].value"))
-        .environmentObject(__designTimeSelection(UserData(), "#9424.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#9424.[2].[0].property.[0].[0]"))
+        AnyView(__designTimeSelection(ContentView(activityName: __designTimeString("#9424.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: __designTimeSelection(Day(), "#9424.[2].[0].property.[0].[0].arg[1].value")), "#9424.[2].[0].property.[0].[0]"))
 #sourceLocation()
     }
 }

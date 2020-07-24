@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>B08D1C73-B38C-49AA-8706-5D2CB52B3A72</key>
+		<key>80E26857-877C-4C47-BF59-5E4B353C7D0E</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>B08D1C73-B38C-49AA-8706-5D2CB52B3A72.xcactivitylog</string>
+			<string>80E26857-877C-4C47-BF59-5E4B353C7D0E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
 			<key>timeStartedRecording</key>
-			<real>617207452.32688296</real>
+			<real>617303616.76962495</real>
 			<key>timeStoppedRecording</key>
-			<real>617207454.33352196</real>
+			<real>617303618.02844298</real>
 			<key>title</key>
 			<string>Build target Clockwork</string>
 			<key>uniqueIdentifier</key>
-			<string>B08D1C73-B38C-49AA-8706-5D2CB52B3A72</string>
+			<string>80E26857-877C-4C47-BF59-5E4B353C7D0E</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

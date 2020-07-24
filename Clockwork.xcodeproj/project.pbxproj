@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A06BCB224C9593600817153 /* DayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB124C9593600817153 /* DayListView.swift */; };
 		4A06BCB424C961D600817153 /* DayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB324C961D600817153 /* DayRow.swift */; };
+		4A45518824CB491D004B80E0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518724CB491D004B80E0 /* Toast.swift */; };
 		4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */; };
 		4A81C0A124C4904C0042D6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */; };
 		4A81C0A324C4904C0042D6B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C0A224C4904C0042D6B7 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		4A06BCB124C9593600817153 /* DayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListView.swift; sourceTree = "<group>"; };
 		4A06BCB324C961D600817153 /* DayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRow.swift; sourceTree = "<group>"; };
+		4A45518724CB491D004B80E0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		4A81C09B24C4904C0042D6B7 /* Clockwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clockwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4A06BCB124C9593600817153 /* DayListView.swift */,
 				4AD323FB24C4971200E46767 /* HistoryListView.swift */,
 				4A97DC8224C8258F0047C7BB /* NameModalView.swift */,
+				4A45518724CB491D004B80E0 /* Toast.swift */,
 				4AD323FD24C49C0E00E46767 /* HistoryRow.swift */,
 				4A06BCB324C961D600817153 /* DayRow.swift */,
 				4A81C0A424C490520042D6B7 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 				4A81C0A124C4904C0042D6B7 /* SceneDelegate.swift in Sources */,
 				4A81C0A324C4904C0042D6B7 /* ContentView.swift in Sources */,
 				4A97DC8324C8258F0047C7BB /* NameModalView.swift in Sources */,
+				4A45518824CB491D004B80E0 /* Toast.swift in Sources */,
 				4A06BCB224C9593600817153 /* DayListView.swift in Sources */,
 				4A06BCB424C961D600817153 /* DayRow.swift in Sources */,
 			);

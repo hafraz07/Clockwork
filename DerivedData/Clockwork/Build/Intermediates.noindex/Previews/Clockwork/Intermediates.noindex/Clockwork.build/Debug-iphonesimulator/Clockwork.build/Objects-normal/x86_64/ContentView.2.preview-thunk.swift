@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DisplayTime {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 99)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 98)
         AnyView(Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
             .font(.largeTitle)
             .offset(y:__designTimeInteger("#9424.[4].[3].property.[0].[0].modifier[1].arg[0].value", fallback: 300)))
@@ -14,7 +14,7 @@ extension DisplayTime {
 
 extension TimerButton {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 83)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 82)
         AnyView(Text(label)
             .foregroundColor(.white)
             .padding(.vertical, __designTimeInteger("#9424.[3].[2].property.[0].[0].modifier[1].arg[1].value", fallback: 20))
@@ -28,8 +28,7 @@ extension TimerButton {
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
         #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 73)
-        AnyView(ContentView(activityName: __designTimeString("#9424.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: Day())
-        .environmentObject(UserData()))
+        AnyView(ContentView(activityName: __designTimeString("#9424.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: Day()))
 #sourceLocation()
     }
 }

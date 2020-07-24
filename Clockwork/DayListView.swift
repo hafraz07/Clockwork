@@ -11,6 +11,10 @@ import SwiftUI
 struct DayListView: View {
     @EnvironmentObject var userData: UserData
     @State private var newViewShowing = false
+    @State private var showModal = false
+    @State var showToast: Bool = false
+    @State private var activityName = ""
+    @State var day = Day()
     
     var body: some View {
         NavigationView {
@@ -29,10 +33,10 @@ struct DayListView: View {
                     Text("No Days")
                 }
                 
-//                NavigationLink(destination: HistoryListView(day: day), isActive: $newViewShowing)
-//                {
-//                    EmptyView()
-//                }.hidden()
+                NavigationLink(destination: ContentView(activityName: self.activityName, day: self.day), isActive: $newViewShowing)
+                {
+                    EmptyView()
+                }.hidden()
                 
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -41,10 +45,26 @@ struct DayListView: View {
                         .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
-                            self.newViewShowing.toggle()
-                            self.userData.days.append(Day())
+                            //Try to find today in hashtable,
+                            //if doesn't exist, append and toggle showModal
+                            //else show alert
+                            if (self.userData.days.isEmpty) {
+                                self.day = Day()
+                                self.showModal.toggle()
+                                self.userData.days.append(self.day)
+                            }
+                            else {
+                                self.showToast.toggle()
+                            }
+                            
                     }
+                    .sheet(isPresented: $showModal) {
+                        NameModalView(activityName: self.$activityName, newViewShowing: self.$newViewShowing)
+                }
             }
+        }
+        .toast(isPresented: self.$showToast) {
+            Text("Day already exists")
         }
     }
 }
