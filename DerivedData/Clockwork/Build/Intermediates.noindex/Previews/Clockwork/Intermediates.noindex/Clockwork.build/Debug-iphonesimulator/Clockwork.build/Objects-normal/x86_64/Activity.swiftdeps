@@ -14,11 +14,17 @@ provides-member:
 provides-dynamic-lookup:
 - "$activities"
 - "$days"
+- "$hours"
+- "$minutes"
+- "$seconds"
 - "$totalHours"
 - "$totalMinutes"
 - "$totalSeconds"
 - "_activities"
 - "_days"
+- "_hours"
+- "_minutes"
+- "_seconds"
 - "_totalHours"
 - "_totalMinutes"
 - "_totalSeconds"
@@ -28,7 +34,6 @@ provides-dynamic-lookup:
 - "days"
 - "displayDate"
 - "hours"
-- "id"
 - "minutes"
 - "name"
 - "seconds"
@@ -57,13 +62,21 @@ depends-top-level:
 - "UUID"
 - "UserData"
 depends-member:
-- !private ["9Clockwork8ActivityC", "Activity"]
+- ["9Clockwork8ActivityC", "$hours"]
+- ["9Clockwork8ActivityC", "$minutes"]
+- ["9Clockwork8ActivityC", "$seconds"]
 - ["9Clockwork8ActivityC", "ID"]
 - ["9Clockwork8ActivityC", "Int"]
 - ["9Clockwork8ActivityC", "ObjectWillChangePublisher"]
+- ["9Clockwork8ActivityC", "Published"]
 - ["9Clockwork8ActivityC", "String"]
+- ["9Clockwork8ActivityC", "UUID"]
 - ["9Clockwork8ActivityC", "_Default_ID"]
 - ["9Clockwork8ActivityC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork8ActivityC", "_hours"]
+- !private ["9Clockwork8ActivityC", "_minutes"]
+- !private ["9Clockwork8ActivityC", "_seconds"]
+- ["9Clockwork8ActivityC", "adjustTime"]
 - ["9Clockwork8ActivityC", "deinit"]
 - ["9Clockwork8ActivityC", "hours"]
 - ["9Clockwork8ActivityC", "id"]
@@ -72,6 +85,7 @@ depends-member:
 - ["9Clockwork8ActivityC", "name"]
 - ["9Clockwork8ActivityC", "objectWillChange"]
 - ["9Clockwork8ActivityC", "seconds"]
+- ["9Clockwork8ActivityC", "uuid"]
 - !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "string"]
@@ -136,7 +150,6 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "string"]
 - ["SH", "uuidString"]
-- !private ["s12IdentifiableP", "Activity"]
 - !private ["s12IdentifiableP", "Date"]
 - !private ["s12IdentifiableP", "DateFormatter"]
 - ["s12IdentifiableP", "ID"]
@@ -147,6 +160,9 @@ depends-member:
 - ["s12IdentifiableP", "_Default_ID"]
 - ["s12IdentifiableP", "_Default_ObjectWillChangePublisher"]
 - !private ["s12IdentifiableP", "_activities"]
+- !private ["s12IdentifiableP", "_hours"]
+- !private ["s12IdentifiableP", "_minutes"]
+- !private ["s12IdentifiableP", "_seconds"]
 - !private ["s12IdentifiableP", "_totalHours"]
 - !private ["s12IdentifiableP", "_totalMinutes"]
 - !private ["s12IdentifiableP", "_totalSeconds"]
@@ -174,7 +190,6 @@ depends-member:
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "string"]
-- !private ["7Combine16ObservableObjectP", "Activity"]
 - !private ["7Combine16ObservableObjectP", "Date"]
 - !private ["7Combine16ObservableObjectP", "DateFormatter"]
 - ["7Combine16ObservableObjectP", "ID"]
@@ -186,6 +201,9 @@ depends-member:
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_activities"]
 - !private ["7Combine16ObservableObjectP", "_days"]
+- !private ["7Combine16ObservableObjectP", "_hours"]
+- !private ["7Combine16ObservableObjectP", "_minutes"]
+- !private ["7Combine16ObservableObjectP", "_seconds"]
 - !private ["7Combine16ObservableObjectP", "_totalHours"]
 - !private ["7Combine16ObservableObjectP", "_totalMinutes"]
 - !private ["7Combine16ObservableObjectP", "_totalSeconds"]
@@ -208,16 +226,12 @@ depends-member:
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
 - ["10Foundation4UUIDV", "init"]
 - ["10Foundation4UUIDV", "uuidString"]
-- ["9Clockwork8UserDataC", "$activities"]
 - ["9Clockwork8UserDataC", "$days"]
-- ["9Clockwork8UserDataC", "Activity"]
 - ["9Clockwork8UserDataC", "Day"]
 - ["9Clockwork8UserDataC", "ObjectWillChangePublisher"]
 - ["9Clockwork8UserDataC", "Published"]
 - ["9Clockwork8UserDataC", "_Default_ObjectWillChangePublisher"]
-- !private ["9Clockwork8UserDataC", "_activities"]
 - !private ["9Clockwork8UserDataC", "_days"]
-- ["9Clockwork8UserDataC", "activities"]
 - ["9Clockwork8UserDataC", "days"]
 - ["9Clockwork8UserDataC", "deinit"]
 - ["9Clockwork8UserDataC", "init"]
@@ -293,4 +307,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d639d9ca73523026c8d9abaa9053fcbd"
+interface-hash: "c389a971911c908852c93a89c61ee30d"

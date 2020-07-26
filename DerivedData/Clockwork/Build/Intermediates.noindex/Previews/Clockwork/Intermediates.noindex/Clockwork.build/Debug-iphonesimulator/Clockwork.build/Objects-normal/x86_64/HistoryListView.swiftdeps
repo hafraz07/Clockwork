@@ -11,12 +11,16 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!"
+- !private "??"
+- !private "Activity"
+- !private "Array"
 - !private "AssignmentPrecedence"
 - "BooleanLiteralType"
 - !private "ContentView"
 - "Day"
 - !private "EmptyView"
 - "FloatLiteralType"
+- !private "ForEach"
 - "HistoryListView"
 - "HistoryListView_Previews"
 - !private "HistoryRow"
@@ -33,60 +37,99 @@ depends-top-level:
 - !private "VStack"
 - "View"
 depends-member:
-- !private ["9Clockwork8ActivityC", "deinit"]
-- !private ["Sa", "isEmpty"]
-- !private ["SK", "isEmpty"]
+- !private ["9Clockwork8ActivityC", "init"]
+- !private ["Sa", "init"]
+- !private ["SK", "init"]
 - !private ["Sb", "toggle"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "keys"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "toggle"]
+- !private ["Sl", "init"]
 - !private ["Sl", "isEmpty"]
+- !private ["Sl", "keys"]
+- !private ["Sl", "subscript"]
 - !private ["7SwiftUI5ColorV", "pink"]
 - !private ["9Clockwork11ContentViewV", "deinit"]
 - !private ["9Clockwork11ContentViewV", "init"]
-- !private ["10Foundation15ContiguousBytesP", "isEmpty"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "keys"]
 - !private ["s28CustomDebugStringConvertibleP", "pink"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "keys"]
 - !private ["s17CustomReflectableP", "pink"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "toggle"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "keys"]
 - !private ["s23CustomStringConvertibleP", "pink"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
-- !private ["10Foundation12DataProtocolP", "isEmpty"]
+- !private ["10Foundation12DataProtocolP", "init"]
 - !private ["9Clockwork3DayC", "activities"]
 - ["9Clockwork3DayC", "deinit"]
 - !private ["9Clockwork3DayC", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "isEmpty"]
+- !private ["Se", "keys"]
 - !private ["Se", "pink"]
+- !private ["Se", "subscript"]
 - !private ["Se", "toggle"]
+- !private ["SD", "isEmpty"]
+- !private ["SD", "keys"]
+- !private ["SD", "subscript"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["7SwiftUI18DynamicViewContentP", "init"]
+- !private ["7SwiftUI18DynamicViewContentP", "navigationBarTitle"]
 - !private ["7SwiftUI9EmptyViewV", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "isEmpty"]
+- !private ["SE", "keys"]
 - !private ["SE", "pink"]
+- !private ["SE", "subscript"]
 - !private ["SE", "toggle"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
+- !private ["SQ", "keys"]
 - !private ["SQ", "pink"]
 - !private ["SQ", "resizable"]
 - !private ["SQ", "scaledToFit"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "toggle"]
 - !private ["SQ", "trailing"]
-- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "pink"]
+- !private ["7SwiftUI7ForEachV", "init"]
+- !private ["7SwiftUI7ForEachV", "navigationBarTitle"]
 - !private ["7SwiftUI7GestureP", "pink"]
+- !private ["SH", "init"]
 - !private ["SH", "isEmpty"]
+- !private ["SH", "keys"]
 - !private ["SH", "pink"]
+- !private ["SH", "subscript"]
 - !private ["SH", "toggle"]
 - !private ["9Clockwork15HistoryListViewV", "$activityName"]
 - ["9Clockwork15HistoryListViewV", "$day"]
 - !private ["9Clockwork15HistoryListViewV", "$newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "$showModal"]
+- !private ["9Clockwork15HistoryListViewV", "Activity"]
+- !private ["9Clockwork15HistoryListViewV", "Array"]
 - ["9Clockwork15HistoryListViewV", "Body"]
 - !private ["9Clockwork15HistoryListViewV", "ContentView"]
 - ["9Clockwork15HistoryListViewV", "Day"]
 - !private ["9Clockwork15HistoryListViewV", "EmptyView"]
+- !private ["9Clockwork15HistoryListViewV", "ForEach"]
 - !private ["9Clockwork15HistoryListViewV", "HistoryRow"]
 - !private ["9Clockwork15HistoryListViewV", "Image"]
 - !private ["9Clockwork15HistoryListViewV", "List"]
@@ -131,10 +174,9 @@ depends-member:
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI5ImageV", "scaledToFit"]
 - !private ["7SwiftUI4ListV", "init"]
-- !private ["7SwiftUI4ListV", "navigationBarTitle"]
 - !private ["s25LosslessStringConvertibleP", "toggle"]
-- !private ["SM", "isEmpty"]
-- !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["9Clockwork13NameModalViewV", "deinit"]
 - !private ["9Clockwork13NameModalViewV", "init"]
 - !private ["9Clockwork13NameModalViewV", "onAppear"]
@@ -153,9 +195,12 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["Sk", "isEmpty"]
-- !private ["Sm", "isEmpty"]
+- !private ["Sk", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
 - !private ["ST", "isEmpty"]
+- !private ["ST", "keys"]
+- !private ["ST", "subscript"]
 - !private ["7SwiftUI10ShapeStyleP", "pink"]
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
@@ -165,9 +210,12 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "$activityName"]
 - !private ["7SwiftUI4ViewP", "$newViewShowing"]
 - !private ["7SwiftUI4ViewP", "$showModal"]
+- !private ["7SwiftUI4ViewP", "Activity"]
+- !private ["7SwiftUI4ViewP", "Array"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ContentView"]
 - !private ["7SwiftUI4ViewP", "EmptyView"]
+- !private ["7SwiftUI4ViewP", "ForEach"]
 - !private ["7SwiftUI4ViewP", "HistoryRow"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "List"]
@@ -199,14 +247,20 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "showModal"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
-- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
-- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
-- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "keys"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "keys"]
 - !private ["s21_ObjectiveCBridgeableP", "pink"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["7SwiftUI16_PreviewProviderP", "Day"]
 - !private ["7SwiftUI16_PreviewProviderP", "HistoryListView"]
@@ -233,13 +287,17 @@ depends-nominal:
 - !private "10Foundation12DataProtocolP"
 - "9Clockwork3DayC"
 - !private "Se"
+- !private "SD"
 - "7SwiftUI15DynamicPropertyP"
+- !private "7SwiftUI18DynamicViewContentP"
 - !private "7SwiftUI9EmptyViewV"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "7SwiftUI7ForEachV"
 - !private "7SwiftUI7GestureP"
 - !private "SH"
 - "9Clockwork15HistoryListViewV"

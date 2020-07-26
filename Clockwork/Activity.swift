@@ -10,14 +10,13 @@ import Foundation
 import SwiftUI
 
 class UserData: ObservableObject {
-    @Published var activities: [Activity] = []
-//    @Published var days = Dictionary<String, [Activity]>()
     @Published var days: [Day] = []
 }
 
 class Day: ObservableObject, Identifiable {
     let uuid = UUID().uuidString
-    @Published var activities: [Activity] = []
+//    @Published var activities: [Activity] = []
+    @Published var activities: [String : Activity] = [:]
     var displayDate: String
     @Published var totalHours: Int = 0
     @Published var totalMinutes: Int = 0
@@ -31,9 +30,9 @@ class Day: ObservableObject, Identifiable {
     }
     
     func calculateTotalTime(hours: Int, minutes: Int, seconds: Int) {
-            totalHours += hours
-            totalMinutes += minutes
-            totalSeconds += seconds
+        totalHours += hours
+        totalMinutes += minutes
+        totalSeconds += seconds
         adjustTime()
     }
     
@@ -53,10 +52,10 @@ class Day: ObservableObject, Identifiable {
 
 class Activity: ObservableObject, Identifiable {
     var name: String
-    var hours: Int
-    var minutes: Int
-    var seconds: Int
-    static var id: Int = -1
+    @Published var hours: Int
+    @Published var minutes: Int
+    @Published var seconds: Int
+    let uuid = UUID().uuidString
     
     
     init(name: String, hours: Int, minutes: Int, seconds: Int) {
@@ -64,6 +63,16 @@ class Activity: ObservableObject, Identifiable {
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
-        Activity.self.id += 1
+    }
+    
+    func adjustTime() {
+        if (self.seconds >= 60) {
+            minutes += seconds / 60
+            seconds += seconds % 60
+        }
+        if (self.minutes >= 60) {
+            hours += minutes / 60
+            minutes += minutes % 60
+        }
     }
 }

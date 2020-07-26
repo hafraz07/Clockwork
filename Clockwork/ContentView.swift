@@ -11,12 +11,19 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject var stopWatch = StopwatchManager();
-//    @EnvironmentObject var userData: UserData
     var activityName: String
     @ObservedObject var day: Day
     
     func addActivity() {
-        self.day.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+        if let activity = self.day.activities[self.activityName] {
+            activity.hours += self.stopWatch.hours
+            activity.minutes += self.stopWatch.minutes
+            activity.seconds += self.stopWatch.secondsElapsed
+            activity.adjustTime()
+        }
+        else {
+            self.day.activities[self.activityName] = Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
+        }
         self.day.calculateTotalTime(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
     }
     

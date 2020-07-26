@@ -14,13 +14,26 @@ provides-member:
 provides-dynamic-lookup:
 - "$activities"
 - "$days"
+- "$hours"
+- "$minutes"
+- "$seconds"
+- "$totalHours"
+- "$totalMinutes"
+- "$totalSeconds"
 - "_activities"
 - "_days"
+- "_hours"
+- "_minutes"
+- "_seconds"
+- "_totalHours"
+- "_totalMinutes"
+- "_totalSeconds"
 - "activities"
-- "date"
+- "adjustTime"
+- "calculateTotalTime"
 - "days"
+- "displayDate"
 - "hours"
-- "id"
 - "minutes"
 - "name"
 - "seconds"
@@ -29,9 +42,14 @@ provides-dynamic-lookup:
 - "totalSeconds"
 - "uuid"
 depends-top-level:
+- !private "%"
 - !private "+="
+- !private "/"
+- !private ">="
 - "Activity"
 - "AssignmentPrecedence"
+- !private "Date"
+- !private "DateFormatter"
 - "Day"
 - "FloatLiteralType"
 - "Identifiable"
@@ -40,17 +58,25 @@ depends-top-level:
 - "ObservableObject"
 - "Published"
 - "String"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "UUID"
 - "UserData"
 depends-member:
-- !private ["9Clockwork8ActivityC", "Activity"]
+- ["9Clockwork8ActivityC", "$hours"]
+- ["9Clockwork8ActivityC", "$minutes"]
+- ["9Clockwork8ActivityC", "$seconds"]
 - ["9Clockwork8ActivityC", "ID"]
 - ["9Clockwork8ActivityC", "Int"]
 - ["9Clockwork8ActivityC", "ObjectWillChangePublisher"]
+- ["9Clockwork8ActivityC", "Published"]
 - ["9Clockwork8ActivityC", "String"]
+- ["9Clockwork8ActivityC", "UUID"]
 - ["9Clockwork8ActivityC", "_Default_ID"]
 - ["9Clockwork8ActivityC", "_Default_ObjectWillChangePublisher"]
+- !private ["9Clockwork8ActivityC", "_hours"]
+- !private ["9Clockwork8ActivityC", "_minutes"]
+- !private ["9Clockwork8ActivityC", "_seconds"]
+- ["9Clockwork8ActivityC", "adjustTime"]
 - ["9Clockwork8ActivityC", "deinit"]
 - ["9Clockwork8ActivityC", "hours"]
 - ["9Clockwork8ActivityC", "id"]
@@ -59,14 +85,32 @@ depends-member:
 - ["9Clockwork8ActivityC", "name"]
 - ["9Clockwork8ActivityC", "objectWillChange"]
 - ["9Clockwork8ActivityC", "seconds"]
+- ["9Clockwork8ActivityC", "uuid"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "string"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
 - ["s28CustomDebugStringConvertibleP", "uuidString"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "uuidString"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "string"]
 - ["s23CustomStringConvertibleP", "uuidString"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["So15NSDateFormatterC", "string"]
 - ["9Clockwork3DayC", "$activities"]
+- ["9Clockwork3DayC", "$totalHours"]
+- ["9Clockwork3DayC", "$totalMinutes"]
+- ["9Clockwork3DayC", "$totalSeconds"]
 - ["9Clockwork3DayC", "Activity"]
+- !private ["9Clockwork3DayC", "Date"]
+- !private ["9Clockwork3DayC", "DateFormatter"]
 - ["9Clockwork3DayC", "ID"]
 - ["9Clockwork3DayC", "Int"]
 - ["9Clockwork3DayC", "ObjectWillChangePublisher"]
@@ -76,9 +120,14 @@ depends-member:
 - ["9Clockwork3DayC", "_Default_ID"]
 - ["9Clockwork3DayC", "_Default_ObjectWillChangePublisher"]
 - !private ["9Clockwork3DayC", "_activities"]
+- !private ["9Clockwork3DayC", "_totalHours"]
+- !private ["9Clockwork3DayC", "_totalMinutes"]
+- !private ["9Clockwork3DayC", "_totalSeconds"]
 - ["9Clockwork3DayC", "activities"]
-- ["9Clockwork3DayC", "date"]
+- ["9Clockwork3DayC", "adjustTime"]
+- ["9Clockwork3DayC", "calculateTotalTime"]
 - ["9Clockwork3DayC", "deinit"]
+- ["9Clockwork3DayC", "displayDate"]
 - ["9Clockwork3DayC", "id"]
 - ["9Clockwork3DayC", "init"]
 - ["9Clockwork3DayC", "objectWillChange"]
@@ -90,11 +139,19 @@ depends-member:
 - ["Se", "uuidString"]
 - ["SE", "init"]
 - ["SE", "uuidString"]
+- !private ["SQ", "dateFormat"]
 - ["SQ", "init"]
+- !private ["SQ", "string"]
 - ["SQ", "uuidString"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["SH", "dateFormat"]
 - ["SH", "init"]
+- !private ["SH", "string"]
 - ["SH", "uuidString"]
-- !private ["s12IdentifiableP", "Activity"]
+- !private ["s12IdentifiableP", "Date"]
+- !private ["s12IdentifiableP", "DateFormatter"]
 - ["s12IdentifiableP", "ID"]
 - ["s12IdentifiableP", "ObjectWillChangePublisher"]
 - ["s12IdentifiableP", "Published"]
@@ -103,14 +160,38 @@ depends-member:
 - ["s12IdentifiableP", "_Default_ID"]
 - ["s12IdentifiableP", "_Default_ObjectWillChangePublisher"]
 - !private ["s12IdentifiableP", "_activities"]
+- !private ["s12IdentifiableP", "_hours"]
+- !private ["s12IdentifiableP", "_minutes"]
+- !private ["s12IdentifiableP", "_seconds"]
+- !private ["s12IdentifiableP", "_totalHours"]
+- !private ["s12IdentifiableP", "_totalMinutes"]
+- !private ["s12IdentifiableP", "_totalSeconds"]
 - !private ["s12IdentifiableP", "activities"]
+- !private ["s12IdentifiableP", "adjustTime"]
+- !private ["s12IdentifiableP", "displayDate"]
 - !private ["s12IdentifiableP", "hours"]
 - ["s12IdentifiableP", "id"]
 - !private ["s12IdentifiableP", "minutes"]
 - !private ["s12IdentifiableP", "name"]
 - ["s12IdentifiableP", "objectWillChange"]
 - !private ["s12IdentifiableP", "seconds"]
-- !private ["7Combine16ObservableObjectP", "Activity"]
+- !private ["s12IdentifiableP", "totalHours"]
+- !private ["s12IdentifiableP", "totalMinutes"]
+- !private ["s12IdentifiableP", "totalSeconds"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "string"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "string"]
+- !private ["7Combine16ObservableObjectP", "Date"]
+- !private ["7Combine16ObservableObjectP", "DateFormatter"]
 - ["7Combine16ObservableObjectP", "ID"]
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Published"]
@@ -120,52 +201,78 @@ depends-member:
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_activities"]
 - !private ["7Combine16ObservableObjectP", "_days"]
+- !private ["7Combine16ObservableObjectP", "_hours"]
+- !private ["7Combine16ObservableObjectP", "_minutes"]
+- !private ["7Combine16ObservableObjectP", "_seconds"]
+- !private ["7Combine16ObservableObjectP", "_totalHours"]
+- !private ["7Combine16ObservableObjectP", "_totalMinutes"]
+- !private ["7Combine16ObservableObjectP", "_totalSeconds"]
 - !private ["7Combine16ObservableObjectP", "activities"]
+- !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "days"]
+- !private ["7Combine16ObservableObjectP", "displayDate"]
 - !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "id"]
 - !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "name"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["7Combine16ObservableObjectP", "seconds"]
+- !private ["7Combine16ObservableObjectP", "totalHours"]
+- !private ["7Combine16ObservableObjectP", "totalMinutes"]
+- !private ["7Combine16ObservableObjectP", "totalSeconds"]
 - ["7Combine9PublishedV", "init"]
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
 - ["10Foundation4UUIDV", "init"]
 - ["10Foundation4UUIDV", "uuidString"]
-- ["9Clockwork8UserDataC", "$activities"]
 - ["9Clockwork8UserDataC", "$days"]
-- ["9Clockwork8UserDataC", "Activity"]
 - ["9Clockwork8UserDataC", "Day"]
 - ["9Clockwork8UserDataC", "ObjectWillChangePublisher"]
 - ["9Clockwork8UserDataC", "Published"]
 - ["9Clockwork8UserDataC", "_Default_ObjectWillChangePublisher"]
-- !private ["9Clockwork8UserDataC", "_activities"]
 - !private ["9Clockwork8UserDataC", "_days"]
-- ["9Clockwork8UserDataC", "activities"]
 - ["9Clockwork8UserDataC", "days"]
 - ["9Clockwork8UserDataC", "deinit"]
 - ["9Clockwork8UserDataC", "init"]
 - ["9Clockwork8UserDataC", "objectWillChange"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "uuidString"]
 depends-nominal:
 - "9Clockwork8ActivityC"
+- !private "s7CVarArgP"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "So15NSDateFormatterC"
 - "9Clockwork3DayC"
 - "Se"
 - "SE"
 - "SQ"
+- !private "So11NSFormatterC"
 - "SH"
 - "s12IdentifiableP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
 - "7Combine16ObservableObjectP"
 - "7Combine9PublishedV"
 - "10Foundation20ReferenceConvertibleP"
 - "10Foundation4UUIDV"
 - "9Clockwork8UserDataC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -180,6 +287,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
@@ -199,4 +307,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d73f6c899b1fa6b3ef4c5ea3d8aaf47f"
+interface-hash: "c389a971911c908852c93a89c61ee30d"

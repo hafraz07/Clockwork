@@ -33,6 +33,7 @@ struct DayListView: View {
                     Text("No Days")
                 }
                 
+                //Links to stopwatch view from modal
                 NavigationLink(destination: ContentView(activityName: self.activityName, day: self.day), isActive: $newViewShowing)
                 {
                     EmptyView()

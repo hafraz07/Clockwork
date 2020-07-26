@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DayListView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift", line: 74)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift", line: 75)
         AnyView(__designTimeSelection(DayListView()
         .environmentObject(__designTimeSelection(UserData(), "#9437.[2].[0].property.[0].[0].modifier[0].arg[0].value")), "#9437.[2].[0].property.[0].[0]"))
 #sourceLocation()
@@ -30,6 +30,7 @@ extension DayListView {
                     __designTimeSelection(Text(__designTimeString("#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Days")), "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0]")
                 }
                 
+                //Links to stopwatch view from modal
                 __designTimeSelection(NavigationLink(destination: __designTimeSelection(ContentView(activityName: __designTimeSelection(self.activityName, "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[0].value.arg[0].value"), day: __designTimeSelection(self.day, "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[0].value.arg[1].value")), "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[0].value"), isActive: __designTimeSelection($newViewShowing, "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[1].value"))
                 {
                     __designTimeSelection(EmptyView(), "#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[1].arg[2].value.[0]")

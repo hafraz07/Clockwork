@@ -4,7 +4,7 @@ import SwiftUI
 
 extension HistoryListView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 54)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 56)
         AnyView(HistoryListView(day: Day()))
 #sourceLocation()
     }
@@ -15,10 +15,12 @@ extension HistoryListView {
         #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 18)
             AnyView(VStack(alignment: .trailing) {
                 if (!day.activities.isEmpty) {
-                    List(day.activities) { activity in
-                        HistoryRow(activity: activity)
+                    List {
+                        ForEach(Array(day.activities.keys), id: \.self) { activityName in
+                            HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0))
+                        }
+                        .navigationBarTitle(Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Work History")))
                     }
-                    .navigationBarTitle(Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Work History")))
                 }
                 else {
                     Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Activities"))
@@ -32,7 +34,7 @@ extension HistoryListView {
                         .onTapGesture {
                             self.showModal.toggle()
                         }
-                
+                //Links to stopwatch view from modal
                 NavigationLink(destination: ContentView(activityName: activityName, day: self.day), isActive: $newViewShowing)
                 {
                     EmptyView()

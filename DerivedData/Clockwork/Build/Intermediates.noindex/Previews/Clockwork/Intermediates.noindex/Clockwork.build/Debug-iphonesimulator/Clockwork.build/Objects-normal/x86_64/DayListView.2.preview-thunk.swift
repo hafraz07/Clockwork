@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DayListView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift", line: 74)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift", line: 75)
         AnyView(DayListView()
         .environmentObject(UserData()))
 #sourceLocation()
@@ -30,6 +30,7 @@ extension DayListView {
                     Text(__designTimeString("#9437.[1].[6].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Days"))
                 }
                 
+                //Links to stopwatch view from modal
                 NavigationLink(destination: ContentView(activityName: self.activityName, day: self.day), isActive: $newViewShowing)
                 {
                     EmptyView()

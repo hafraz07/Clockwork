@@ -17,10 +17,12 @@ struct HistoryListView: View {
     var body: some View {
             VStack(alignment: .trailing) {
                 if (!day.activities.isEmpty) {
-                    List(day.activities) { activity in
-                        HistoryRow(activity: activity)
+                    List {
+                        ForEach(Array(day.activities.keys), id: \.self) { activityName in
+                            HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0))
+                        }
+                        .navigationBarTitle(Text("Work History"))
                     }
-                    .navigationBarTitle(Text("Work History"))
                 }
                 else {
                     Text("No Activities")
@@ -34,7 +36,7 @@ struct HistoryListView: View {
                         .onTapGesture {
                             self.showModal.toggle()
                         }
-                
+                //Links to stopwatch view from modal
                 NavigationLink(destination: ContentView(activityName: activityName, day: self.day), isActive: $newViewShowing)
                 {
                     EmptyView()

@@ -4,7 +4,7 @@ import SwiftUI
 
 extension DisplayTime {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 98)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 105)
         AnyView(Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
             .font(.largeTitle)
             .offset(y:__designTimeInteger("#9424.[4].[3].property.[0].[0].modifier[1].arg[0].value", fallback: 300)))
@@ -14,7 +14,7 @@ extension DisplayTime {
 
 extension TimerButton {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 82)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 89)
         AnyView(Text(label)
             .foregroundColor(.white)
             .padding(.vertical, __designTimeInteger("#9424.[3].[2].property.[0].[0].modifier[1].arg[1].value", fallback: 20))
@@ -27,7 +27,7 @@ extension TimerButton {
 
 extension ContentView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 73)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 80)
         AnyView(ContentView(activityName: __designTimeString("#9424.[2].[0].property.[0].[0].arg[0].value.[0].value", fallback: "Interview"), day: Day()))
 #sourceLocation()
     }
@@ -35,7 +35,7 @@ extension ContentView_Previews {
 
 extension ContentView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 24)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 31)
         AnyView(VStack {
             Text(activityName)
                 .font(.headline)
@@ -86,8 +86,16 @@ extension ContentView {
 
 extension ContentView {
     @_dynamicReplacement(for: addActivity()) private func __preview__addActivity() {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 19)
-        self.day.activities.append(Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed))
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift", line: 18)
+        if let activity = self.day.activities[self.activityName] {
+            activity.hours += self.stopWatch.hours
+            activity.minutes += self.stopWatch.minutes
+            activity.seconds += self.stopWatch.secondsElapsed
+            activity.adjustTime()
+        }
+        else {
+            self.day.activities[self.activityName] = Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
+        }
         self.day.calculateTotalTime(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
 #sourceLocation()
     }
