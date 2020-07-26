@@ -230,6 +230,7 @@ depends-member:
 - ["9Clockwork8UserDataC", "Day"]
 - ["9Clockwork8UserDataC", "ObjectWillChangePublisher"]
 - ["9Clockwork8UserDataC", "Published"]
+- ["9Clockwork8UserDataC", "String"]
 - ["9Clockwork8UserDataC", "_Default_ObjectWillChangePublisher"]
 - !private ["9Clockwork8UserDataC", "_days"]
 - ["9Clockwork8UserDataC", "days"]
@@ -307,4 +308,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c389a971911c908852c93a89c61ee30d"
+interface-hash: "b800831c3dcf5f453c1350f571f50b8b"

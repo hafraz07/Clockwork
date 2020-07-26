@@ -686,6 +686,40 @@
 			<key>uniqueIdentifier</key>
 			<string>63CB3E58-341D-49F4-9AE8-7C12884FED9E</string>
 		</dict>
+		<key>67E1BBCC-D33E-4F1F-8B63-DF62E33D13B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>67E1BBCC-D33E-4F1F-8B63-DF62E33D13B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>617450243.28749204</real>
+			<key>timeStoppedRecording</key>
+			<real>617450251.99577606</real>
+			<key>title</key>
+			<string>Build Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>67E1BBCC-D33E-4F1F-8B63-DF62E33D13B3</string>
+		</dict>
 		<key>690FE530-C8F0-4ADF-B03A-3C93A01AB39F</key>
 		<dict>
 			<key>className</key>
@@ -1094,6 +1128,40 @@
 			<key>uniqueIdentifier</key>
 			<string>9C8B183F-7CD6-4447-A814-580FDB262FBE</string>
 		</dict>
+		<key>AA9FE190-6532-44B8-846E-8165326D2D74</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AA9FE190-6532-44B8-846E-8165326D2D74.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Preview Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>617450400.70373797</real>
+			<key>timeStoppedRecording</key>
+			<real>617450408.53644502</real>
+			<key>title</key>
+			<string>Preview Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>AA9FE190-6532-44B8-846E-8165326D2D74</string>
+		</dict>
 		<key>AC059846-86DE-4C90-9209-920D29CB9086</key>
 		<dict>
 			<key>className</key>
@@ -1127,6 +1195,40 @@
 			<string>Build Clockwork</string>
 			<key>uniqueIdentifier</key>
 			<string>AC059846-86DE-4C90-9209-920D29CB9086</string>
+		</dict>
+		<key>B63BB083-E8AC-4EE6-8FC9-705A6336765B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B63BB083-E8AC-4EE6-8FC9-705A6336765B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>617450395.48227096</real>
+			<key>timeStoppedRecording</key>
+			<real>617450396.87658298</real>
+			<key>title</key>
+			<string>Build Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>B63BB083-E8AC-4EE6-8FC9-705A6336765B</string>
 		</dict>
 		<key>B6519D6D-8DF0-4363-844D-CCCD4BA84124</key>
 		<dict>

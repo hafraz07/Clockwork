@@ -21,9 +21,9 @@ struct DayListView: View {
             VStack(alignment: .trailing) {
                 if (!userData.days.isEmpty) {
                     List {
-                        ForEach(userData.days) { day in
-                            NavigationLink(destination: HistoryListView(day: day)) {
-                                DayRow(day: day)
+                        ForEach(Array(userData.days.keys), id:\.self) { date in
+                            NavigationLink(destination: HistoryListView(day: self.userData.days[date] ?? Day())) {
+                                DayRow(day: self.userData.days[date] ?? Day())
                             }
                         }
                     }
@@ -49,15 +49,14 @@ struct DayListView: View {
                             //Try to find today in hashtable,
                             //if doesn't exist, append and toggle showModal
                             //else show alert
-                            if (self.userData.days.isEmpty) {
-                                self.day = Day()
-                                self.showModal.toggle()
-                                self.userData.days.append(self.day)
-                            }
-                            else {
+                            if self.userData.days[self.day.displayDate] != nil {
                                 self.showToast.toggle()
                             }
-                            
+                            else {
+                                self.day = Day()
+                                self.showModal.toggle()
+                                self.userData.days[self.day.displayDate] = self.day
+                            }
                     }
                     .sheet(isPresented: $showModal) {
                         NameModalView(activityName: self.$activityName, newViewShowing: self.$newViewShowing)
