@@ -10,6 +10,7 @@
 		4A06BCB224C9593600817153 /* DayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB124C9593600817153 /* DayListView.swift */; };
 		4A06BCB424C961D600817153 /* DayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB324C961D600817153 /* DayRow.swift */; };
 		4A45518824CB491D004B80E0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518724CB491D004B80E0 /* Toast.swift */; };
+		4A45519024CF1673004B80E0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518E24CDBDB2004B80E0 /* ChartView.swift */; };
 		4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */; };
 		4A81C0A124C4904C0042D6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */; };
 		4A81C0A324C4904C0042D6B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C0A224C4904C0042D6B7 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 		4A06BCB124C9593600817153 /* DayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListView.swift; sourceTree = "<group>"; };
 		4A06BCB324C961D600817153 /* DayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRow.swift; sourceTree = "<group>"; };
 		4A45518724CB491D004B80E0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		4A45518E24CDBDB2004B80E0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		4A81C09B24C4904C0042D6B7 /* Clockwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clockwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				4A81C0A224C4904C0042D6B7 /* ContentView.swift */,
 				4A06BCB124C9593600817153 /* DayListView.swift */,
 				4AD323FB24C4971200E46767 /* HistoryListView.swift */,
+				4A45518E24CDBDB2004B80E0 /* ChartView.swift */,
 				4A97DC8224C8258F0047C7BB /* NameModalView.swift */,
 				4A45518724CB491D004B80E0 /* Toast.swift */,
 				4AD323FD24C49C0E00E46767 /* HistoryRow.swift */,
@@ -115,6 +118,8 @@
 			dependencies = (
 			);
 			name = Clockwork;
+			packageProductDependencies = (
+			);
 			productName = Clockwork;
 			productReference = 4A81C09B24C4904C0042D6B7 /* Clockwork.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +148,8 @@
 				Base,
 			);
 			mainGroup = 4A81C09224C4904C0042D6B7;
+			packageReferences = (
+			);
 			productRefGroup = 4A81C09C24C4904C0042D6B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,6 +188,7 @@
 				4A45518824CB491D004B80E0 /* Toast.swift in Sources */,
 				4A06BCB224C9593600817153 /* DayListView.swift in Sources */,
 				4A06BCB424C961D600817153 /* DayRow.swift in Sources */,
+				4A45519024CF1673004B80E0 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

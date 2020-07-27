@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 
 class UserData: ObservableObject {
-//    @Published var days: [Day] = []
     @Published var days: [String:Day] = [:]
 }
 
@@ -56,6 +55,7 @@ class Activity: ObservableObject, Identifiable {
     @Published var minutes: Int
     @Published var seconds: Int
     let uuid = UUID().uuidString
+    var slideColor = Color.white
     
     
     init(name: String, hours: Int, minutes: Int, seconds: Int) {
@@ -63,6 +63,7 @@ class Activity: ObservableObject, Identifiable {
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
+        self.slideColor = generateRandomColor()
     }
     
     func adjustTime() {
@@ -75,4 +76,15 @@ class Activity: ObservableObject, Identifiable {
             minutes += minutes % 60
         }
     }
+    
+    func generateRandomColor() -> Color {
+        let redValue = CGFloat.random(in: 0...1)
+        let greenValue = CGFloat.random(in: 0...1)
+        let blueValue = CGFloat.random(in: 0...1)
+        
+        let randomColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
+        
+        return Color(randomColor)
+    }
+    
 }

@@ -17,8 +17,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
+- !private "+="
 - !private "=="
 - !private "Activity"
+- "AssignmentPrecedence"
 - "Binding"
 - !private "Button"
 - "Color"
@@ -42,17 +44,19 @@ depends-top-level:
 - !private "VStack"
 - "View"
 depends-member:
+- !private ["9Clockwork8ActivityC", "adjustTime"]
+- !private ["9Clockwork8ActivityC", "hours"]
 - !private ["9Clockwork8ActivityC", "init"]
-- !private ["Sa", "append"]
-- !private ["SK", "append"]
+- !private ["9Clockwork8ActivityC", "minutes"]
+- !private ["9Clockwork8ActivityC", "seconds"]
 - !private ["SK", "init"]
 - !private ["7SwiftUI7BindingV", "wrappedValue"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["7SwiftUI6ButtonV", "offset"]
-- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "init"]
-- !private ["Sl", "append"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
 - !private ["7SwiftUI5ColorV", "blue"]
 - !private ["7SwiftUI5ColorV", "red"]
 - !private ["7SwiftUI5ColorV", "white"]
@@ -101,39 +105,38 @@ depends-member:
 - ["9Clockwork20ContentView_PreviewsV", "init"]
 - ["9Clockwork20ContentView_PreviewsV", "platform"]
 - ["9Clockwork20ContentView_PreviewsV", "previews"]
-- !private ["10Foundation15ContiguousBytesP", "append"]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "headline"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "largeTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "headline"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "largeTitle"]
 - !private ["s17CustomReflectableP", "none"]
 - !private ["s17CustomReflectableP", "some"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "white"]
-- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "blue"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "presentationMode"]
 - !private ["s23CustomStringConvertibleP", "red"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "white"]
-- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["9Clockwork3DayC", "activities"]
 - !private ["9Clockwork3DayC", "calculateTotalTime"]
 - ["9Clockwork3DayC", "deinit"]
 - !private ["9Clockwork3DayC", "init"]
-- !private ["Se", "append"]
 - !private ["Se", "headline"]
 - !private ["Se", "init"]
 - !private ["Se", "largeTitle"]
 - !private ["Se", "none"]
 - !private ["Se", "some"]
+- !private ["Se", "subscript"]
 - !private ["Se", "white"]
+- !private ["SD", "subscript"]
 - ["9Clockwork11DisplayTimeV", "Body"]
 - ["9Clockwork11DisplayTimeV", "String"]
 - !private ["9Clockwork11DisplayTimeV", "Text"]
@@ -149,17 +152,16 @@ depends-member:
 - ["9Clockwork11DisplayTimeV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
-- !private ["SE", "append"]
 - !private ["SE", "headline"]
 - !private ["SE", "init"]
 - !private ["SE", "largeTitle"]
 - !private ["SE", "none"]
 - !private ["SE", "some"]
+- !private ["SE", "subscript"]
 - !private ["SE", "white"]
 - ["7SwiftUI11EnvironmentV", "init"]
 - ["7SwiftUI11EnvironmentV", "wrappedValue"]
 - ["7SwiftUI17EnvironmentValuesV", "presentationMode"]
-- !private ["SQ", "append"]
 - !private ["SQ", "blue"]
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
@@ -175,13 +177,14 @@ depends-member:
 - !private ["SQ", "running"]
 - !private ["SQ", "some"]
 - !private ["SQ", "stopped"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "top"]
 - !private ["SQ", "vertical"]
 - !private ["SQ", "white"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s25ExpressibleByArrayLiteralP", "top"]
 - !private ["s25ExpressibleByArrayLiteralP", "vertical"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "headline"]
 - !private ["s23ExpressibleByNilLiteralP", "largeTitle"]
@@ -198,7 +201,6 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "none"]
 - !private ["7SwiftUI7GestureP", "some"]
 - !private ["7SwiftUI7GestureP", "white"]
-- !private ["SH", "append"]
 - !private ["SH", "blue"]
 - !private ["SH", "headline"]
 - !private ["SH", "init"]
@@ -209,21 +211,26 @@ depends-member:
 - !private ["SH", "running"]
 - !private ["SH", "some"]
 - !private ["SH", "stopped"]
+- !private ["SH", "subscript"]
 - !private ["SH", "white"]
 - !private ["s12IdentifiableP", "activities"]
+- !private ["s12IdentifiableP", "adjustTime"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
+- !private ["s12IdentifiableP", "hours"]
 - !private ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "minutes"]
+- !private ["s12IdentifiableP", "seconds"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["SM", "append"]
-- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["7Combine16ObservableObjectP", "activities"]
+- !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "calculateTotalTime"]
 - !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "mode"]
 - !private ["7Combine16ObservableObjectP", "pause"]
+- !private ["7Combine16ObservableObjectP", "seconds"]
 - !private ["7Combine16ObservableObjectP", "secondsElapsed"]
 - !private ["7Combine16ObservableObjectP", "start"]
 - !private ["7Combine16ObservableObjectP", "stop"]
@@ -247,14 +254,12 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["Sk", "append"]
-- !private ["Sm", "append"]
 - !private ["Sm", "init"]
 - !private ["SY", "horizontal"]
 - !private ["SY", "top"]
 - !private ["SY", "vertical"]
-- !private ["ST", "append"]
 - !private ["ST", "init"]
+- !private ["ST", "subscript"]
 - !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
 - !private ["7SwiftUI4EdgeO3SetV", "top"]
 - !private ["7SwiftUI4EdgeO3SetV", "vertical"]
@@ -346,21 +351,18 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
-- !private ["s14_ArrayProtocolP", "append"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "headline"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
 - !private ["s21_ObjectiveCBridgeableP", "none"]
 - !private ["s21_ObjectiveCBridgeableP", "some"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["7SwiftUI16_PreviewProviderP", "ContentView"]
 - !private ["7SwiftUI16_PreviewProviderP", "Day"]
@@ -373,7 +375,6 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "9Clockwork8ActivityC"
-- !private "Sa"
 - !private "SK"
 - !private "7SwiftUI7BindingV"
 - !private "7SwiftUI6ButtonV"
@@ -383,13 +384,12 @@ depends-nominal:
 - !private "SL"
 - "9Clockwork11ContentViewV"
 - "9Clockwork20ContentView_PreviewsV"
-- !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "10Foundation12DataProtocolP"
 - "9Clockwork3DayC"
 - !private "Se"
+- !private "SD"
 - "9Clockwork11DisplayTimeV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
@@ -397,6 +397,7 @@ depends-nominal:
 - "7SwiftUI17EnvironmentValuesV"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
@@ -408,15 +409,12 @@ depends-nominal:
 - !private "s12IdentifiableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
 - "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "7SwiftUI16PresentationModeV"
 - "7SwiftUI15PreviewProviderP"
-- !private "Sk"
 - !private "Sm"
 - !private "SY"
 - !private "ST"
@@ -435,9 +433,7 @@ depends-nominal:
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"

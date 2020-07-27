@@ -14,10 +14,12 @@ depends-top-level:
 - !private "!="
 - !private "??"
 - !private "Array"
-- !private "AssignmentPrecedence"
+- "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
 - !private "ContentView"
+- !private "Date"
+- !private "DateFormatter"
 - "Day"
 - "DayListView"
 - "DayListView_Previews"
@@ -35,6 +37,7 @@ depends-top-level:
 - !private "NavigationView"
 - "PreviewProvider"
 - "State"
+- "String"
 - "StringLiteralType"
 - !private "Text"
 - "UserData"
@@ -44,9 +47,11 @@ depends-member:
 - !private ["Sa", "init"]
 - !private ["SK", "init"]
 - !private ["Sb", "toggle"]
+- !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "keys"]
+- !private ["s7CVarArgP", "string"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "toggle"]
 - !private ["Sl", "init"]
@@ -54,13 +59,16 @@ depends-member:
 - !private ["Sl", "keys"]
 - !private ["Sl", "subscript"]
 - !private ["7SwiftUI5ColorV", "pink"]
+- !private ["SL", "init"]
 - !private ["9Clockwork11ContentViewV", "deinit"]
 - !private ["9Clockwork11ContentViewV", "init"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "keys"]
 - !private ["s28CustomDebugStringConvertibleP", "pink"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
@@ -68,14 +76,19 @@ depends-member:
 - !private ["s17CustomReflectableP", "pink"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "toggle"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "keys"]
 - !private ["s23CustomStringConvertibleP", "pink"]
+- !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
 - !private ["10Foundation12DataProtocolP", "init"]
-- !private ["9Clockwork3DayC", "displayDate"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["So15NSDateFormatterC", "string"]
 - ["9Clockwork3DayC", "init"]
 - !private ["9Clockwork11DayListViewV", "$activityName"]
 - ["9Clockwork11DayListViewV", "$day"]
@@ -87,6 +100,8 @@ depends-member:
 - ["9Clockwork11DayListViewV", "Body"]
 - ["9Clockwork11DayListViewV", "Bool"]
 - !private ["9Clockwork11DayListViewV", "ContentView"]
+- !private ["9Clockwork11DayListViewV", "Date"]
+- !private ["9Clockwork11DayListViewV", "DateFormatter"]
 - ["9Clockwork11DayListViewV", "Day"]
 - !private ["9Clockwork11DayListViewV", "DayRow"]
 - !private ["9Clockwork11DayListViewV", "EmptyView"]
@@ -99,6 +114,7 @@ depends-member:
 - !private ["9Clockwork11DayListViewV", "NavigationLink"]
 - !private ["9Clockwork11DayListViewV", "NavigationView"]
 - ["9Clockwork11DayListViewV", "State"]
+- ["9Clockwork11DayListViewV", "String"]
 - !private ["9Clockwork11DayListViewV", "Text"]
 - ["9Clockwork11DayListViewV", "UserData"]
 - !private ["9Clockwork11DayListViewV", "VStack"]
@@ -117,6 +133,7 @@ depends-member:
 - ["9Clockwork11DayListViewV", "day"]
 - ["9Clockwork11DayListViewV", "deinit"]
 - !private ["9Clockwork11DayListViewV", "environmentObject"]
+- ["9Clockwork11DayListViewV", "getDate"]
 - ["9Clockwork11DayListViewV", "init"]
 - !private ["9Clockwork11DayListViewV", "newViewShowing"]
 - !private ["9Clockwork11DayListViewV", "showModal"]
@@ -155,12 +172,14 @@ depends-member:
 - !private ["SE", "subscript"]
 - !private ["SE", "toggle"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
+- !private ["SQ", "dateFormat"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "keys"]
 - !private ["SQ", "pink"]
 - !private ["SQ", "resizable"]
 - !private ["SQ", "scaledToFit"]
+- !private ["SQ", "string"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "toggle"]
 - !private ["SQ", "trailing"]
@@ -171,17 +190,21 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "pink"]
 - !private ["7SwiftUI7ForEachV", "init"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
 - !private ["7SwiftUI7GestureP", "pink"]
+- !private ["SH", "dateFormat"]
 - !private ["SH", "init"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "keys"]
 - !private ["SH", "pink"]
+- !private ["SH", "string"]
 - !private ["SH", "subscript"]
 - !private ["SH", "toggle"]
 - !private ["9Clockwork15HistoryListViewV", "deinit"]
 - !private ["9Clockwork15HistoryListViewV", "init"]
 - !private ["7SwiftUI19HorizontalAlignmentV", "trailing"]
-- !private ["s12IdentifiableP", "displayDate"]
 - ["s12IdentifiableP", "init"]
 - !private ["7SwiftUI5ImageV", "init"]
 - !private ["7SwiftUI5ImageV", "resizable"]
@@ -191,6 +214,18 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "toggle"]
 - !private ["SM", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "string"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "string"]
 - !private ["9Clockwork13NameModalViewV", "deinit"]
 - !private ["9Clockwork13NameModalViewV", "init"]
 - !private ["7SwiftUI14NavigationLinkV", "hidden"]
@@ -198,7 +233,6 @@ depends-member:
 - !private ["7SwiftUI14NavigationViewV", "init"]
 - !private ["7SwiftUI14NavigationViewV", "toast"]
 - !private ["7Combine16ObservableObjectP", "days"]
-- !private ["7Combine16ObservableObjectP", "displayDate"]
 - ["7Combine16ObservableObjectP", "init"]
 - !private ["Sq", "pink"]
 - !private ["7SwiftUI15PreviewProviderP", "DayListView"]
@@ -212,6 +246,7 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["Sk", "init"]
 - !private ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "isEmpty"]
 - !private ["ST", "keys"]
@@ -231,6 +266,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "Array"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "ContentView"]
+- !private ["7SwiftUI4ViewP", "Date"]
+- !private ["7SwiftUI4ViewP", "DateFormatter"]
 - ["7SwiftUI4ViewP", "Day"]
 - !private ["7SwiftUI4ViewP", "DayRow"]
 - !private ["7SwiftUI4ViewP", "EmptyView"]
@@ -255,6 +292,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "environmentObject"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "getDate"]
 - !private ["7SwiftUI4ViewP", "hidden"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
@@ -271,6 +309,7 @@ depends-member:
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["s14_ArrayProtocolP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
@@ -279,6 +318,12 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "keys"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dateFormat"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "keys"]
@@ -301,12 +346,15 @@ depends-nominal:
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "7SwiftUI5ColorV"
+- !private "SL"
 - !private "9Clockwork11ContentViewV"
 - !private "10Foundation15ContiguousBytesP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
+- !private "10Foundation4DateV"
+- !private "So15NSDateFormatterC"
 - "9Clockwork3DayC"
 - "9Clockwork11DayListViewV"
 - "9Clockwork20DayListView_PreviewsV"
@@ -324,6 +372,7 @@ depends-nominal:
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "7SwiftUI7ForEachV"
+- !private "So11NSFormatterC"
 - !private "7SwiftUI7GestureP"
 - !private "SH"
 - !private "9Clockwork15HistoryListViewV"
@@ -334,6 +383,10 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
 - !private "9Clockwork13NameModalViewV"
 - !private "7SwiftUI14NavigationLinkV"
 - !private "7SwiftUI14NavigationViewV"
@@ -342,6 +395,7 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - !private "Sk"
 - !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "7SwiftUI10ShapeStyleP"
 - "7SwiftUI5StateV"
@@ -356,6 +410,8 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -391,4 +447,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "dfc698b18e0b5e20bae840a4900bd176"
+interface-hash: "6c1f1a398584b29c71a7650f2a81cbf7"

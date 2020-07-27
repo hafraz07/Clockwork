@@ -12,16 +12,26 @@ struct HistoryListView: View {
     @ObservedObject var day: Day
     @State private var showModal = false
     @State private var newViewShowing = false
+    @State private var showPiechart = false
     @State private var activityName = ""
     
     var body: some View {
             VStack(alignment: .trailing) {
                 if (!day.activities.isEmpty) {
-                    List {
-                        ForEach(Array(day.activities.keys), id: \.self) { activityName in
-                            HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0))
+                    Toggle(isOn: $showPiechart) {
+                        Text("Show Piechart")
+                    }
+                    .padding()
+                    if (!showPiechart) {
+                        List {
+                          ForEach(Array(day.activities.keys), id: \.self) { activityName in
+                              HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0))
+                          }
+                          .navigationBarTitle(Text("Work History"))
                         }
-                        .navigationBarTitle(Text("Work History"))
+                    }
+                    else {
+                        ChartView(day: self.day)
                     }
                 }
                 else {

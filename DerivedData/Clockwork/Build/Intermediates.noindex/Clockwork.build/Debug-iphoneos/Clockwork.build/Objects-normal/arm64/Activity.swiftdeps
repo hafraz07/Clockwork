@@ -33,10 +33,12 @@ provides-dynamic-lookup:
 - "calculateTotalTime"
 - "days"
 - "displayDate"
+- "generateRandomColor"
 - "hours"
 - "minutes"
 - "name"
 - "seconds"
+- "slideColor"
 - "totalHours"
 - "totalMinutes"
 - "totalSeconds"
@@ -44,10 +46,13 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "%"
 - !private "+="
+- !private "..."
 - !private "/"
 - !private ">="
 - "Activity"
 - "AssignmentPrecedence"
+- !private "CGFloat"
+- "Color"
 - !private "Date"
 - !private "DateFormatter"
 - "Day"
@@ -59,17 +64,21 @@ depends-top-level:
 - "Published"
 - "String"
 - !private "StringLiteralType"
+- !private "UIColor"
 - "UUID"
 - "UserData"
 depends-member:
 - ["9Clockwork8ActivityC", "$hours"]
 - ["9Clockwork8ActivityC", "$minutes"]
 - ["9Clockwork8ActivityC", "$seconds"]
+- !private ["9Clockwork8ActivityC", "CGFloat"]
+- ["9Clockwork8ActivityC", "Color"]
 - ["9Clockwork8ActivityC", "ID"]
 - ["9Clockwork8ActivityC", "Int"]
 - ["9Clockwork8ActivityC", "ObjectWillChangePublisher"]
 - ["9Clockwork8ActivityC", "Published"]
 - ["9Clockwork8ActivityC", "String"]
+- !private ["9Clockwork8ActivityC", "UIColor"]
 - ["9Clockwork8ActivityC", "UUID"]
 - ["9Clockwork8ActivityC", "_Default_ID"]
 - ["9Clockwork8ActivityC", "_Default_ObjectWillChangePublisher"]
@@ -78,6 +87,7 @@ depends-member:
 - !private ["9Clockwork8ActivityC", "_seconds"]
 - ["9Clockwork8ActivityC", "adjustTime"]
 - ["9Clockwork8ActivityC", "deinit"]
+- ["9Clockwork8ActivityC", "generateRandomColor"]
 - ["9Clockwork8ActivityC", "hours"]
 - ["9Clockwork8ActivityC", "id"]
 - ["9Clockwork8ActivityC", "init"]
@@ -85,21 +95,32 @@ depends-member:
 - ["9Clockwork8ActivityC", "name"]
 - ["9Clockwork8ActivityC", "objectWillChange"]
 - ["9Clockwork8ActivityC", "seconds"]
+- ["9Clockwork8ActivityC", "slideColor"]
 - ["9Clockwork8ActivityC", "uuid"]
+- !private ["s18AdditiveArithmeticP", "random"]
+- !private ["SB", "random"]
+- !private ["12CoreGraphics7CGFloatV", "random"]
 - !private ["s7CVarArgP", "dateFormat"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "random"]
 - !private ["s7CVarArgP", "string"]
+- !private ["7SwiftUI5ColorV", "init"]
+- ["7SwiftUI5ColorV", "white"]
 - !private ["SL", "init"]
+- !private ["SL", "random"]
 - !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "string"]
 - ["s28CustomDebugStringConvertibleP", "uuidString"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "random"]
 - ["s17CustomReflectableP", "uuidString"]
 - !private ["s23CustomStringConvertibleP", "dateFormat"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "random"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - ["s23CustomStringConvertibleP", "uuidString"]
+- ["s23CustomStringConvertibleP", "white"]
 - !private ["10Foundation4DateV", "init"]
 - !private ["So15NSDateFormatterC", "dateFormat"]
 - !private ["So15NSDateFormatterC", "init"]
@@ -136,25 +157,37 @@ depends-member:
 - ["9Clockwork3DayC", "totalSeconds"]
 - ["9Clockwork3DayC", "uuid"]
 - ["Se", "init"]
+- !private ["Se", "random"]
 - ["Se", "uuidString"]
 - ["SE", "init"]
+- !private ["SE", "random"]
 - ["SE", "uuidString"]
 - !private ["SQ", "dateFormat"]
 - ["SQ", "init"]
+- !private ["SQ", "random"]
 - !private ["SQ", "string"]
 - ["SQ", "uuidString"]
+- ["SQ", "white"]
+- !private ["s25ExpressibleByFloatLiteralP", "random"]
+- !private ["s27ExpressibleByIntegerLiteralP", "random"]
+- !private ["SF", "random"]
 - !private ["So11NSFormatterC", "dateFormat"]
 - !private ["So11NSFormatterC", "init"]
 - !private ["So11NSFormatterC", "string"]
 - !private ["SH", "dateFormat"]
 - ["SH", "init"]
+- !private ["SH", "random"]
 - !private ["SH", "string"]
 - ["SH", "uuidString"]
+- ["SH", "white"]
+- !private ["s12IdentifiableP", "CGFloat"]
+- ["s12IdentifiableP", "Color"]
 - !private ["s12IdentifiableP", "Date"]
 - !private ["s12IdentifiableP", "DateFormatter"]
 - ["s12IdentifiableP", "ID"]
 - ["s12IdentifiableP", "ObjectWillChangePublisher"]
 - ["s12IdentifiableP", "Published"]
+- !private ["s12IdentifiableP", "UIColor"]
 - ["s12IdentifiableP", "UUID"]
 - ["s12IdentifiableP", ""]
 - ["s12IdentifiableP", "_Default_ID"]
@@ -169,12 +202,14 @@ depends-member:
 - !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "adjustTime"]
 - !private ["s12IdentifiableP", "displayDate"]
+- !private ["s12IdentifiableP", "generateRandomColor"]
 - !private ["s12IdentifiableP", "hours"]
 - ["s12IdentifiableP", "id"]
 - !private ["s12IdentifiableP", "minutes"]
 - !private ["s12IdentifiableP", "name"]
 - ["s12IdentifiableP", "objectWillChange"]
 - !private ["s12IdentifiableP", "seconds"]
+- !private ["s12IdentifiableP", "slideColor"]
 - !private ["s12IdentifiableP", "totalHours"]
 - !private ["s12IdentifiableP", "totalMinutes"]
 - !private ["s12IdentifiableP", "totalSeconds"]
@@ -184,17 +219,24 @@ depends-member:
 - !private ["So9NSCopyingP", "dateFormat"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "string"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So8NSObjectC", "dateFormat"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "string"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["Sj", "random"]
+- !private ["7Combine16ObservableObjectP", "CGFloat"]
+- ["7Combine16ObservableObjectP", "Color"]
 - !private ["7Combine16ObservableObjectP", "Date"]
 - !private ["7Combine16ObservableObjectP", "DateFormatter"]
 - ["7Combine16ObservableObjectP", "ID"]
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Published"]
+- !private ["7Combine16ObservableObjectP", "UIColor"]
 - ["7Combine16ObservableObjectP", "UUID"]
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ID"]
@@ -211,12 +253,14 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "days"]
 - !private ["7Combine16ObservableObjectP", "displayDate"]
+- !private ["7Combine16ObservableObjectP", "generateRandomColor"]
 - !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "id"]
 - !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "name"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["7Combine16ObservableObjectP", "seconds"]
+- !private ["7Combine16ObservableObjectP", "slideColor"]
 - !private ["7Combine16ObservableObjectP", "totalHours"]
 - !private ["7Combine16ObservableObjectP", "totalMinutes"]
 - !private ["7Combine16ObservableObjectP", "totalSeconds"]
@@ -224,6 +268,11 @@ depends-member:
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
+- !private ["7SwiftUI10ShapeStyleP", "init"]
+- ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["s13SignedNumericP", "random"]
+- !private ["Sx", "random"]
+- !private ["So7UIColorC", "init"]
 - ["10Foundation4UUIDV", "init"]
 - ["10Foundation4UUIDV", "uuidString"]
 - ["9Clockwork8UserDataC", "$days"]
@@ -237,7 +286,14 @@ depends-member:
 - ["9Clockwork8UserDataC", "deinit"]
 - ["9Clockwork8UserDataC", "init"]
 - ["9Clockwork8UserDataC", "objectWillChange"]
+- !private ["7SwiftUI16VectorArithmeticP", "random"]
+- !private ["7SwiftUI4ViewP", "init"]
+- ["7SwiftUI4ViewP", "white"]
+- !private ["s15_CVarArgAlignedP", "random"]
+- !private ["s22_CVarArgPassedAsDoubleP", "random"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "random"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
@@ -245,10 +301,15 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "string"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "random"]
 - ["s21_ObjectiveCBridgeableP", "uuidString"]
 depends-nominal:
 - "9Clockwork8ActivityC"
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "12CoreGraphics7CGFloatV"
 - !private "s7CVarArgP"
+- "7SwiftUI5ColorV"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
@@ -259,19 +320,36 @@ depends-nominal:
 - "Se"
 - "SE"
 - "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "SF"
 - !private "So11NSFormatterC"
 - "SH"
 - "s12IdentifiableP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sj"
 - "7Combine16ObservableObjectP"
 - "7Combine9PublishedV"
 - "10Foundation20ReferenceConvertibleP"
+- "7SwiftUI10ShapeStyleP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "So7UIColorC"
 - "10Foundation4UUIDV"
 - "9Clockwork8UserDataC"
+- !private "7SwiftUI16VectorArithmeticP"
+- "7SwiftUI4ViewP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - "s21_ObjectiveCBridgeableP"
@@ -308,4 +386,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b800831c3dcf5f453c1350f571f50b8b"
+interface-hash: "3b63cf276151ef0ac3dc35c8bc194371"

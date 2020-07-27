@@ -16,6 +16,7 @@ depends-top-level:
 - !private "Array"
 - !private "AssignmentPrecedence"
 - "BooleanLiteralType"
+- !private "ChartView"
 - !private "ContentView"
 - "Day"
 - !private "EmptyView"
@@ -34,6 +35,7 @@ depends-top-level:
 - "State"
 - "StringLiteralType"
 - !private "Text"
+- !private "Toggle"
 - !private "VStack"
 - "View"
 depends-member:
@@ -46,6 +48,8 @@ depends-member:
 - !private ["s7CVarArgP", "keys"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "toggle"]
+- !private ["9Clockwork9ChartViewV", "deinit"]
+- !private ["9Clockwork9ChartViewV", "init"]
 - !private ["Sl", "init"]
 - !private ["Sl", "isEmpty"]
 - !private ["Sl", "keys"]
@@ -123,9 +127,11 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "$day"]
 - !private ["9Clockwork15HistoryListViewV", "$newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "$showModal"]
+- !private ["9Clockwork15HistoryListViewV", "$showPiechart"]
 - !private ["9Clockwork15HistoryListViewV", "Activity"]
 - !private ["9Clockwork15HistoryListViewV", "Array"]
 - ["9Clockwork15HistoryListViewV", "Body"]
+- !private ["9Clockwork15HistoryListViewV", "ChartView"]
 - !private ["9Clockwork15HistoryListViewV", "ContentView"]
 - ["9Clockwork15HistoryListViewV", "Day"]
 - !private ["9Clockwork15HistoryListViewV", "EmptyView"]
@@ -138,6 +144,7 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "ObservedObject"]
 - ["9Clockwork15HistoryListViewV", "State"]
 - !private ["9Clockwork15HistoryListViewV", "Text"]
+- !private ["9Clockwork15HistoryListViewV", "Toggle"]
 - !private ["9Clockwork15HistoryListViewV", "VStack"]
 - ["9Clockwork15HistoryListViewV", "View"]
 - ["9Clockwork15HistoryListViewV", "_Default_Body"]
@@ -147,6 +154,7 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "_makeViewList"]
 - !private ["9Clockwork15HistoryListViewV", "_newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "_showModal"]
+- !private ["9Clockwork15HistoryListViewV", "_showPiechart"]
 - !private ["9Clockwork15HistoryListViewV", "activityName"]
 - ["9Clockwork15HistoryListViewV", "body"]
 - ["9Clockwork15HistoryListViewV", "day"]
@@ -154,6 +162,7 @@ depends-member:
 - ["9Clockwork15HistoryListViewV", "init"]
 - !private ["9Clockwork15HistoryListViewV", "newViewShowing"]
 - !private ["9Clockwork15HistoryListViewV", "showModal"]
+- !private ["9Clockwork15HistoryListViewV", "showPiechart"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "Day"]
 - !private ["9Clockwork24HistoryListView_PreviewsV", "HistoryListView"]
 - ["9Clockwork24HistoryListView_PreviewsV", "Previews"]
@@ -205,14 +214,18 @@ depends-member:
 - ["7SwiftUI5StateV", "init"]
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6ToggleV", "init"]
+- !private ["7SwiftUI6ToggleV", "padding"]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI6VStackV", "sheet"]
 - !private ["7SwiftUI4ViewP", "$activityName"]
 - !private ["7SwiftUI4ViewP", "$newViewShowing"]
 - !private ["7SwiftUI4ViewP", "$showModal"]
+- !private ["7SwiftUI4ViewP", "$showPiechart"]
 - !private ["7SwiftUI4ViewP", "Activity"]
 - !private ["7SwiftUI4ViewP", "Array"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "ChartView"]
 - !private ["7SwiftUI4ViewP", "ContentView"]
 - !private ["7SwiftUI4ViewP", "EmptyView"]
 - !private ["7SwiftUI4ViewP", "ForEach"]
@@ -224,6 +237,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - ["7SwiftUI4ViewP", "State"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "Toggle"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -245,6 +259,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "scaledToFit"]
 - !private ["7SwiftUI4ViewP", "sheet"]
 - !private ["7SwiftUI4ViewP", "showModal"]
+- !private ["7SwiftUI4ViewP", "showPiechart"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["s14_ArrayProtocolP", "init"]
@@ -277,6 +292,7 @@ depends-nominal:
 - !private "SK"
 - !private "Sb"
 - !private "s7CVarArgP"
+- !private "9Clockwork9ChartViewV"
 - !private "Sl"
 - !private "7SwiftUI5ColorV"
 - !private "9Clockwork11ContentViewV"
@@ -322,6 +338,7 @@ depends-nominal:
 - !private "7SwiftUI10ShapeStyleP"
 - "7SwiftUI5StateV"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI6ToggleV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -366,4 +383,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4eab304a48f0d20b3e1a6583381b61b2"
+interface-hash: "29ea1608baa7cbb4118b926bd6436a96"

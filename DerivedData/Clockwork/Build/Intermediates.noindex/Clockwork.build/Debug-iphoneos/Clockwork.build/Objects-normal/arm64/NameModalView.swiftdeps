@@ -9,6 +9,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Binding"
 - "Bool"
+- !private "Button"
+- "Color"
 - "Environment"
 - !private "Form"
 - "NameModalView"
@@ -16,6 +18,7 @@ depends-top-level:
 - !private "Section"
 - "String"
 - !private "StringLiteralType"
+- "TernaryPrecedence"
 - !private "Text"
 - !private "TextField"
 - "View"
@@ -23,46 +26,45 @@ depends-member:
 - !private ["SK", "isEmpty"]
 - !private ["7SwiftUI7BindingV", "wrappedValue"]
 - !private ["Sb", "toggle"]
+- !private ["7SwiftUI6ButtonV", "disabled"]
+- !private ["7SwiftUI6ButtonV", "init"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "toggle"]
 - !private ["Sl", "isEmpty"]
+- !private ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "pink"]
 - !private ["SL", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
-- !private ["s28CustomDebugStringConvertibleP", "pink"]
 - !private ["s17CustomReflectableP", "isEmpty"]
-- !private ["s17CustomReflectableP", "pink"]
 - !private ["s17CustomReflectableP", "toggle"]
+- !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "pink"]
 - ["s23CustomStringConvertibleP", "presentationMode"]
 - !private ["s23CustomStringConvertibleP", "toggle"]
 - !private ["Se", "isEmpty"]
-- !private ["Se", "pink"]
 - !private ["Se", "toggle"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["SE", "isEmpty"]
-- !private ["SE", "pink"]
 - !private ["SE", "toggle"]
 - ["7SwiftUI11EnvironmentV", "init"]
 - ["7SwiftUI11EnvironmentV", "wrappedValue"]
 - ["7SwiftUI17EnvironmentValuesV", "presentationMode"]
 - !private ["SQ", "default"]
-- !private ["SQ", "disabled"]
+- !private ["SQ", "gray"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "pink"]
 - !private ["SQ", "toggle"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
-- !private ["s23ExpressibleByNilLiteralP", "pink"]
 - !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
 - !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["7SwiftUI4FormV", "init"]
-- !private ["7SwiftUI7GestureP", "pink"]
 - !private ["SH", "default"]
+- !private ["SH", "gray"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "pink"]
 - !private ["SH", "toggle"]
@@ -83,6 +85,8 @@ depends-member:
 - ["9Clockwork13NameModalViewV", "Binding"]
 - ["9Clockwork13NameModalViewV", "Body"]
 - ["9Clockwork13NameModalViewV", "Bool"]
+- !private ["9Clockwork13NameModalViewV", "Button"]
+- ["9Clockwork13NameModalViewV", "Color"]
 - ["9Clockwork13NameModalViewV", "Environment"]
 - !private ["9Clockwork13NameModalViewV", "Form"]
 - !private ["9Clockwork13NameModalViewV", "NavigationView"]
@@ -99,21 +103,21 @@ depends-member:
 - !private ["9Clockwork13NameModalViewV", "_presentationMode"]
 - ["9Clockwork13NameModalViewV", "activityName"]
 - ["9Clockwork13NameModalViewV", "body"]
+- ["9Clockwork13NameModalViewV", "buttonColor"]
 - ["9Clockwork13NameModalViewV", "deinit"]
 - ["9Clockwork13NameModalViewV", "init"]
 - ["9Clockwork13NameModalViewV", "newViewShowing"]
 - !private ["9Clockwork13NameModalViewV", "presentationMode"]
 - !private ["7SwiftUI14NavigationViewV", "init"]
-- !private ["Sq", "pink"]
 - !private ["7SwiftUI16PresentationModeV", "dismiss"]
 - !private ["Sm", "isEmpty"]
 - !private ["SY", "default"]
 - !private ["7SwiftUI7SectionV", "init"]
 - !private ["ST", "isEmpty"]
+- !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "pink"]
 - !private ["SS", "isEmpty"]
 - !private ["Sy", "isEmpty"]
-- !private ["7SwiftUI4TextV", "disabled"]
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI9TextFieldV", "init"]
 - !private ["7SwiftUI9TextFieldV", "keyboardType"]
@@ -123,6 +127,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "$activityName"]
 - ["7SwiftUI4ViewP", "Binding"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
 - ["7SwiftUI4ViewP", "Environment"]
 - !private ["7SwiftUI4ViewP", "Form"]
 - !private ["7SwiftUI4ViewP", "NavigationView"]
@@ -135,14 +140,15 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - !private ["7SwiftUI4ViewP", "activityName"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "buttonColor"]
 - !private ["7SwiftUI4ViewP", "disabled"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
+- !private ["7SwiftUI4ViewP", "gray"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "keyboardType"]
 - !private ["7SwiftUI4ViewP", "navigationBarItems"]
 - !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI4ViewP", "newViewShowing"]
-- !private ["7SwiftUI4ViewP", "onTapGesture"]
 - !private ["7SwiftUI4ViewP", "pink"]
 - !private ["7SwiftUI4ViewP", "presentationMode"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
@@ -156,12 +162,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
-- !private ["s21_ObjectiveCBridgeableP", "pink"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 depends-nominal:
 - !private "SK"
 - !private "7SwiftUI7BindingV"
 - !private "Sb"
+- !private "7SwiftUI6ButtonV"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "7SwiftUI5ColorV"
@@ -177,12 +183,10 @@ depends-nominal:
 - !private "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FormV"
-- !private "7SwiftUI7GestureP"
 - !private "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -197,7 +201,6 @@ depends-nominal:
 - !private "So8NSStringC"
 - "9Clockwork13NameModalViewV"
 - !private "7SwiftUI14NavigationViewV"
-- !private "Sq"
 - !private "7SwiftUI16PresentationModeV"
 - !private "Sm"
 - !private "SY"
@@ -255,4 +258,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "316b6fe3c415109d0e4ccc252d296962"
+interface-hash: "f6c8896de5c2a718140dea1124a34799"

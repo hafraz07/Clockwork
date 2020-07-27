@@ -12,6 +12,10 @@ struct NameModalView: View {
     @Binding var activityName: String
     @Environment(\.presentationMode) private var presentationMode
     @Binding var newViewShowing: Bool
+    
+    var buttonColor: Color {
+        return activityName.isEmpty ? .gray : .pink
+    }
 
     var body: some View {
         NavigationView {
@@ -19,14 +23,14 @@ struct NameModalView: View {
                 Section(header: Text("Activity Name")) {
                     TextField("Enter activity name", text: $activityName)
                         .keyboardType(.default)
-                        .navigationBarTitle(Text("Add New Activity"))
-                        .navigationBarItems(trailing: Text("Done")
-                            .disabled(self.activityName.isEmpty)
-                            .foregroundColor(.pink)
-                            .onTapGesture {
-                                self.newViewShowing.toggle()
-                                self.presentationMode.wrappedValue.dismiss()
-                    })
+                        .navigationBarTitle("Add New Activity")
+                        .navigationBarItems(trailing: Button("Done") {
+                            self.newViewShowing.toggle()
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                        .disabled(self.activityName.isEmpty)
+                        .foregroundColor(buttonColor)
+                    )
                 }
             }
         }

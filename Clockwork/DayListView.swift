@@ -16,6 +16,13 @@ struct DayListView: View {
     @State private var activityName = ""
     @State var day = Day()
     
+    func getDate()->String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        return formatter.string(from: date)
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .trailing) {
@@ -48,14 +55,14 @@ struct DayListView: View {
                         .onTapGesture {
                             //Try to find today in hashtable,
                             //if doesn't exist, append and toggle showModal
-                            //else show alert
-                            if self.userData.days[self.day.displayDate] != nil {
+                            //else show toast
+                            if self.userData.days[self.getDate()] != nil {
                                 self.showToast.toggle()
                             }
                             else {
                                 self.day = Day()
                                 self.showModal.toggle()
-                                self.userData.days[self.day.displayDate] = self.day
+                                self.userData.days[self.getDate()] = self.day
                             }
                     }
                     .sheet(isPresented: $showModal) {

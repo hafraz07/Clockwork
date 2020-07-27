@@ -4,7 +4,7 @@ import SwiftUI
 
 extension HistoryListView_Previews {
     @_dynamicReplacement(for: previews) private static var __preview__previews: some View {
-        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 54)
+        #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 56)
         AnyView(__designTimeSelection(HistoryListView(day: __designTimeSelection(Day(), "#9578.[2].[0].property.[0].[0].arg[0].value")), "#9578.[2].[0].property.[0].[0]"))
 #sourceLocation()
     }
@@ -15,10 +15,12 @@ extension HistoryListView {
         #sourceLocation(file: "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift", line: 18)
             AnyView(__designTimeSelection(VStack(alignment: .trailing) {
                 if (!day.activities.isEmpty) {
-                    __designTimeSelection(List(__designTimeSelection(day.activities, "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value")) { activity in
-                        __designTimeSelection(HistoryRow(activity: __designTimeSelection(activity, "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[1].value.[0].arg[0].value")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[1].value.[0]")
-                    }
-                    .navigationBarTitle(__designTimeSelection(Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Work History")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].modifier[0].arg[0].value")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0]")
+                    __designTimeSelection(List {
+                        __designTimeSelection(ForEach(__designTimeSelection(Array(__designTimeSelection(day.activities.keys, "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].arg[0].value.arg[0].value")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].arg[0].value"), id: \.self) { activityName in
+                            __designTimeSelection(HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0)), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].arg[2].value.[0]")
+                        }
+                        .navigationBarTitle(__designTimeSelection(Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Work History")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0].modifier[0].arg[0].value")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0].arg[0].value.[0]")
+                    }, "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[0].[0]")
                 }
                 else {
                     __designTimeSelection(Text(__designTimeString("#9578.[1].[4].property.[0].[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Activities")), "#9578.[1].[4].property.[0].[0].arg[1].value.[0].[1].[0]")

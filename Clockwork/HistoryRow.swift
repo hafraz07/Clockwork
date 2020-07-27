@@ -15,7 +15,8 @@ struct HistoryRow: View {
             Text(activity.name)
             Spacer()
             if (activity.hours > 0) {
-                Text(String(format: "%02d", activity.hours) + ":" + String(format: "%02d", activity.minutes))
+//                Text(String(format: "%02d", activity.hours) + ":" + String(format: "%02d", activity.minutes))
+                Text(String(activity.hours) + "h " + String(activity.minutes) + "m")
             }
             else if (activity.minutes > 0) {
                 Text(String(activity.minutes) + " minutes")

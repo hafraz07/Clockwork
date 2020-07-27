@@ -15,7 +15,8 @@ struct DayRow: View {
             Text(day.displayDate)
             Spacer()
             if (day.totalHours > 0) {
-                Text(String(format: "%02d", day.totalHours) + ":" + String(format: "%02d", day.totalMinutes))
+//                Text(String(format: "%02d", day.totalHours) + ":" + String(format: "%02d", day.totalMinutes))
+                Text(String(day.totalHours) + "h " + String(day.totalMinutes) + "m")
             }
             else if (day.totalMinutes > 0) {
                 Text(String(day.totalMinutes) + " minutes")
