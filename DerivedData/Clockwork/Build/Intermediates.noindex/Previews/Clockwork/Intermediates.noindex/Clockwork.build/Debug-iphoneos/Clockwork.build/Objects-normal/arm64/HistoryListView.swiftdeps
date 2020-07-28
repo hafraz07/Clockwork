@@ -40,6 +40,7 @@ depends-top-level:
 - "View"
 depends-member:
 - !private ["9Clockwork8ActivityC", "init"]
+- !private ["7SwiftUI9AlignmentV", "trailing"]
 - !private ["Sa", "init"]
 - !private ["SK", "init"]
 - !private ["Sb", "toggle"]
@@ -50,6 +51,7 @@ depends-member:
 - !private ["s7CVarArgP", "toggle"]
 - !private ["9Clockwork9ChartViewV", "deinit"]
 - !private ["9Clockwork9ChartViewV", "init"]
+- !private ["9Clockwork9ChartViewV", "navigationBarTitle"]
 - !private ["Sl", "init"]
 - !private ["Sl", "isEmpty"]
 - !private ["Sl", "keys"]
@@ -176,7 +178,6 @@ depends-member:
 - ["9Clockwork24HistoryListView_PreviewsV", "previews"]
 - !private ["9Clockwork10HistoryRowV", "deinit"]
 - !private ["9Clockwork10HistoryRowV", "init"]
-- !private ["7SwiftUI19HorizontalAlignmentV", "trailing"]
 - !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "init"]
 - !private ["7SwiftUI5ImageV", "init"]
@@ -288,6 +289,7 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "9Clockwork8ActivityC"
+- !private "7SwiftUI9AlignmentV"
 - !private "Sa"
 - !private "SK"
 - !private "Sb"
@@ -319,7 +321,6 @@ depends-nominal:
 - "9Clockwork15HistoryListViewV"
 - "9Clockwork24HistoryListView_PreviewsV"
 - !private "9Clockwork10HistoryRowV"
-- !private "7SwiftUI19HorizontalAlignmentV"
 - !private "s12IdentifiableP"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI4ListV"

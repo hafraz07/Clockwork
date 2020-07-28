@@ -16,7 +16,7 @@ struct HistoryListView: View {
     @State private var activityName = ""
     
     var body: some View {
-            VStack(alignment: .trailing) {
+            VStack {
                 if (!day.activities.isEmpty) {
                     Toggle(isOn: $showPiechart) {
                         Text("Show Piechart")
@@ -32,6 +32,7 @@ struct HistoryListView: View {
                     }
                     else {
                         ChartView(day: self.day)
+                        .navigationBarTitle(Text("Work History"))
                     }
                 }
                 else {
@@ -40,8 +41,8 @@ struct HistoryListView: View {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50, height: 50)
-                        .padding()
+                        .frame(width: 50, height: 50, alignment: .trailing)
+//                        .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
                             self.showModal.toggle()
