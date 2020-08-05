@@ -2,8 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>UIKit</string>
+	<string>QuartzCore</string>
+	<string>CoreGraphics</string>
+	<string>Quartz</string>
 	<string>SwiftUI</string>
+	<string>XCTest</string>
+	<string>FBSnapshotTestCase</string>
+	<string>CoreData</string>
+	<string>Charts</string>
+	<string>AppKit</string>
+	<string>UIKit</string>
+	<string>Cocoa</string>
 	<string>Foundation</string>
 </array>
 </plist>

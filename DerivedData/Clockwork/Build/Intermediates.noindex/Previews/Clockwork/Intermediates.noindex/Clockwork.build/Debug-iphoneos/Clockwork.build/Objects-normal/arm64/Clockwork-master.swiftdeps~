@@ -1,16 +1,21 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "64b299df17cc8951f95d0d6643a79017"
-build_time: [1595918609, 355410000]
+options: "07e9a66b3646d8c6658f608248dba00c"
+build_time: [1596628796, 558076000]
 inputs:
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryRow.swift": [1595917101, 505331308]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Stopwatch.swift": [1595388987, 367615299]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/Activity.swift": [1595869917, 502049271]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/Activity.swift": [1596077812, 46220419]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/AppDelegate.swift": [1595168972, 766032736]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift": [1595917956, 585061027]
+  "/Users/afrazhasan/Documents/ChartView-master/Sources/SwiftUICharts/PieChart/PieChartCell.swift": [1596627354, 107695633]
+  "/Users/afrazhasan/Documents/ChartView-master/Sources/SwiftUICharts/PieChart/PieChartHelpers.swift": [1596275422, 0]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/SceneDelegate.swift": [1595485519, 531507797]
+  "/Users/afrazhasan/Documents/ChartView-master/Sources/SwiftUICharts/PieChart/PieChartView.swift": [1596627354, 133017541]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift": [1595756393, 82091707]
+  "/Users/afrazhasan/Documents/ChartView-master/Sources/SwiftUICharts/Helpers.swift": [1596275422, 0]
+  "/Users/afrazhasan/Documents/ChartView-master/Sources/SwiftUICharts/PieChart/PieChartRow.swift": [1596628473, 58141801]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/NameModalView.swift": [1595767206, 995501049]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Toast.swift": [1595610799, 316903400]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift": [1595780024, 964199053]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayRow.swift": [1595858675, 582392893]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ChartView.swift": [1595918589, 773622715]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ChartView.swift": [1596628775, 719144236]

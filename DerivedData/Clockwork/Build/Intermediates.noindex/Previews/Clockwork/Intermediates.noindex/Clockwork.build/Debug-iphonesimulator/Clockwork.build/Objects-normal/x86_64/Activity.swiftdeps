@@ -63,7 +63,7 @@ depends-top-level:
 - "ObservableObject"
 - "Published"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "UIColor"
 - "UUID"
 - "UserData"
@@ -180,6 +180,7 @@ depends-member:
 - !private ["SH", "string"]
 - ["SH", "uuidString"]
 - ["SH", "white"]
+- ["s12IdentifiableP", "Activity"]
 - !private ["s12IdentifiableP", "CGFloat"]
 - ["s12IdentifiableP", "Color"]
 - !private ["s12IdentifiableP", "Date"]
@@ -205,6 +206,7 @@ depends-member:
 - !private ["s12IdentifiableP", "generateRandomColor"]
 - !private ["s12IdentifiableP", "hours"]
 - ["s12IdentifiableP", "id"]
+- ["s12IdentifiableP", "init"]
 - !private ["s12IdentifiableP", "minutes"]
 - !private ["s12IdentifiableP", "name"]
 - ["s12IdentifiableP", "objectWillChange"]
@@ -229,10 +231,12 @@ depends-member:
 - !private ["So8NSObjectP", "string"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["Sj", "random"]
+- ["7Combine16ObservableObjectP", "Activity"]
 - !private ["7Combine16ObservableObjectP", "CGFloat"]
 - ["7Combine16ObservableObjectP", "Color"]
 - !private ["7Combine16ObservableObjectP", "Date"]
 - !private ["7Combine16ObservableObjectP", "DateFormatter"]
+- ["7Combine16ObservableObjectP", "Day"]
 - ["7Combine16ObservableObjectP", "ID"]
 - ["7Combine16ObservableObjectP", "ObjectWillChangePublisher"]
 - ["7Combine16ObservableObjectP", "Published"]
@@ -256,6 +260,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "generateRandomColor"]
 - !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "id"]
+- ["7Combine16ObservableObjectP", "init"]
 - !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "name"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
@@ -386,4 +391,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3b63cf276151ef0ac3dc35c8bc194371"
+interface-hash: "5aeccaa0e6f95c505da65c595a3b65df"

@@ -10,9 +10,14 @@ import SwiftUI
 
 struct ChartView: View {
     @ObservedObject var day: Day
-    @State var index = 0
+    @State var activityTimes: [Double] = [20, 40, 30, 2]
     var dayTotalTime: Double {
         Double(day.totalHours * 60 + day.totalMinutes * 60 + day.totalSeconds)
+    }
+    
+    init(day: Day) {
+        self.day = day
+        self.addActivityTimes()
     }
     
     func getSlideColor(activityName: String)-> Color {
@@ -34,23 +39,32 @@ struct ChartView: View {
         return "Default"
     }
     
+    func addActivityTimes() {
+        for (_, activity) in self.day.activities {
+            let activityTime = Double((activity.hours * 60 * 60) + (activity.minutes * 60) + activity.seconds)
+            self.activityTimes.append(activityTime)
+        }
+    }
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
-        GeometryReader {g in
-            ZStack {
-                ForEach(Array(self.day.activities.keys), id:\.self) {activityName in
-                    DrawShape(center: CGPoint(x: g.frame(in: .global).width / 2,
-                                              y: g.frame(in: .global).height / 2),
-                              activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0),
-                              dayTotal: self.dayTotalTime, index: self.index)
-                }//ForEach
-            }//ZStack
-        }//GeometryReader
-        .frame(height: 360) // since radius is 180
-        .padding(.top, 20)
-            .clipShape(Circle())
-            .shadow(radius: 8)
-        
+//        GeometryReader {g in
+//            ZStack {
+//                ForEach(Array(self.day.activities.keys), id:\.self) {activityName in
+//                    DrawShape(center: CGPoint(x: g.frame(in: .global).width / 2,
+//                                              y: g.frame(in: .global).height / 2),
+//                              activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0),
+//                              dayTotal: self.dayTotalTime, index: self.index)
+//                }//ForEach
+//            }//ZStack
+//        }//GeometryReader
+//        .frame(height: 360) // since radius is 180
+//        .padding(.top, 20)
+//            .clipShape(Circle())
+//            .shadow(radius: 8)
+            PieChartView(data: self.activityTimes, title: "Test", form: ChartForm.large)
+                .padding(.top, 100)
+            
             VStack {
                 ForEach(Array(self.day.activities.keys), id:\.self) {activityName in
                     HStack {
@@ -73,8 +87,8 @@ struct ChartView: View {
                     .padding(.top, 18)
                 } //ForEach
         } //VStack
-            .padding()
-            Spacer()
+                .padding(.top, 70)
+//            Spacer()
         } //ScrollView
     }
 }
@@ -87,7 +101,7 @@ struct DrawShape: View {
     }
     var dayTotal: Double
     var index: Int
-    static var lastSlideAngle = 0.0
+    static var currentAngle: Double = -90
     
     
     var body: some View {
@@ -96,34 +110,26 @@ struct DrawShape: View {
 
             path.addArc(center: self.center,
                         radius: 180,
-                        startAngle: .init(degrees: self.from()),
-                        endAngle: .init(degrees: self.to()),
+                        startAngle: .degrees(self.from()),
+                        endAngle: .degrees(self.to()),
                         clockwise: false)
         }
         .fill(self.activity.slideColor)
+        
     }
     
     func from()->Double {
-//        if DrawShape.lastSlideAngle == 0 { return 0 }
-//        else {
-//            //converting percentage to angle
-//            var temp: Double = 0
-//
-//            for i in 0...self.index - 1 {
-//                temp += Double(activityTime / dayTotal) * 360
-//            }
-        return Double(DrawShape.lastSlideAngle)
+        return Double(DrawShape.currentAngle)
     }
     
     func to()->Double {
-        var temp: Double = 0
+        var endAngle: Double = 0
         
-        //because we need the current degree
-//        for i in 0...self.index {
-            temp = Double(activityTime / dayTotal) * 360
-        DrawShape.lastSlideAngle = temp
-//        }
-        return temp
+        let angle = Double(activityTime / dayTotal) * 360
+        DrawShape.currentAngle += angle
+        endAngle = DrawShape.currentAngle
+        
+        return endAngle
     }
 }
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		h8CQVn0t3FhgY+hON2lMMcOE/LQ=
+		zTfa/GAg5GPxUMMl972mU//1JsU=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,19 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		Qea+YcBlkUshIMeVhlzzqRV3dYw=
+		q3QOq5r4nSrMk+BJDE68sh8V3pw=
+		</data>
+		<key>Frameworks/Charts.framework/Charts</key>
+		<data>
+		MPxjq1R2+g72RhiCocZmKv0z2eE=
+		</data>
+		<key>Frameworks/Charts.framework/Info.plist</key>
+		<data>
+		VlJJD+tPdhYLHfeHcMYhrAoliUM=
+		</data>
+		<key>Frameworks/Charts.framework/_CodeSignature/CodeResources</key>
+		<data>
+		tgO/XqTjXbPMzzuZsj+XFXQ2GjM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,7 +38,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		9iaRTiuoJ1xxh/VahpfZGJ2GOS0=
+		MrRDyi4tcDc9WKFFojcxeFD/5nw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CLguKkA+GDsa2sxzJ/xvx3602aOsYX0hagpgv1ECQuU=
+			6tpV+gfpwU3E4w/Of+KCzhlu0ebR0VwKNtwZcXLCTYg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -49,14 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PHaeEwEH2oz4X+ujUyXWBYetCE8xeNPc7Y6tr8136c=
+			+0HXhUuB80Va2RSJCTk2BWCDyQo0amojP8k+adINt/0=
+			</data>
+		</dict>
+		<key>Frameworks/Charts.framework/Charts</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yf2sVZVhx50gw0yBCvH+nLh9rZhXpVxBLObF2xVeyVU=
+			</data>
+		</dict>
+		<key>Frameworks/Charts.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jvzJegI7AQwQ8r5Tm8eRg1ZjLUBOXsyytivPGJZuU/w=
+			</data>
+		</dict>
+		<key>Frameworks/Charts.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qvinzevCZD5UQHGH41Dbsk94U33tk7sQVqUCuESYTOY=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mKuw2rjlHgLy5TtrhegtdDmuQ4k4H6pcxZ1jgtwtgpc=
+			OJjAuSSXcAAE3IHYE/iGtk5U/fcVIBK9HpG+dhsg39s=
 			</data>
 		</dict>
 	</dict>
