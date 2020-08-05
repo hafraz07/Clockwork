@@ -822,6 +822,40 @@
 			<key>uniqueIdentifier</key>
 			<string>3B5CFC54-A6E3-419D-8F54-83AB5F18D4F9</string>
 		</dict>
+		<key>3BB3876A-2E85-4C46-963B-516167DE5058</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3BB3876A-2E85-4C46-963B-516167DE5058.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Preview Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>618326281.60293901</real>
+			<key>timeStoppedRecording</key>
+			<real>618326287.61076701</real>
+			<key>title</key>
+			<string>Preview Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>3BB3876A-2E85-4C46-963B-516167DE5058</string>
+		</dict>
 		<key>4007BC90-FDD1-4FB4-A7AA-73CA90F81C8C</key>
 		<dict>
 			<key>className</key>
@@ -1297,6 +1331,40 @@
 			<string>Preview Clockwork</string>
 			<key>uniqueIdentifier</key>
 			<string>647BDC6B-D9B8-43A2-AFE8-CD0B6B65D18C</string>
+		</dict>
+		<key>653BD0D0-DDC7-4E8C-9D43-949F2480FC6A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>653BD0D0-DDC7-4E8C-9D43-949F2480FC6A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Preview Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>618326409.43100905</real>
+			<key>timeStoppedRecording</key>
+			<real>618326411.59389305</real>
+			<key>title</key>
+			<string>Preview Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>653BD0D0-DDC7-4E8C-9D43-949F2480FC6A</string>
 		</dict>
 		<key>664FA1BB-52A6-43FE-8AC0-E5C9E633B1E9</key>
 		<dict>

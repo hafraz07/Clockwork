@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "03923d2cd8786fe50d638b1f1dd511ee"
-build_time: [1596631274, 399396000]
+build_time: [1596633609, 551267000]
 inputs:
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryRow.swift": [1595917101, 505331308]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Stopwatch.swift": [1595388987, 367615299]
@@ -18,4 +18,4 @@ inputs:
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Toast.swift": [1595610799, 316903400]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayListView.swift": [1595780024, 964199053]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/DayRow.swift": [1595858675, 582392893]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ChartView.swift": [1596631008, 235760660]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ChartView.swift": [1596633609, 422704724]

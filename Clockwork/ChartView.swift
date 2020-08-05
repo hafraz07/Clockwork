@@ -10,14 +10,17 @@ import SwiftUI
 
 struct ChartView: View {
     @ObservedObject var day: Day
-    @State var activityTimes: [Double] = [20, 40, 30, 2]
+    @State var activityTimes: [Double] = []
     var dayTotalTime: Double {
         Double(day.totalHours * 60 + day.totalMinutes * 60 + day.totalSeconds)
     }
     
     init(day: Day) {
         self.day = day
-        self.addActivityTimes()
+        let activities = day.activities.values.map {
+           Double(($0.hours * 60 * 60) + ($0.minutes * 60) + $0.seconds)
+        }
+        self._activityTimes = State(initialValue: activities)
     }
     
     func getSlideColor(activityName: String)-> Color {
@@ -38,14 +41,7 @@ struct ChartView: View {
         }
         return "Default"
     }
-    
-    func addActivityTimes() {
-        for (_, activity) in self.day.activities {
-            let activityTime = Double((activity.hours * 60 * 60) + (activity.minutes * 60) + activity.seconds)
-            self.activityTimes.append(activityTime)
-        }
-    }
-    
+        
     var body: some View {
         ScrollView(showsIndicators: false) {
 //        GeometryReader {g in
@@ -80,7 +76,7 @@ struct ChartView: View {
                                 
                                 Text(self.getDisplayTime(activityName: activityName))
                                     .fontWeight(.bold)
-                                    .padding(.leading, 10)
+                                    .padding([.leading, .trailing], 10)
                             } //Inner HStack
                         } //GeometryReader
                     } //Outer HStack
