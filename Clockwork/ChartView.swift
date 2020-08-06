@@ -44,22 +44,8 @@ struct ChartView: View {
         
     var body: some View {
         ScrollView(showsIndicators: false) {
-//        GeometryReader {g in
-//            ZStack {
-//                ForEach(Array(self.day.activities.keys), id:\.self) {activityName in
-//                    DrawShape(center: CGPoint(x: g.frame(in: .global).width / 2,
-//                                              y: g.frame(in: .global).height / 2),
-//                              activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0),
-//                              dayTotal: self.dayTotalTime, index: self.index)
-//                }//ForEach
-//            }//ZStack
-//        }//GeometryReader
-//        .frame(height: 360) // since radius is 180
-//        .padding(.top, 20)
-//            .clipShape(Circle())
-//            .shadow(radius: 8)
-            PieChartView(data: self.activityTimes, title: "Test", form: ChartForm.large)
-                .padding(.top, 100)
+            PieChartView(data: self.activityTimes, title: self.day.displayDate, form: ChartForm.large)
+                .padding(.top, 120)
             
             VStack {
                 ForEach(Array(self.day.activities.keys), id:\.self) {activityName in
@@ -84,7 +70,7 @@ struct ChartView: View {
                 } //ForEach
         } //VStack
                 .padding(.top, 70)
-//            Spacer()
+            Spacer()
         } //ScrollView
     }
 }

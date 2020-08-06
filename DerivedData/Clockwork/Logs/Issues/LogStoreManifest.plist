@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1345CA86-1057-40AB-B9F2-20118F59C40B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>1345CA86-1057-40AB-B9F2-20118F59C40B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Charts-hfcalqevwgkkeigjuekyvuwpiuli</string>
-			<key>timeStartedRecording</key>
-			<real>618324081.33039999</real>
-			<key>timeStoppedRecording</key>
-			<real>618324095.72668695</real>
-			<key>title</key>
-			<string>Build target Charts</string>
-			<key>uniqueIdentifier</key>
-			<string>1345CA86-1057-40AB-B9F2-20118F59C40B</string>
-		</dict>
-		<key>7BE2A3FA-A13C-4B42-99D9-FE8190412276</key>
+		<key>031A9C91-40CC-446F-9AD6-39C5F950EA84</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>7BE2A3FA-A13C-4B42-99D9-FE8190412276.xcactivitylog</string>
+			<string>031A9C91-40CC-446F-9AD6-39C5F950EA84.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +26,13 @@
 			<key>signature</key>
 			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
 			<key>timeStartedRecording</key>
-			<real>618326409.54287302</real>
+			<real>618399894.58630502</real>
 			<key>timeStoppedRecording</key>
-			<real>618326411.57959795</real>
+			<real>618399905.36423898</real>
 			<key>title</key>
 			<string>Build target Clockwork</string>
 			<key>uniqueIdentifier</key>
-			<string>7BE2A3FA-A13C-4B42-99D9-FE8190412276</string>
+			<string>031A9C91-40CC-446F-9AD6-39C5F950EA84</string>
 		</dict>
 		<key>8D9DEB97-761B-46DD-BD62-11686EE88FBC</key>
 		<dict>
@@ -89,6 +61,34 @@
 			<string>Build target SwiftUICharts</string>
 			<key>uniqueIdentifier</key>
 			<string>8D9DEB97-761B-46DD-BD62-11686EE88FBC</string>
+		</dict>
+		<key>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Charts-hfcalqevwgkkeigjuekyvuwpiuli</string>
+			<key>timeStartedRecording</key>
+			<real>618399875.92732298</real>
+			<key>timeStoppedRecording</key>
+			<real>618399895.274701</real>
+			<key>title</key>
+			<string>Build target Charts</string>
+			<key>uniqueIdentifier</key>
+			<string>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

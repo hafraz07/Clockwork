@@ -14,16 +14,9 @@ enum StopwatchMode {
     case running
 }
 
-class TimeBreakdown: ObservableObject {
-    @Published var hours = 0
-    @Published var minutes = 0
-    @Published var secondsElapsed = 0
-}
-
 class StopwatchManager: ObservableObject {
     @Published var mode: StopwatchMode = .stopped
     var timer = Timer()
-//    @ObservedObject var timeKeeper = TimeBreakdown()
     @Published var hours = 0
     @Published var minutes = 0
     @Published var secondsElapsed = 0
@@ -46,8 +39,6 @@ class StopwatchManager: ObservableObject {
     func stop() {
         timer.invalidate()
         mode = .stopped
-        //Appends activity to env object array
-//        self.userData.activities.append(Activity(hours: self.hours, minutes: self.minutes, seconds: self.secondsElapsed))
         reset()
     }
     

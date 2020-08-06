@@ -10,12 +10,12 @@ import Foundation
 import SwiftUI
 
 class UserData: ObservableObject {
-    @Published var days: [String:Day] = ["30 Jul 2020" : Day()]
+    @Published var days: [String:Day] = [:]
 }
 
 class Day: ObservableObject, Identifiable {
     let uuid = UUID().uuidString
-    @Published var activities: [String:Activity] = ["Gym" : Activity(name: "Gym", hours: 1, minutes: 2, seconds: 5), "Studying" : Activity(name: "Studying", hours: 0, minutes: 25, seconds: 48)]
+    @Published var activities: [String:Activity] = [:]
     var displayDate: String
     @Published var totalHours: Int = 0
     @Published var totalMinutes: Int = 0
