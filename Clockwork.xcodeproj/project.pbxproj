@@ -11,11 +11,6 @@
 		4A06BCB424C961D600817153 /* DayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB324C961D600817153 /* DayRow.swift */; };
 		4A19696224D45DB0004CAA94 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A19695F24D45DA9004CAA94 /* Charts.framework */; };
 		4A19696324D45DB0004CAA94 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A19695F24D45DA9004CAA94 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A19696B24DACEC7004CAA94 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19696724DACEC6004CAA94 /* PieChartRow.swift */; };
-		4A19696C24DACEC7004CAA94 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19696824DACEC6004CAA94 /* PieChartHelpers.swift */; };
-		4A19696D24DACEC7004CAA94 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19696924DACEC7004CAA94 /* PieChartCell.swift */; };
-		4A19696E24DACEC7004CAA94 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19696A24DACEC7004CAA94 /* PieChartView.swift */; };
-		4A19697024DACF42004CAA94 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19696F24DACF42004CAA94 /* Helpers.swift */; };
 		4A45518824CB491D004B80E0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518724CB491D004B80E0 /* Toast.swift */; };
 		4A45519024CF1673004B80E0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518E24CDBDB2004B80E0 /* ChartView.swift */; };
 		4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */; };
@@ -29,6 +24,11 @@
 		4AD323FE24C49C0E00E46767 /* HistoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD323FD24C49C0E00E46767 /* HistoryRow.swift */; };
 		4AD3240024C4AB7E00E46767 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD323FF24C4AB7E00E46767 /* Stopwatch.swift */; };
 		4AD3240224C709FB00E46767 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3240124C709FB00E46767 /* Activity.swift */; };
+		4AD8343924DDBC94007CDBA8 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8343524DDBC93007CDBA8 /* PieChartHelpers.swift */; };
+		4AD8343A24DDBC94007CDBA8 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8343624DDBC93007CDBA8 /* PieChartCell.swift */; };
+		4AD8343B24DDBC94007CDBA8 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8343724DDBC93007CDBA8 /* PieChartRow.swift */; };
+		4AD8343C24DDBC94007CDBA8 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8343824DDBC94007CDBA8 /* PieChartView.swift */; };
+		4AD8343E24DDBCA0007CDBA8 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD8343D24DDBCA0007CDBA8 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +66,6 @@
 		4A06BCB124C9593600817153 /* DayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListView.swift; sourceTree = "<group>"; };
 		4A06BCB324C961D600817153 /* DayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRow.swift; sourceTree = "<group>"; };
 		4A19695924D45DA8004CAA94 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
-		4A19696724DACEC6004CAA94 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChartRow.swift; path = "../../ChartView-master/Sources/SwiftUICharts/PieChart/PieChartRow.swift"; sourceTree = "<group>"; };
-		4A19696824DACEC6004CAA94 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChartHelpers.swift; path = "../../ChartView-master/Sources/SwiftUICharts/PieChart/PieChartHelpers.swift"; sourceTree = "<group>"; };
-		4A19696924DACEC7004CAA94 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChartCell.swift; path = "../../ChartView-master/Sources/SwiftUICharts/PieChart/PieChartCell.swift"; sourceTree = "<group>"; };
-		4A19696A24DACEC7004CAA94 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PieChartView.swift; path = "../../ChartView-master/Sources/SwiftUICharts/PieChart/PieChartView.swift"; sourceTree = "<group>"; };
-		4A19696F24DACF42004CAA94 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = "../../ChartView-master/Sources/SwiftUICharts/Helpers.swift"; sourceTree = "<group>"; };
 		4A45518724CB491D004B80E0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		4A45518E24CDBDB2004B80E0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		4A81C09B24C4904C0042D6B7 /* Clockwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clockwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +81,11 @@
 		4AD323FD24C49C0E00E46767 /* HistoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRow.swift; sourceTree = "<group>"; };
 		4AD323FF24C4AB7E00E46767 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		4AD3240124C709FB00E46767 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		4AD8343524DDBC93007CDBA8 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
+		4AD8343624DDBC93007CDBA8 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		4AD8343724DDBC93007CDBA8 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
+		4AD8343824DDBC94007CDBA8 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		4AD8343D24DDBCA0007CDBA8 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,11 +137,11 @@
 		4A81C09D24C4904C0042D6B7 /* Clockwork */ = {
 			isa = PBXGroup;
 			children = (
-				4A19696F24DACF42004CAA94 /* Helpers.swift */,
-				4A19696924DACEC7004CAA94 /* PieChartCell.swift */,
-				4A19696824DACEC6004CAA94 /* PieChartHelpers.swift */,
-				4A19696724DACEC6004CAA94 /* PieChartRow.swift */,
-				4A19696A24DACEC7004CAA94 /* PieChartView.swift */,
+				4AD8343D24DDBCA0007CDBA8 /* Helpers.swift */,
+				4AD8343624DDBC93007CDBA8 /* PieChartCell.swift */,
+				4AD8343524DDBC93007CDBA8 /* PieChartHelpers.swift */,
+				4AD8343724DDBC93007CDBA8 /* PieChartRow.swift */,
+				4AD8343824DDBC94007CDBA8 /* PieChartView.swift */,
 				4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */,
 				4A81C0A024C4904C0042D6B7 /* SceneDelegate.swift */,
 				4AD3240124C709FB00E46767 /* Activity.swift */,
@@ -274,18 +274,18 @@
 				4AD3240224C709FB00E46767 /* Activity.swift in Sources */,
 				4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */,
 				4AD323FC24C4971200E46767 /* HistoryListView.swift in Sources */,
-				4A19696D24DACEC7004CAA94 /* PieChartCell.swift in Sources */,
-				4A19696C24DACEC7004CAA94 /* PieChartHelpers.swift in Sources */,
 				4A81C0A124C4904C0042D6B7 /* SceneDelegate.swift in Sources */,
-				4A19696E24DACEC7004CAA94 /* PieChartView.swift in Sources */,
+				4AD8343B24DDBC94007CDBA8 /* PieChartRow.swift in Sources */,
 				4A81C0A324C4904C0042D6B7 /* ContentView.swift in Sources */,
-				4A19697024DACF42004CAA94 /* Helpers.swift in Sources */,
-				4A19696B24DACEC7004CAA94 /* PieChartRow.swift in Sources */,
+				4AD8343C24DDBC94007CDBA8 /* PieChartView.swift in Sources */,
+				4AD8343A24DDBC94007CDBA8 /* PieChartCell.swift in Sources */,
+				4AD8343E24DDBCA0007CDBA8 /* Helpers.swift in Sources */,
 				4A97DC8324C8258F0047C7BB /* NameModalView.swift in Sources */,
 				4A45518824CB491D004B80E0 /* Toast.swift in Sources */,
 				4A06BCB224C9593600817153 /* DayListView.swift in Sources */,
 				4A06BCB424C961D600817153 /* DayRow.swift in Sources */,
 				4A45519024CF1673004B80E0 /* ChartView.swift in Sources */,
+				4AD8343924DDBC94007CDBA8 /* PieChartHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

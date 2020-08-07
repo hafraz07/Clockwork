@@ -6,34 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>25E292F1-276A-40EE-9E30-1F1EDD7B26BA</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.ProvisioningLog</string>
-			<key>fileName</key>
-			<string>25E292F1-276A-40EE-9E30-1F1EDD7B26BA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Update Signing</string>
-			<key>timeStartedRecording</key>
-			<real>617626116.05395901</real>
-			<key>timeStoppedRecording</key>
-			<real>617626122.42230296</real>
-			<key>title</key>
-			<string>Update Signing</string>
-			<key>uniqueIdentifier</key>
-			<string>25E292F1-276A-40EE-9E30-1F1EDD7B26BA</string>
-		</dict>
 		<key>639593DC-F06D-456F-9AC1-2D0572136D49</key>
 		<dict>
 			<key>className</key>

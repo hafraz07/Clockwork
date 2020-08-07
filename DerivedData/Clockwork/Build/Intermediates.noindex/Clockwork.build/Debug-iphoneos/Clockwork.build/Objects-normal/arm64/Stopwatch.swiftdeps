@@ -26,7 +26,6 @@ provides-dynamic-lookup:
 - "start"
 - "stop"
 - "timer"
-- "totalSeconds"
 depends-top-level:
 - !private "+="
 - "=="
@@ -95,7 +94,6 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "reset"]
 - !private ["7Combine16ObservableObjectP", "secondsElapsed"]
 - !private ["7Combine16ObservableObjectP", "timer"]
-- !private ["7Combine16ObservableObjectP", "totalSeconds"]
 - ["7Combine9PublishedV", "init"]
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["9Clockwork16StopwatchManagerC", "$hours"]
@@ -123,7 +121,6 @@ depends-member:
 - ["9Clockwork16StopwatchManagerC", "start"]
 - ["9Clockwork16StopwatchManagerC", "stop"]
 - ["9Clockwork16StopwatchManagerC", "timer"]
-- ["9Clockwork16StopwatchManagerC", "totalSeconds"]
 - ["9Clockwork13StopwatchModeO", "=="]
 - ["9Clockwork13StopwatchModeO", "__derived_enum_equals"]
 - ["9Clockwork13StopwatchModeO", "_rawHashValue"]
@@ -191,4 +188,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "18ecc38958968c7d360d048125b22cf5"
+interface-hash: "69555b00d274b76f65ebe82b7d998cf2"

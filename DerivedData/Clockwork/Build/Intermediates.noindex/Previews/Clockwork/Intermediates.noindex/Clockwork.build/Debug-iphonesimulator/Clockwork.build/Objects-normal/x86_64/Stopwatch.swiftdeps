@@ -1,15 +1,12 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "StopwatchMode"
-- "TimeBreakdown"
 - "StopwatchManager"
 provides-nominal:
 - "9Clockwork13StopwatchModeO"
-- "9Clockwork13TimeBreakdownC"
 - "9Clockwork16StopwatchManagerC"
 provides-member:
 - ["9Clockwork13StopwatchModeO", ""]
-- ["9Clockwork13TimeBreakdownC", ""]
 - ["9Clockwork16StopwatchManagerC", ""]
 provides-dynamic-lookup:
 - "$hours"
@@ -41,7 +38,6 @@ depends-top-level:
 - "Published"
 - "StopwatchManager"
 - "StopwatchMode"
-- "TimeBreakdown"
 - "Timer"
 depends-member:
 - ["s7CVarArgP", "init"]
@@ -134,21 +130,6 @@ depends-member:
 - ["9Clockwork13StopwatchModeO", "paused"]
 - ["9Clockwork13StopwatchModeO", "running"]
 - ["9Clockwork13StopwatchModeO", "stopped"]
-- ["9Clockwork13TimeBreakdownC", "$hours"]
-- ["9Clockwork13TimeBreakdownC", "$minutes"]
-- ["9Clockwork13TimeBreakdownC", "$secondsElapsed"]
-- ["9Clockwork13TimeBreakdownC", "ObjectWillChangePublisher"]
-- ["9Clockwork13TimeBreakdownC", "Published"]
-- ["9Clockwork13TimeBreakdownC", "_Default_ObjectWillChangePublisher"]
-- !private ["9Clockwork13TimeBreakdownC", "_hours"]
-- !private ["9Clockwork13TimeBreakdownC", "_minutes"]
-- !private ["9Clockwork13TimeBreakdownC", "_secondsElapsed"]
-- ["9Clockwork13TimeBreakdownC", "deinit"]
-- ["9Clockwork13TimeBreakdownC", "hours"]
-- ["9Clockwork13TimeBreakdownC", "init"]
-- ["9Clockwork13TimeBreakdownC", "minutes"]
-- ["9Clockwork13TimeBreakdownC", "objectWillChange"]
-- ["9Clockwork13TimeBreakdownC", "secondsElapsed"]
 - ["So7NSTimerC", "init"]
 - !private ["So7NSTimerC", "invalidate"]
 - !private ["So7NSTimerC", "scheduledTimer"]
@@ -171,7 +152,6 @@ depends-nominal:
 - "7Combine9PublishedV"
 - "9Clockwork16StopwatchManagerC"
 - "9Clockwork13StopwatchModeO"
-- "9Clockwork13TimeBreakdownC"
 - "So7NSTimerC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -208,4 +188,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "21dbb2558dc160fc5d0fffc12c8bab19"
+interface-hash: "69555b00d274b76f65ebe82b7d998cf2"
