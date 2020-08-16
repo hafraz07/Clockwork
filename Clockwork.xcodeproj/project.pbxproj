@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A06BCB224C9593600817153 /* DayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB124C9593600817153 /* DayListView.swift */; };
 		4A06BCB424C961D600817153 /* DayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A06BCB324C961D600817153 /* DayRow.swift */; };
-		4A19696224D45DB0004CAA94 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A19695F24D45DA9004CAA94 /* Charts.framework */; };
-		4A19696324D45DB0004CAA94 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A19695F24D45DA9004CAA94 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A45518824CB491D004B80E0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518724CB491D004B80E0 /* Toast.swift */; };
 		4A45519024CF1673004B80E0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45518E24CDBDB2004B80E0 /* ChartView.swift */; };
 		4A81C09F24C4904C0042D6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A81C09E24C4904C0042D6B7 /* AppDelegate.swift */; };
@@ -48,20 +46,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4A19696424D45DB1004CAA94 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4A19696324D45DB0004CAA94 /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		4A06BCB124C9593600817153 /* DayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayListView.swift; sourceTree = "<group>"; };
 		4A06BCB324C961D600817153 /* DayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRow.swift; sourceTree = "<group>"; };
@@ -93,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A19696224D45DB0004CAA94 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +163,6 @@
 				4A81C09724C4904C0042D6B7 /* Sources */,
 				4A81C09824C4904C0042D6B7 /* Frameworks */,
 				4A81C09924C4904C0042D6B7 /* Resources */,
-				4A19696424D45DB1004CAA94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Afraz Hasan";
 				TargetAttributes = {
 					4A81C09A24C4904C0042D6B7 = {
@@ -329,6 +311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -389,6 +372,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

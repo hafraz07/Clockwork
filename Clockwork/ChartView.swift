@@ -11,19 +11,19 @@ import SwiftUI
 struct ChartView: View {
     @ObservedObject var day: Day
     @State var activityTimes: [Double] = []
-    @State var actityNames: [String] = []
+    @State var activities: [Activity] = []
     var dayTotalTime: Double {
         Double(day.totalHours * 60 + day.totalMinutes * 60 + day.totalSeconds)
     }
     
     init(day: Day) {
         self.day = day
-        let activityNames = Array(day.activities.keys)
-        let activities = day.activities.values.map {
+        let activities = Array(day.activities.values)
+        let activityTimes = day.activities.values.map {
            Double(($0.hours * 60 * 60) + ($0.minutes * 60) + $0.seconds)
         }
-        self._activityTimes = State(initialValue: activities)
-        self._actityNames = State(initialValue: activityNames)
+        self._activityTimes = State(initialValue: activityTimes)
+        self._activities = State(initialValue: activities)
     }
     
     func getSlideColor(activityName: String)-> Color {
@@ -47,7 +47,7 @@ struct ChartView: View {
         
     var body: some View {
         ScrollView(showsIndicators: false) {
-            PieChartView(data: PieData(data: self.activityTimes), title: self.day.displayDate, form: ChartForm.large)
+            PieChartView(data: PieData(data: self.activityTimes, activities: self.activities), title: self.day.displayDate, form: ChartForm.large)
                 .padding(.top, 120)
             
             VStack {

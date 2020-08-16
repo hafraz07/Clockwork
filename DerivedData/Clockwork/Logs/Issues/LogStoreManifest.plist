@@ -6,33 +6,33 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0D064CB3-9E8B-4581-962B-45BB25CA759D</key>
+		<key>5D22E809-7DDB-43BF-90F7-A1EA3D93BBB4</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
 			<key>documentTypeString</key>
 			<string>&lt;nil&gt;</string>
 			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>0D064CB3-9E8B-4581-962B-45BB25CA759D.xcactivitylog</string>
+			<string>5D22E809-7DDB-43BF-90F7-A1EA3D93BBB4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
-			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
+			<string>Charts-hfcalqevwgkkeigjuekyvuwpiuli</string>
 			<key>timeStartedRecording</key>
-			<real>618513571.965114</real>
+			<real>618514929.38668799</real>
 			<key>timeStoppedRecording</key>
-			<real>618513577.22463202</real>
+			<real>618514962.45434201</real>
 			<key>title</key>
-			<string>Build target Clockwork</string>
+			<string>Build target Charts</string>
 			<key>uniqueIdentifier</key>
-			<string>0D064CB3-9E8B-4581-962B-45BB25CA759D</string>
+			<string>5D22E809-7DDB-43BF-90F7-A1EA3D93BBB4</string>
 		</dict>
 		<key>8D9DEB97-761B-46DD-BD62-11686EE88FBC</key>
 		<dict>
@@ -62,33 +62,33 @@
 			<key>uniqueIdentifier</key>
 			<string>8D9DEB97-761B-46DD-BD62-11686EE88FBC</string>
 		</dict>
-		<key>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054</key>
+		<key>ECEB22F9-371D-4236-AEB4-03E932660999</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
 			<key>documentTypeString</key>
 			<string>&lt;nil&gt;</string>
 			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054.xcactivitylog</string>
+			<string>ECEB22F9-371D-4236-AEB4-03E932660999.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>signature</key>
-			<string>Charts-hfcalqevwgkkeigjuekyvuwpiuli</string>
+			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
 			<key>timeStartedRecording</key>
-			<real>618399875.92732298</real>
+			<real>619254750.357656</real>
 			<key>timeStoppedRecording</key>
-			<real>618399895.274701</real>
+			<real>619254753.27522898</real>
 			<key>title</key>
-			<string>Build target Charts</string>
+			<string>Build target Clockwork</string>
 			<key>uniqueIdentifier</key>
-			<string>F61ADA3B-A6E8-4C82-B9CC-9B5C350E3054</string>
+			<string>ECEB22F9-371D-4236-AEB4-03E932660999</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

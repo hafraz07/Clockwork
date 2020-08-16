@@ -10,9 +10,11 @@ import SwiftUI
 
 class PieData : ObservableObject {
     @Published var data: [Double]
+    var activities: [Activity]
     
-    public init(data: [Double]) {
+    public init(data: [Double], activities: [Activity]) {
         self.data = data
+        self.activities = activities
     }
 }
 
@@ -67,7 +69,8 @@ struct PieChartView : View {
                         .foregroundColor(self.style.legendTextColor)
                 }.padding()
                 PieChartRow(pieData: data, backgroundColor: self.style.backgroundColor, accentColor: self.style.accentColor, showValue: $showValue, currentValue: $currentValue)
-                    .foregroundColor(self.style.accentColor).padding(self.legend != nil ? 0 : 12).offset(y:self.legend != nil ? 0 : -10)
+//                    .foregroundColor(self.style.accentColor)
+                    .padding(self.legend != nil ? 0 : 12).offset(y:self.legend != nil ? 0 : -10)
                 if(self.legend != nil) {
                     Text(self.legend!)
                         .font(.headline)
@@ -81,9 +84,9 @@ struct PieChartView : View {
 }
 
 #if DEBUG
-struct PieChartView_Previews : PreviewProvider {
-    static var previews: some View {
-        PieChartView(data: PieData(data: [56,78,53,65,54]), title: "Title", legend: "Legend")
-    }
-}
+//struct PieChartView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        PieChartView(data: PieData(data: [56,78,53,65,54]), title: "Title", legend: "Legend")
+//    }
+//}
 #endif

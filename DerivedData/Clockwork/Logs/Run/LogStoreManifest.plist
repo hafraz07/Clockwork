@@ -6,6 +6,108 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>257F069B-FB6C-47A3-A997-963972A1100A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>257F069B-FB6C-47A3-A997-963972A1100A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>619254702.328174</real>
+			<key>timeStoppedRecording</key>
+			<real>619254750.44316399</real>
+			<key>title</key>
+			<string>Run Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>257F069B-FB6C-47A3-A997-963972A1100A</string>
+		</dict>
+		<key>2C004068-8E20-4482-979C-448E102077A9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2C004068-8E20-4482-979C-448E102077A9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>619254586.83309305</real>
+			<key>timeStoppedRecording</key>
+			<real>619254697.15034294</real>
+			<key>title</key>
+			<string>Run Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>2C004068-8E20-4482-979C-448E102077A9</string>
+		</dict>
+		<key>4D924B2F-BF76-441D-B8CB-9248E8306F26</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4D924B2F-BF76-441D-B8CB-9248E8306F26.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Clockwork project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Clockwork</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Clockwork</string>
+			<key>timeStartedRecording</key>
+			<real>619254753.29289103</real>
+			<key>timeStoppedRecording</key>
+			<real>619254821.40700197</real>
+			<key>title</key>
+			<string>Run Clockwork</string>
+			<key>uniqueIdentifier</key>
+			<string>4D924B2F-BF76-441D-B8CB-9248E8306F26</string>
+		</dict>
 		<key>A1D3EE8A-B1DD-4B86-9554-E3DBAE19D89D</key>
 		<dict>
 			<key>className</key>

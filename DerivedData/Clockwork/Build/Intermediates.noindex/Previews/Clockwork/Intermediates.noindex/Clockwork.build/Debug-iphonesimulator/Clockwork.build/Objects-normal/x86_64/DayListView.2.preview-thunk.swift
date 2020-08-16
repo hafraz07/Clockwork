@@ -24,10 +24,10 @@ extension DayListView {
                             }
                         }
                     }
-                    .navigationBarTitle(Text(__designTimeString("#3958.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[0].[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Day History")))
+                    .navigationBarTitle(Text(__designTimeString("#10674.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[0].[0].modifier[0].arg[0].value.arg[0].value.[0].value", fallback: "Day History")))
                 }
                 else {
-                    Text(__designTimeString("#3958.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Days"))
+                    Text(__designTimeString("#10674.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[0].[1].[0].arg[0].value.[0].value", fallback: "No Days"))
                 }
                 
                 //Links to stopwatch view from modal
@@ -36,10 +36,10 @@ extension DayListView {
                     EmptyView()
                 }.hidden()
                 
-                    Image(systemName: __designTimeString("#3958.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[0].value.[0].value", fallback: "plus.circle.fill"))
+                    Image(systemName: __designTimeString("#10674.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].arg[0].value.[0].value", fallback: "plus.circle.fill"))
                         .resizable()
                         .scaledToFit()
-                        .frame(width: __designTimeInteger("#3958.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[2].arg[0].value", fallback: 50), height: __designTimeInteger("#3958.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[2].arg[1].value", fallback: 50))
+                        .frame(width: __designTimeInteger("#10674.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[2].arg[0].value", fallback: 50), height: __designTimeInteger("#10674.[1].[7].property.[0].[0].arg[0].value.[0].arg[1].value.[2].modifier[2].arg[1].value", fallback: 50))
                         .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
@@ -61,7 +61,7 @@ extension DayListView {
             }
         }
         .toast(isPresented: self.$showToast) {
-            Text(__designTimeString("#3958.[1].[7].property.[0].[0].modifier[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Day already exists"))
+            Text(__designTimeString("#10674.[1].[7].property.[0].[0].modifier[0].arg[1].value.[0].arg[0].value.[0].value", fallback: "Day already exists"))
         })
 #sourceLocation()
     }
