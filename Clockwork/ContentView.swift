@@ -39,35 +39,20 @@ struct ContentView: View {
             
             Text(timeString(accumulatedTime: self.stopWatch.totalRunningTime))
                 .font(.largeTitle)
-                .offset(y:300)
+                .offset(y:190)
             
             
             if (stopWatch.mode == .stopped) {
                 Button(action: {self.stopWatch.start()}) {
                     TimerButton(label: "Start", buttonColor: Color.blue)
                 }
-                .offset(y:400)
+                .offset(y:240)
             }
             else if (stopWatch.mode == .running) {
                 Button(action: {self.stopWatch.pause()}) {
                     TimerButton(label: "Pause", buttonColor: Color.blue)
                 }
-                .offset(y:400)
-                    Button(action: {
-                        self.addActivity()
-                        self.stopWatch.stop()
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        TimerButton(label: "Stop", buttonColor: Color.red)
-                    }
-                    .offset(y:200)
-                    .padding(.top, 30)
-            }
-            else if (stopWatch.mode == .paused) {
-                Button(action: {self.stopWatch.start()}) {
-                    TimerButton(label: "Resume", buttonColor: Color.blue)
-                }
-                .offset(y:400)
+                .offset(y:240)
                 Button(action: {
                     self.addActivity()
                     self.stopWatch.stop()
@@ -75,7 +60,22 @@ struct ContentView: View {
                 }) {
                     TimerButton(label: "Stop", buttonColor: Color.red)
                 }
-                .offset(y:200)
+                .offset(y:220)
+                .padding(.top, 30)
+            }
+            else if (stopWatch.mode == .paused) {
+                Button(action: {self.stopWatch.start()}) {
+                    TimerButton(label: "Resume", buttonColor: Color.blue)
+                }
+                .offset(y:240)
+                Button(action: {
+                    self.addActivity()
+                    self.stopWatch.stop()
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    TimerButton(label: "Stop", buttonColor: Color.red)
+                }
+                .offset(y:220)
                 .padding(.top, 30)
             }
             Spacer()

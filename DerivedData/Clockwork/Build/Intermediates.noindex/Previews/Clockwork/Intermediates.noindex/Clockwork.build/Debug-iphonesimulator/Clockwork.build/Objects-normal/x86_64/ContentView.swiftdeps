@@ -13,6 +13,7 @@ provides-member:
 - ["9Clockwork11TimerButtonV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "!="
 - !private "%"
 - !private "+="
 - !private "/"
@@ -29,6 +30,7 @@ depends-top-level:
 - !private "FloatLiteralType"
 - !private "Int"
 - !private "IntegerLiteralType"
+- !private "NotificationCenter"
 - "ObservedObject"
 - "PresentationMode"
 - "PreviewProvider"
@@ -39,6 +41,7 @@ depends-top-level:
 - "Text"
 - "TimeInterval"
 - "TimerButton"
+- !private "UIApplication"
 - !private "VStack"
 - "View"
 - "activityName"
@@ -61,8 +64,12 @@ depends-member:
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["7SwiftUI6ButtonV", "offset"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "init"]
+- !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "publisher"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "willEnterForegroundNotification"]
+- !private ["s7CVarArgP", "willResignActiveNotification"]
 - ["Sl", ""]
 - !private ["Sl", "init"]
 - !private ["Sl", "subscript"]
@@ -82,6 +89,7 @@ depends-member:
 - ["9Clockwork11ContentViewV", "Default_Body"]
 - ["9Clockwork11ContentViewV", "Environment"]
 - !private ["9Clockwork11ContentViewV", "Int"]
+- !private ["9Clockwork11ContentViewV", "NotificationCenter"]
 - ["9Clockwork11ContentViewV", "ObservedObject"]
 - ["9Clockwork11ContentViewV", "PresentationMode"]
 - !private ["9Clockwork11ContentViewV", "Spacer"]
@@ -90,6 +98,7 @@ depends-member:
 - !private ["9Clockwork11ContentViewV", "Text"]
 - ["9Clockwork11ContentViewV", "TimeInterval"]
 - !private ["9Clockwork11ContentViewV", "TimerButton"]
+- !private ["9Clockwork11ContentViewV", "UIApplication"]
 - !private ["9Clockwork11ContentViewV", "VStack"]
 - ["9Clockwork11ContentViewV", "View"]
 - ["9Clockwork11ContentViewV", ""]
@@ -120,13 +129,17 @@ depends-member:
 - ["9Clockwork20ContentView_PreviewsV", "init"]
 - ["9Clockwork20ContentView_PreviewsV", "platform"]
 - ["9Clockwork20ContentView_PreviewsV", "previews"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "headline"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "largeTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "publisher"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s28CustomDebugStringConvertibleP", "willEnterForegroundNotification"]
+- !private ["s28CustomDebugStringConvertibleP", "willResignActiveNotification"]
 - !private ["s17CustomReflectableP", "headline"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "largeTitle"]
@@ -136,11 +149,15 @@ depends-member:
 - !private ["s17CustomReflectableP", "white"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "blue"]
+- !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "presentationMode"]
+- !private ["s23CustomStringConvertibleP", "publisher"]
 - !private ["s23CustomStringConvertibleP", "red"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "white"]
+- !private ["s23CustomStringConvertibleP", "willEnterForegroundNotification"]
+- !private ["s23CustomStringConvertibleP", "willResignActiveNotification"]
 - ["9Clockwork3DayC", ""]
 - !private ["9Clockwork3DayC", "activities"]
 - !private ["9Clockwork3DayC", "calculateTotalTime"]
@@ -171,6 +188,7 @@ depends-member:
 - !private ["SQ", "=="]
 - ["SQ", ""]
 - !private ["SQ", "blue"]
+- !private ["SQ", "default"]
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "headline"]
@@ -181,6 +199,7 @@ depends-member:
 - !private ["SQ", "offset"]
 - !private ["SQ", "padding"]
 - !private ["SQ", "paused"]
+- !private ["SQ", "publisher"]
 - !private ["SQ", "red"]
 - !private ["SQ", "running"]
 - !private ["SQ", "some"]
@@ -189,6 +208,8 @@ depends-member:
 - !private ["SQ", "top"]
 - !private ["SQ", "vertical"]
 - !private ["SQ", "white"]
+- !private ["SQ", "willEnterForegroundNotification"]
+- !private ["SQ", "willResignActiveNotification"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "horizontal"]
 - !private ["s25ExpressibleByArrayLiteralP", "top"]
@@ -220,17 +241,21 @@ depends-member:
 - !private ["7SwiftUI7GestureP", "white"]
 - ["SH", ""]
 - !private ["SH", "blue"]
+- !private ["SH", "default"]
 - !private ["SH", "headline"]
 - !private ["SH", "init"]
 - !private ["SH", "largeTitle"]
 - !private ["SH", "none"]
 - !private ["SH", "paused"]
+- !private ["SH", "publisher"]
 - !private ["SH", "red"]
 - !private ["SH", "running"]
 - !private ["SH", "some"]
 - !private ["SH", "stopped"]
 - !private ["SH", "subscript"]
 - !private ["SH", "white"]
+- !private ["SH", "willEnterForegroundNotification"]
+- !private ["SH", "willResignActiveNotification"]
 - !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
 - !private ["s12IdentifiableP", "init"]
@@ -240,7 +265,18 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", ""]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "publisher"]
+- !private ["So8NSObjectC", "willEnterForegroundNotification"]
+- !private ["So8NSObjectC", "willResignActiveNotification"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "publisher"]
+- !private ["So8NSObjectP", "willEnterForegroundNotification"]
+- !private ["So8NSObjectP", "willResignActiveNotification"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "publisher"]
 - !private ["Sj", ""]
 - !private ["Sj", "init"]
 - !private ["7Combine16ObservableObjectP", "activities"]
@@ -250,6 +286,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "pause"]
 - !private ["7Combine16ObservableObjectP", "start"]
 - !private ["7Combine16ObservableObjectP", "stop"]
+- !private ["7Combine16ObservableObjectP", "suspend"]
 - !private ["7Combine16ObservableObjectP", "totalRunningTime"]
 - !private ["7Combine16ObservableObjectP", "totalTime"]
 - ["7SwiftUI14ObservedObjectV", "init"]
@@ -279,6 +316,7 @@ depends-member:
 - ["7Combine9PublishedV", "projectedValue"]
 - ["7Combine9PublishedV", "subscript"]
 - ["7Combine9PublishedV", "wrappedValue"]
+- !private ["7Combine9PublisherP", "receive"]
 - !private ["Sm", "init"]
 - !private ["SY", ""]
 - !private ["SY", "horizontal"]
@@ -308,6 +346,7 @@ depends-member:
 - !private ["9Clockwork16StopwatchManagerC", "pause"]
 - !private ["9Clockwork16StopwatchManagerC", "start"]
 - !private ["9Clockwork16StopwatchManagerC", "stop"]
+- !private ["9Clockwork16StopwatchManagerC", "suspend"]
 - !private ["9Clockwork16StopwatchManagerC", "totalRunningTime"]
 - !private ["9Clockwork13StopwatchModeO", ""]
 - !private ["9Clockwork13StopwatchModeO", "paused"]
@@ -341,8 +380,20 @@ depends-member:
 - ["9Clockwork11TimerButtonV", "buttonColor"]
 - ["9Clockwork11TimerButtonV", "init"]
 - ["9Clockwork11TimerButtonV", "label"]
+- !private ["So13UIApplicationC", "willEnterForegroundNotification"]
+- !private ["So13UIApplicationC", "willResignActiveNotification"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "willEnterForegroundNotification"]
+- !private ["So30UIPasteConfigurationSupportingP", "willResignActiveNotification"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "willEnterForegroundNotification"]
+- !private ["So11UIResponderC", "willResignActiveNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "willEnterForegroundNotification"]
+- !private ["So30UIResponderStandardEditActionsP", "willResignActiveNotification"]
+- !private ["So23UIUserActivityRestoringP", "willEnterForegroundNotification"]
+- !private ["So23UIUserActivityRestoringP", "willResignActiveNotification"]
 - !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI6VStackV", "onReceive"]
 - !private ["7SwiftUI4ViewP", "Activity"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
@@ -350,12 +401,14 @@ depends-member:
 - ["7SwiftUI4ViewP", "Default_Body"]
 - ["7SwiftUI4ViewP", "Environment"]
 - !private ["7SwiftUI4ViewP", "Int"]
+- !private ["7SwiftUI4ViewP", "NotificationCenter"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - ["7SwiftUI4ViewP", "StopwatchManager"]
 - !private ["7SwiftUI4ViewP", "String"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "TimerButton"]
+- !private ["7SwiftUI4ViewP", "UIApplication"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
@@ -378,6 +431,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "largeTitle"]
 - !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "offset"]
+- !private ["7SwiftUI4ViewP", "onReceive"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "presentationMode"]
 - !private ["7SwiftUI4ViewP", "red"]
@@ -402,6 +456,14 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "publisher"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willEnterForegroundNotification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "willResignActiveNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "publisher"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "willEnterForegroundNotification"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "willResignActiveNotification"]
 - !private ["s21_ObjectiveCBridgeableP", "headline"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
@@ -463,7 +525,9 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
+- "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So20NSNotificationCenterC"
 - !private "Sj"
 - "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
@@ -472,6 +536,7 @@ depends-nominal:
 - !private "7SwiftUI16PresentationModeV"
 - "7SwiftUI15PreviewProviderP"
 - "7Combine9PublishedV"
+- !private "7Combine9PublisherP"
 - !private "Sm"
 - !private "SY"
 - !private "s10SIMDScalarP"
@@ -491,7 +556,12 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "9Clockwork11TimerButtonV"
+- !private "So13UIApplicationC"
 - "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So23UIUserActivityRestoringP"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -503,6 +573,8 @@ depends-nominal:
 - !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -548,4 +620,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "45591cd9451c6127470f1cde4d48184b"
+interface-hash: "938d673f6fa7bf5fb924e6ac67dc056a"
