@@ -25,7 +25,6 @@ provides-dynamic-lookup:
 - "_totalSeconds"
 - "_totalTime"
 - "activities"
-- "adjustTime"
 - "calculateTotalTime"
 - "days"
 - "displayDate"
@@ -38,11 +37,8 @@ provides-dynamic-lookup:
 - "totalTime"
 - "uuid"
 depends-top-level:
-- !private "%"
 - !private "+="
 - !private "..."
-- !private "/"
-- !private ">="
 - "Activity"
 - "AssignmentPrecedence"
 - !private "CGFloat"
@@ -64,9 +60,6 @@ depends-top-level:
 - "UUID"
 - "UserData"
 - !private "generateRandomColor"
-- !private "totalHours"
-- !private "totalMinutes"
-- !private "totalSeconds"
 - !private "totalTime"
 depends-member:
 - ["9Clockwork8ActivityC", "$totalTime"]
@@ -96,7 +89,6 @@ depends-member:
 - ["9Clockwork8ActivityC", "uuid"]
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["s18AdditiveArithmeticP", "random"]
-- !private ["SK", ""]
 - !private ["SB", "binade"]
 - !private ["SB", "exponentBitCount"]
 - !private ["SB", "exponentBitPattern"]
@@ -112,7 +104,6 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "random"]
 - !private ["s7CVarArgP", "string"]
-- !private ["Sl", ""]
 - !private ["7SwiftUI5ColorV", "init"]
 - ["7SwiftUI5ColorV", "white"]
 - !private ["SL", ""]
@@ -163,7 +154,6 @@ depends-member:
 - !private ["9Clockwork3DayC", "_totalSeconds"]
 - !private ["9Clockwork3DayC", "_totalTime"]
 - ["9Clockwork3DayC", "activities"]
-- ["9Clockwork3DayC", "adjustTime"]
 - ["9Clockwork3DayC", "calculateTotalTime"]
 - ["9Clockwork3DayC", "deinit"]
 - ["9Clockwork3DayC", "displayDate"]
@@ -191,7 +181,6 @@ depends-member:
 - ["s30ExpressibleByDictionaryLiteralP", "Key"]
 - ["s30ExpressibleByDictionaryLiteralP", "Value"]
 - ["s30ExpressibleByDictionaryLiteralP", "init"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
 - !private ["s25ExpressibleByFloatLiteralP", ""]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
@@ -200,9 +189,6 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "random"]
-- !private ["s32ExpressibleByStringInterpolationP", ""]
-- !private ["s26ExpressibleByStringLiteralP", ""]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", ""]
 - !private ["SF", "random"]
 - ["So11NSFormatterC", ""]
@@ -238,7 +224,6 @@ depends-member:
 - !private ["s12IdentifiableP", "_totalSeconds"]
 - !private ["s12IdentifiableP", "_totalTime"]
 - !private ["s12IdentifiableP", "activities"]
-- !private ["s12IdentifiableP", "adjustTime"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
 - !private ["s12IdentifiableP", "displayDate"]
 - !private ["s12IdentifiableP", "generateRandomColor"]
@@ -250,7 +235,6 @@ depends-member:
 - !private ["s12IdentifiableP", "totalMinutes"]
 - !private ["s12IdentifiableP", "totalSeconds"]
 - !private ["s12IdentifiableP", "totalTime"]
-- !private ["s25LosslessStringConvertibleP", ""]
 - !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dateFormat"]
 - !private ["So8NSCodingP", "dateFormatFromTemplate"]
@@ -322,7 +306,6 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "_totalSeconds"]
 - !private ["7Combine16ObservableObjectP", "_totalTime"]
 - !private ["7Combine16ObservableObjectP", "activities"]
-- !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "calculateTotalTime"]
 - !private ["7Combine16ObservableObjectP", "days"]
 - !private ["7Combine16ObservableObjectP", "displayDate"]
@@ -341,15 +324,12 @@ depends-member:
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
-- !private ["ST", ""]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["s13SignedNumericP", ""]
 - !private ["s13SignedNumericP", "random"]
 - !private ["Sx", ""]
 - !private ["Sx", "random"]
-- !private ["s16TextOutputStreamP", ""]
-- !private ["s20TextOutputStreamableP", ""]
 - !private ["So7UIColorC", "init"]
 - ["10Foundation4UUIDV", "init"]
 - ["10Foundation4UUIDV", "uuidString"]
@@ -372,11 +352,9 @@ depends-member:
 - !private ["s15_CVarArgAlignedP", "random"]
 - !private ["s22_CVarArgPassedAsDoubleP", "random"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["7SwiftUI18_FormatSpecifiableP", "random"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
@@ -392,12 +370,10 @@ depends-member:
 depends-nominal:
 - "9Clockwork8ActivityC"
 - !private "s18AdditiveArithmeticP"
-- !private "SK"
 - !private "SB"
 - !private "12CoreGraphics7CGFloatV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
-- !private "Sl"
 - "7SwiftUI5ColorV"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
@@ -410,17 +386,12 @@ depends-nominal:
 - "SE"
 - "SQ"
 - "s30ExpressibleByDictionaryLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
 - "So11NSFormatterC"
 - "SH"
 - "s12IdentifiableP"
-- !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -432,12 +403,9 @@ depends-nominal:
 - "7Combine16ObservableObjectP"
 - "7Combine9PublishedV"
 - "10Foundation20ReferenceConvertibleP"
-- !private "ST"
 - "7SwiftUI10ShapeStyleP"
 - !private "s13SignedNumericP"
 - !private "Sx"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
 - !private "So7UIColorC"
 - "10Foundation4UUIDV"
 - "9Clockwork8UserDataC"
@@ -446,11 +414,9 @@ depends-nominal:
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "7SwiftUI18_FormatSpecifiableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -499,4 +465,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5917df82aadd434c36cf2d74af68ded0"
+interface-hash: "49e0664dc18d3e3bbb5e224269ccd244"

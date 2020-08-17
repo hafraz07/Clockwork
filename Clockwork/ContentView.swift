@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -24,10 +25,6 @@ struct ContentView: View {
     func addActivity() {
         if let activity = self.day.activities[self.activityName] {
             activity.totalTime += self.stopWatch.totalRunningTime
-//            activity.hours += self.stopWatch.hours
-//            activity.minutes += self.stopWatch.minutes
-//            activity.seconds += self.stopWatch.secondsElapsed
-//            activity.adjustTime()
         }
         else {
             self.day.activities[self.activityName] = Activity(name: self.activityName, activityTime: self.stopWatch.totalRunningTime)
@@ -40,10 +37,10 @@ struct ContentView: View {
             Text(activityName)
                 .font(.headline)
             
-//            DisplayTime(displayHours: String(format: "%02d", self.stopWatch.hours), displayMinutes: String(format: "%02d", self.stopWatch.minutes), displaySeconds: String(self.stopWatch.secondsElapsed))
             Text(timeString(accumulatedTime: self.stopWatch.totalRunningTime))
                 .font(.largeTitle)
                 .offset(y:300)
+            
             
             if (stopWatch.mode == .stopped) {
                 Button(action: {self.stopWatch.start()}) {
@@ -82,7 +79,17 @@ struct ContentView: View {
                 .padding(.top, 30)
             }
             Spacer()
-        }
+        }// VStack
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+                if self.stopWatch.mode != .paused {
+                    self.stopWatch.suspend()
+                }
+           }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+                if self.stopWatch.mode != .paused {
+                    self.stopWatch.start()
+                }
+           }
     }
 }
 
@@ -106,17 +113,4 @@ struct TimerButton: View {
     }
 }
 
-
-
-
-//struct DisplayTime: View {
-//    let displayHours: String
-//    let displayMinutes: String
-//    let displaySeconds: String
-//    var body: some View {
-//        Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
-//            .font(.largeTitle)
-//            .offset(y:300)
-//    }
-//}
 

@@ -31,21 +31,6 @@ class Day: ObservableObject, Identifiable {
     
     func calculateTotalTime(timeAccumulated: TimeInterval) {
         totalTime += timeAccumulated
-//        totalHours += hours
-//        totalMinutes += minutes
-//        totalSeconds += seconds
-//        adjustTime()
-    }
-    
-    func adjustTime() {
-        if (self.totalSeconds >= 60) {
-            totalMinutes += totalSeconds / 60
-            totalSeconds += totalSeconds % 60
-        }
-        if (self.totalMinutes >= 60) {
-            totalHours += totalMinutes / 60
-            totalMinutes += totalMinutes % 60
-        }
     }
 }
 
@@ -54,38 +39,15 @@ class Day: ObservableObject, Identifiable {
 class Activity: ObservableObject, Identifiable {
     var name: String
     @Published var totalTime: TimeInterval = 0
-//    @Published var hours: Int
-//    @Published var minutes: Int
-//    @Published var seconds: Int
     let uuid = UUID().uuidString
     var slideColor = Color.white
-    
-    
-//    init(name: String, hours: Int, minutes: Int, seconds: Int) {
-//        self.name = name
-//        self.hours = hours
-//        self.minutes = minutes
-//        self.seconds = seconds
-//        self.slideColor = generateRandomColor()
-//    }
     
     init(name: String, activityTime: TimeInterval) {
         self.name = name
         self.totalTime = activityTime
         self.slideColor = generateRandomColor()
     }
-    
-//    func adjustTime() {
-//        if (self.seconds >= 60) {
-//            minutes += seconds / 60
-//            seconds += seconds % 60
-//        }
-//        if (self.minutes >= 60) {
-//            hours += minutes / 60
-//            minutes += minutes % 60
-//        }
-//    }
-    
+        
     func generateRandomColor() -> Color {
         let redValue = CGFloat.random(in: 0...1)
         let greenValue = CGFloat.random(in: 0...1)

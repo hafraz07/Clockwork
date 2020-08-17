@@ -62,7 +62,7 @@
 			<key>uniqueIdentifier</key>
 			<string>8D9DEB97-761B-46DD-BD62-11686EE88FBC</string>
 		</dict>
-		<key>C9021DAC-C96F-48BF-ABBD-A7E607108F64</key>
+		<key>A1C2CEA8-6069-4D8A-8B42-FF39060C8E0A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +71,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>C9021DAC-C96F-48BF-ABBD-A7E607108F64.xcactivitylog</string>
+			<string>A1C2CEA8-6069-4D8A-8B42-FF39060C8E0A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
 			<key>timeStartedRecording</key>
-			<real>619337974.89122605</real>
+			<real>619365931.42897797</real>
 			<key>timeStoppedRecording</key>
-			<real>619337977.83507597</real>
+			<real>619365934.56448603</real>
 			<key>title</key>
 			<string>Build target Clockwork</string>
 			<key>uniqueIdentifier</key>
-			<string>C9021DAC-C96F-48BF-ABBD-A7E607108F64</string>
+			<string>A1C2CEA8-6069-4D8A-8B42-FF39060C8E0A</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

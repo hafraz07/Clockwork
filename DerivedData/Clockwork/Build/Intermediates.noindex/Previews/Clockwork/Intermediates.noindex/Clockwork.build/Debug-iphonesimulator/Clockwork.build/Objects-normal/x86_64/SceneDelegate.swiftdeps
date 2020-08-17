@@ -201,6 +201,10 @@ depends-member:
 - ["So8NSObjectP", "windowScene"]
 - !private ["Sj", ""]
 - !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine9PublishedV", "init"]
+- !private ["7Combine9PublishedV", "projectedValue"]
+- !private ["7Combine9PublishedV", "subscript"]
+- !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["9Clockwork13SceneDelegateC", "DayListView"]
 - !private ["9Clockwork13SceneDelegateC", "UIHostingController"]
 - ["9Clockwork13SceneDelegateC", "UIScene"]
@@ -223,6 +227,10 @@ depends-member:
 - ["9Clockwork13SceneDelegateC", "windowScene"]
 - ["ST", ""]
 - !private ["s13SignedNumericP", ""]
+- !private ["7SwiftUI5StateV", "init"]
+- !private ["7SwiftUI5StateV", "projectedValue"]
+- !private ["7SwiftUI5StateV", "subscript"]
+- !private ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["Sx", ""]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
@@ -484,9 +492,11 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "Sj"
 - !private "7Combine16ObservableObjectP"
+- !private "7Combine9PublishedV"
 - "9Clockwork13SceneDelegateC"
 - "ST"
 - !private "s13SignedNumericP"
+- !private "7SwiftUI5StateV"
 - !private "Sx"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
