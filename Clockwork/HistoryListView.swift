@@ -25,7 +25,7 @@ struct HistoryListView: View {
                     if (!showPiechart) {
                         List {
                           ForEach(Array(day.activities.keys), id: \.self) { activityName in
-                              HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0))
+                              HistoryRow(activity: self.day.activities[activityName] ?? Activity(name: "Default", activityTime: 20))
                           }
                           .navigationBarTitle(Text("Work History"))
                         }

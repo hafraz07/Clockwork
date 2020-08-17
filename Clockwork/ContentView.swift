@@ -14,17 +14,25 @@ struct ContentView: View {
     var activityName: String
     @ObservedObject var day: Day
     
+    func timeString(accumulatedTime: TimeInterval) -> String {
+            let hours = Int(accumulatedTime) / 3600
+            let minutes = Int(accumulatedTime) / 60 % 60
+            let seconds = Int(accumulatedTime) % 60
+            return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+    }
+    
     func addActivity() {
         if let activity = self.day.activities[self.activityName] {
-            activity.hours += self.stopWatch.hours
-            activity.minutes += self.stopWatch.minutes
-            activity.seconds += self.stopWatch.secondsElapsed
-            activity.adjustTime()
+            activity.totalTime += self.stopWatch.totalRunningTime
+//            activity.hours += self.stopWatch.hours
+//            activity.minutes += self.stopWatch.minutes
+//            activity.seconds += self.stopWatch.secondsElapsed
+//            activity.adjustTime()
         }
         else {
-            self.day.activities[self.activityName] = Activity(name: self.activityName, hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
+            self.day.activities[self.activityName] = Activity(name: self.activityName, activityTime: self.stopWatch.totalRunningTime)
         }
-        self.day.calculateTotalTime(hours: self.stopWatch.hours, minutes: self.stopWatch.minutes, seconds: self.stopWatch.secondsElapsed)
+        self.day.calculateTotalTime(timeAccumulated: self.stopWatch.totalRunningTime)
     }
     
     var body: some View {
@@ -32,7 +40,10 @@ struct ContentView: View {
             Text(activityName)
                 .font(.headline)
             
-            DisplayTime(displayHours: String(format: "%02d", self.stopWatch.hours), displayMinutes: String(format: "%02d", self.stopWatch.minutes), displaySeconds: String(self.stopWatch.secondsElapsed))
+//            DisplayTime(displayHours: String(format: "%02d", self.stopWatch.hours), displayMinutes: String(format: "%02d", self.stopWatch.minutes), displaySeconds: String(self.stopWatch.secondsElapsed))
+            Text(timeString(accumulatedTime: self.stopWatch.totalRunningTime))
+                .font(.largeTitle)
+                .offset(y:300)
             
             if (stopWatch.mode == .stopped) {
                 Button(action: {self.stopWatch.start()}) {
@@ -97,13 +108,15 @@ struct TimerButton: View {
 
 
 
-struct DisplayTime: View {
-    let displayHours: String
-    let displayMinutes: String
-    let displaySeconds: String
-    var body: some View {
-        Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
-            .font(.largeTitle)
-            .offset(y:300)
-    }
-}
+
+//struct DisplayTime: View {
+//    let displayHours: String
+//    let displayMinutes: String
+//    let displaySeconds: String
+//    var body: some View {
+//        Text(displayHours + ":" + displayMinutes + "." + displaySeconds)
+//            .font(.largeTitle)
+//            .offset(y:300)
+//    }
+//}
+

@@ -26,7 +26,6 @@ depends-top-level:
 - "DayListView"
 - "DayListView_Previews"
 - "DayRow"
-- !private "Dictionary"
 - "EmptyView"
 - "EnvironmentObject"
 - "FloatLiteralType"
@@ -199,9 +198,6 @@ depends-member:
 - !private ["7SwiftUI11EnvironmentV", "wrappedValue"]
 - !private ["7SwiftUI11EnvironmentV", "wrapperValue"]
 - ["7SwiftUI17EnvironmentObjectV", "init"]
-- ["7SwiftUI17EnvironmentObjectV", "projectedValue"]
-- ["7SwiftUI17EnvironmentObjectV", "subscript"]
-- ["7SwiftUI17EnvironmentObjectV", "wrappedValue"]
 - ["SQ", ""]
 - !private ["SQ", "dateFormat"]
 - !private ["SQ", "init"]
@@ -217,9 +213,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "keys"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
@@ -265,7 +258,7 @@ depends-member:
 - !private ["SM", ""]
 - !private ["SM", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
-- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dateFormat"]
 - !private ["So8NSCodingP", "dateFormatFromTemplate"]
 - !private ["So8NSCodingP", "init"]
@@ -284,7 +277,6 @@ depends-member:
 - !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "stringForObjectValue"]
 - !private ["So8NSObjectC", "stringFromDate"]
-- !private ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "dateFormat"]
 - !private ["So8NSObjectP", "dateFormatFromTemplate"]
 - !private ["So8NSObjectP", "init"]
@@ -314,10 +306,6 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["7Combine9PublishedV", "init"]
-- !private ["7Combine9PublishedV", "projectedValue"]
-- !private ["7Combine9PublishedV", "subscript"]
-- !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["Sk", ""]
 - !private ["Sk", "init"]
 - !private ["Sm", ""]
@@ -330,8 +318,6 @@ depends-member:
 - !private ["ST", "subscript"]
 - !private ["7SwiftUI10ShapeStyleP", "pink"]
 - ["7SwiftUI5StateV", "init"]
-- ["7SwiftUI5StateV", "projectedValue"]
-- ["7SwiftUI5StateV", "subscript"]
 - ["7SwiftUI5StateV", "wrappedValue"]
 - !private ["9Clockwork16StopwatchManagerC", ""]
 - !private ["7SwiftUI4TextV", "init"]
@@ -401,11 +387,10 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
 - !private ["s24_DestructorSafeContainerP", "init"]
-- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -490,7 +475,7 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
-- "So8NSCodingP"
+- !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So8NSObjectC"
 - !private "So8NSObjectP"
@@ -501,7 +486,6 @@ depends-nominal:
 - !private "7SwiftUI14ObservedObjectV"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
-- !private "7Combine9PublishedV"
 - !private "Sk"
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
@@ -519,10 +503,10 @@ depends-nominal:
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"

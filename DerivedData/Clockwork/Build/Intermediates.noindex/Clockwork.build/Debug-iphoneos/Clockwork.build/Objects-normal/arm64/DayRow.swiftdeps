@@ -10,14 +10,16 @@ provides-member:
 - ["9Clockwork15DayRow_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "+"
-- ">"
-- ">="
+- !private "%"
+- !private "/"
+- !private ">"
+- !private ">="
 - "Day"
 - "DayRow"
 - "DayRow_Previews"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - !private "HStack"
+- !private "Int"
 - !private "IntegerLiteralType"
 - "ObservedObject"
 - "PreviewProvider"
@@ -25,13 +27,19 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Text"
+- "TimeInterval"
 - !private "UnicodeScalarType"
 - "View"
 - "day"
+- "timeString"
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "init"]
+- ["7SwiftUI10AnimatableP", ""]
 - ["SK", ""]
 - !private ["SK", "init"]
+- !private ["Sz", ""]
+- !private ["Sz", "init"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "init"]
 - !private ["s7CVarArgP", "init"]
 - ["Sl", ""]
@@ -39,28 +47,26 @@ depends-member:
 - ["SL", ""]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "none"]
-- !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "none"]
-- !private ["s17CustomReflectableP", "some"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - ["9Clockwork3DayC", ""]
 - !private ["9Clockwork3DayC", "displayDate"]
 - !private ["9Clockwork3DayC", "init"]
-- !private ["9Clockwork3DayC", "totalHours"]
-- !private ["9Clockwork3DayC", "totalMinutes"]
-- !private ["9Clockwork3DayC", "totalSeconds"]
+- !private ["9Clockwork3DayC", "totalTime"]
 - ["9Clockwork6DayRowV", "$day"]
 - ["9Clockwork6DayRowV", "Body"]
 - ["9Clockwork6DayRowV", "Day"]
 - ["9Clockwork6DayRowV", "Default_Body"]
 - !private ["9Clockwork6DayRowV", "HStack"]
+- !private ["9Clockwork6DayRowV", "Int"]
 - ["9Clockwork6DayRowV", "ObservedObject"]
 - !private ["9Clockwork6DayRowV", "Spacer"]
-- !private ["9Clockwork6DayRowV", "String"]
+- ["9Clockwork6DayRowV", "String"]
 - !private ["9Clockwork6DayRowV", "Text"]
+- ["9Clockwork6DayRowV", "TimeInterval"]
 - ["9Clockwork6DayRowV", "View"]
 - ["9Clockwork6DayRowV", ""]
 - ["9Clockwork6DayRowV", "_Default_Body"]
@@ -71,6 +77,7 @@ depends-member:
 - ["9Clockwork6DayRowV", "body"]
 - ["9Clockwork6DayRowV", "day"]
 - ["9Clockwork6DayRowV", "init"]
+- !private ["9Clockwork6DayRowV", "timeString"]
 - !private ["9Clockwork15DayRow_PreviewsV", "Day"]
 - !private ["9Clockwork15DayRow_PreviewsV", "DayRow"]
 - ["9Clockwork15DayRow_PreviewsV", "Default_Previews"]
@@ -84,54 +91,45 @@ depends-member:
 - ["9Clockwork15DayRow_PreviewsV", "platform"]
 - ["9Clockwork15DayRow_PreviewsV", "previews"]
 - !private ["Se", "init"]
-- !private ["Se", "none"]
-- !private ["Se", "some"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "init"]
-- !private ["SE", "none"]
-- !private ["SE", "some"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- !private ["SQ", "none"]
-- !private ["SQ", "some"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
-- !private ["s23ExpressibleByNilLiteralP", "none"]
-- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["7SwiftUI7GestureP", "none"]
-- !private ["7SwiftUI7GestureP", "some"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["7SwiftUI6HStackV", "padding"]
 - ["SH", ""]
 - !private ["SH", "init"]
-- !private ["SH", "none"]
-- !private ["SH", "some"]
 - !private ["s12IdentifiableP", "displayDate"]
 - !private ["s12IdentifiableP", "init"]
-- !private ["s12IdentifiableP", "totalHours"]
-- !private ["s12IdentifiableP", "totalMinutes"]
-- !private ["s12IdentifiableP", "totalSeconds"]
+- !private ["s12IdentifiableP", "totalTime"]
+- !private ["Si", "init"]
 - ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", ""]
-- ["So8NSObjectP", ""]
 - !private ["Sj", ""]
+- !private ["Sj", "init"]
 - !private ["7Combine16ObservableObjectP", "displayDate"]
 - !private ["7Combine16ObservableObjectP", "init"]
-- !private ["7Combine16ObservableObjectP", "totalHours"]
-- !private ["7Combine16ObservableObjectP", "totalMinutes"]
-- !private ["7Combine16ObservableObjectP", "totalSeconds"]
+- !private ["7Combine16ObservableObjectP", "totalTime"]
 - ["7SwiftUI14ObservedObjectV", "init"]
-- !private ["Sq", "none"]
-- !private ["Sq", "some"]
+- ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- ["7SwiftUI14ObservedObjectV", "subscript"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["7SwiftUI15PreviewProviderP", "Day"]
 - !private ["7SwiftUI15PreviewProviderP", "DayRow"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
@@ -142,21 +140,36 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7Combine9PublishedV", "init"]
+- !private ["7Combine9PublishedV", "projectedValue"]
+- !private ["7Combine9PublishedV", "subscript"]
+- !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["Sm", "init"]
+- !private ["s10SIMDScalarP", "init"]
 - ["ST", ""]
 - !private ["ST", "init"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "init"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - !private ["Sx", ""]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
 - !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "init"]
 - ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", ""]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Int"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "String"]
@@ -169,11 +182,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "day"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "some"]
+- !private ["7SwiftUI4ViewP", "timeString"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
@@ -185,10 +196,10 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "none"]
-- !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["7SwiftUI16_PreviewProviderP", "Day"]
 - !private ["7SwiftUI16_PreviewProviderP", "DayRow"]
 - ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
@@ -201,7 +212,9 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
+- "7SwiftUI10AnimatableP"
 - "SK"
+- !private "Sz"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
 - "Sl"
@@ -213,33 +226,37 @@ depends-nominal:
 - "9Clockwork6DayRowV"
 - "9Clockwork15DayRow_PreviewsV"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "7SwiftUI7GestureP"
+- !private "s17FixedWidthIntegerP"
 - !private "7SwiftUI6HStackV"
 - "SH"
 - !private "s12IdentifiableP"
+- !private "Si"
 - "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
-- "So8NSObjectP"
 - !private "Sj"
 - !private "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
-- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
+- !private "7Combine9PublishedV"
 - !private "Sm"
+- !private "s10SIMDScalarP"
 - "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
 - !private "7SwiftUI6SpacerV"
 - !private "Sx"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
 - "s16TextOutputStreamP"
@@ -251,7 +268,9 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -297,4 +316,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "098dfbe4294a10e990d3e6f6779866a4"
+interface-hash: "c3d4676d73e0a02f525248ad80439a82"

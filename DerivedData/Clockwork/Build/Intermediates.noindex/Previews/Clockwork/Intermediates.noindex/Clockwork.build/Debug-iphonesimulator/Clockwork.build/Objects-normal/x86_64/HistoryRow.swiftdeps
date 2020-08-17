@@ -10,34 +10,39 @@ provides-member:
 - ["9Clockwork19HistoryRow_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "+"
-- ">"
-- ">="
+- !private "%"
+- !private "/"
+- !private ">"
+- !private ">="
 - "Activity"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - !private "HStack"
 - "HistoryRow"
 - "HistoryRow_Previews"
+- !private "Int"
 - !private "IntegerLiteralType"
 - "PreviewProvider"
 - "Spacer"
 - "String"
 - !private "StringLiteralType"
 - "Text"
+- "TimeInterval"
 - !private "UnicodeScalarType"
 - "View"
 - "activity"
+- "timeString"
 depends-member:
-- !private ["9Clockwork8ActivityC", "hours"]
 - !private ["9Clockwork8ActivityC", "init"]
-- !private ["9Clockwork8ActivityC", "minutes"]
 - !private ["9Clockwork8ActivityC", "name"]
-- !private ["9Clockwork8ActivityC", "seconds"]
+- !private ["9Clockwork8ActivityC", "totalTime"]
 - !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "init"]
 - ["7SwiftUI10AnimatableP", ""]
 - !private ["7SwiftUI7AnyViewV", "init"]
 - ["SK", ""]
 - !private ["SK", "init"]
+- !private ["Sz", ""]
+- !private ["Sz", "init"]
 - !private ["8CloudKit21CKRecordValueProtocolP", "init"]
 - !private ["s7CVarArgP", "init"]
 - ["Sl", ""]
@@ -45,51 +50,43 @@ depends-member:
 - ["SL", ""]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "none"]
-- !private ["s28CustomDebugStringConvertibleP", "some"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s17CustomReflectableP", "none"]
-- !private ["s17CustomReflectableP", "some"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["Se", "init"]
-- !private ["Se", "none"]
-- !private ["Se", "some"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
-- !private ["SE", "none"]
-- !private ["SE", "some"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
-- !private ["SQ", "none"]
-- !private ["SQ", "some"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
-- !private ["s23ExpressibleByNilLiteralP", "none"]
-- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["7SwiftUI7GestureP", "none"]
-- !private ["7SwiftUI7GestureP", "some"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["7SwiftUI6HStackV", "init"]
 - !private ["7SwiftUI6HStackV", "padding"]
 - ["SH", ""]
 - !private ["SH", "init"]
-- !private ["SH", "none"]
-- !private ["SH", "some"]
 - ["9Clockwork10HistoryRowV", "Activity"]
 - ["9Clockwork10HistoryRowV", "Body"]
 - ["9Clockwork10HistoryRowV", "Default_Body"]
 - !private ["9Clockwork10HistoryRowV", "HStack"]
+- !private ["9Clockwork10HistoryRowV", "Int"]
 - !private ["9Clockwork10HistoryRowV", "Spacer"]
-- !private ["9Clockwork10HistoryRowV", "String"]
+- ["9Clockwork10HistoryRowV", "String"]
 - !private ["9Clockwork10HistoryRowV", "Text"]
+- ["9Clockwork10HistoryRowV", "TimeInterval"]
 - ["9Clockwork10HistoryRowV", "View"]
 - ["9Clockwork10HistoryRowV", ""]
 - ["9Clockwork10HistoryRowV", "_Default_Body"]
@@ -100,6 +97,7 @@ depends-member:
 - ["9Clockwork10HistoryRowV", "body"]
 - ["9Clockwork10HistoryRowV", "init"]
 - !private ["9Clockwork10HistoryRowV", "previewLayout"]
+- !private ["9Clockwork10HistoryRowV", "timeString"]
 - !private ["9Clockwork19HistoryRow_PreviewsV", "Activity"]
 - ["9Clockwork19HistoryRow_PreviewsV", "Default_Previews"]
 - !private ["9Clockwork19HistoryRow_PreviewsV", "HistoryRow"]
@@ -112,24 +110,19 @@ depends-member:
 - ["9Clockwork19HistoryRow_PreviewsV", "init"]
 - ["9Clockwork19HistoryRow_PreviewsV", "platform"]
 - ["9Clockwork19HistoryRow_PreviewsV", "previews"]
-- !private ["s12IdentifiableP", "hours"]
 - !private ["s12IdentifiableP", "init"]
-- !private ["s12IdentifiableP", "minutes"]
 - !private ["s12IdentifiableP", "name"]
-- !private ["s12IdentifiableP", "seconds"]
+- !private ["s12IdentifiableP", "totalTime"]
+- !private ["Si", "init"]
 - ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", ""]
-- ["So8NSObjectP", ""]
 - !private ["Sj", ""]
-- !private ["7Combine16ObservableObjectP", "hours"]
+- !private ["Sj", "init"]
 - !private ["7Combine16ObservableObjectP", "init"]
-- !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "name"]
-- !private ["7Combine16ObservableObjectP", "seconds"]
-- !private ["Sq", "none"]
-- !private ["Sq", "some"]
+- !private ["7Combine16ObservableObjectP", "totalTime"]
 - !private ["7SwiftUI13PreviewLayoutO", "fixed"]
 - !private ["7SwiftUI15PreviewProviderP", "Activity"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
@@ -146,20 +139,31 @@ depends-member:
 - !private ["7Combine9PublishedV", "subscript"]
 - !private ["7Combine9PublishedV", "wrappedValue"]
 - !private ["Sm", "init"]
+- !private ["s10SIMDScalarP", "init"]
 - ["ST", ""]
 - !private ["ST", "init"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "init"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - !private ["Sx", ""]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
 - !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "init"]
 - ["s16TextOutputStreamP", ""]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", ""]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "Default_Body"]
 - !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "Int"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - !private ["7SwiftUI4ViewP", "String"]
 - !private ["7SwiftUI4ViewP", "Text"]
@@ -171,12 +175,10 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "activity"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "none"]
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "previewLayout"]
-- !private ["7SwiftUI4ViewP", "some"]
+- !private ["7SwiftUI4ViewP", "timeString"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["7SwiftUI11ViewBuilderV", "buildEither"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
@@ -188,10 +190,10 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "none"]
-- !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["7SwiftUI16_PreviewProviderP", "Activity"]
 - ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "HistoryRow"]
@@ -208,6 +210,7 @@ depends-nominal:
 - "7SwiftUI10AnimatableP"
 - !private "7SwiftUI7AnyViewV"
 - "SK"
+- !private "Sz"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
 - "Sl"
@@ -216,35 +219,38 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "s26DefaultStringInterpolationV"
 - !private "SE"
 - "SQ"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "7SwiftUI7GestureP"
+- !private "s17FixedWidthIntegerP"
 - !private "7SwiftUI6HStackV"
 - "SH"
 - "9Clockwork10HistoryRowV"
 - "9Clockwork19HistoryRow_PreviewsV"
 - !private "s12IdentifiableP"
+- !private "Si"
 - "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
-- "So8NSObjectP"
 - !private "Sj"
 - !private "7Combine16ObservableObjectP"
-- !private "Sq"
 - !private "7SwiftUI13PreviewLayoutO"
 - "7SwiftUI15PreviewProviderP"
 - !private "7Combine9PublishedV"
 - !private "Sm"
+- !private "s10SIMDScalarP"
 - "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
 - !private "7SwiftUI6SpacerV"
 - !private "Sx"
 - !private "SS"
+- !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
 - "s16TextOutputStreamP"
@@ -256,7 +262,9 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -279,6 +287,7 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
@@ -301,4 +310,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b756f06ef6213db59156960ce72f00d2"
+interface-hash: "1c3ddc2d12b01dec62706452a7b5d48a"

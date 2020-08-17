@@ -14,34 +14,28 @@ provides-member:
 provides-dynamic-lookup:
 - "$activities"
 - "$days"
-- "$hours"
-- "$minutes"
-- "$seconds"
 - "$totalHours"
 - "$totalMinutes"
 - "$totalSeconds"
+- "$totalTime"
 - "_activities"
 - "_days"
-- "_hours"
-- "_minutes"
-- "_seconds"
 - "_totalHours"
 - "_totalMinutes"
 - "_totalSeconds"
+- "_totalTime"
 - "activities"
 - "adjustTime"
 - "calculateTotalTime"
 - "days"
 - "displayDate"
 - "generateRandomColor"
-- "hours"
-- "minutes"
 - "name"
-- "seconds"
 - "slideColor"
 - "totalHours"
 - "totalMinutes"
 - "totalSeconds"
+- "totalTime"
 - "uuid"
 depends-top-level:
 - !private "%"
@@ -65,52 +59,44 @@ depends-top-level:
 - "Published"
 - "String"
 - !private "StringLiteralType"
+- "TimeInterval"
 - !private "UIColor"
 - "UUID"
 - "UserData"
-- !private "adjustTime"
 - !private "generateRandomColor"
-- !private "hours"
-- !private "minutes"
-- !private "seconds"
 - !private "totalHours"
 - !private "totalMinutes"
 - !private "totalSeconds"
+- !private "totalTime"
 depends-member:
-- ["9Clockwork8ActivityC", "$hours"]
-- ["9Clockwork8ActivityC", "$minutes"]
-- ["9Clockwork8ActivityC", "$seconds"]
+- ["9Clockwork8ActivityC", "$totalTime"]
 - !private ["9Clockwork8ActivityC", "CGFloat"]
 - ["9Clockwork8ActivityC", "Color"]
 - ["9Clockwork8ActivityC", "Default_ID"]
 - ["9Clockwork8ActivityC", "Default_ObjectWillChangePublisher"]
 - ["9Clockwork8ActivityC", "ID"]
-- ["9Clockwork8ActivityC", "Int"]
 - ["9Clockwork8ActivityC", "ObjectWillChangePublisher"]
 - ["9Clockwork8ActivityC", "Published"]
 - ["9Clockwork8ActivityC", "String"]
+- ["9Clockwork8ActivityC", "TimeInterval"]
 - !private ["9Clockwork8ActivityC", "UIColor"]
 - ["9Clockwork8ActivityC", "UUID"]
 - ["9Clockwork8ActivityC", ""]
 - ["9Clockwork8ActivityC", "_Default_ID"]
 - ["9Clockwork8ActivityC", "_Default_ObjectWillChangePublisher"]
-- !private ["9Clockwork8ActivityC", "_hours"]
-- !private ["9Clockwork8ActivityC", "_minutes"]
-- !private ["9Clockwork8ActivityC", "_seconds"]
-- ["9Clockwork8ActivityC", "adjustTime"]
+- !private ["9Clockwork8ActivityC", "_totalTime"]
 - ["9Clockwork8ActivityC", "deinit"]
 - ["9Clockwork8ActivityC", "generateRandomColor"]
-- ["9Clockwork8ActivityC", "hours"]
 - ["9Clockwork8ActivityC", "id"]
 - ["9Clockwork8ActivityC", "init"]
-- ["9Clockwork8ActivityC", "minutes"]
 - ["9Clockwork8ActivityC", "name"]
 - ["9Clockwork8ActivityC", "objectWillChange"]
-- ["9Clockwork8ActivityC", "seconds"]
 - ["9Clockwork8ActivityC", "slideColor"]
+- ["9Clockwork8ActivityC", "totalTime"]
 - ["9Clockwork8ActivityC", "uuid"]
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["s18AdditiveArithmeticP", "random"]
+- !private ["SK", ""]
 - !private ["SB", "binade"]
 - !private ["SB", "exponentBitCount"]
 - !private ["SB", "exponentBitPattern"]
@@ -126,6 +112,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "random"]
 - !private ["s7CVarArgP", "string"]
+- !private ["Sl", ""]
 - !private ["7SwiftUI5ColorV", "init"]
 - ["7SwiftUI5ColorV", "white"]
 - !private ["SL", ""]
@@ -154,6 +141,7 @@ depends-member:
 - ["9Clockwork3DayC", "$totalHours"]
 - ["9Clockwork3DayC", "$totalMinutes"]
 - ["9Clockwork3DayC", "$totalSeconds"]
+- ["9Clockwork3DayC", "$totalTime"]
 - ["9Clockwork3DayC", "Activity"]
 - !private ["9Clockwork3DayC", "Date"]
 - !private ["9Clockwork3DayC", "DateFormatter"]
@@ -164,6 +152,7 @@ depends-member:
 - ["9Clockwork3DayC", "ObjectWillChangePublisher"]
 - ["9Clockwork3DayC", "Published"]
 - ["9Clockwork3DayC", "String"]
+- ["9Clockwork3DayC", "TimeInterval"]
 - ["9Clockwork3DayC", "UUID"]
 - ["9Clockwork3DayC", ""]
 - ["9Clockwork3DayC", "_Default_ID"]
@@ -172,6 +161,7 @@ depends-member:
 - !private ["9Clockwork3DayC", "_totalHours"]
 - !private ["9Clockwork3DayC", "_totalMinutes"]
 - !private ["9Clockwork3DayC", "_totalSeconds"]
+- !private ["9Clockwork3DayC", "_totalTime"]
 - ["9Clockwork3DayC", "activities"]
 - ["9Clockwork3DayC", "adjustTime"]
 - ["9Clockwork3DayC", "calculateTotalTime"]
@@ -183,6 +173,7 @@ depends-member:
 - ["9Clockwork3DayC", "totalHours"]
 - ["9Clockwork3DayC", "totalMinutes"]
 - ["9Clockwork3DayC", "totalSeconds"]
+- ["9Clockwork3DayC", "totalTime"]
 - ["9Clockwork3DayC", "uuid"]
 - ["Se", "init"]
 - !private ["Se", "random"]
@@ -200,6 +191,7 @@ depends-member:
 - ["s30ExpressibleByDictionaryLiteralP", "Key"]
 - ["s30ExpressibleByDictionaryLiteralP", "Value"]
 - ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s25ExpressibleByFloatLiteralP", "FloatLiteralType"]
 - !private ["s25ExpressibleByFloatLiteralP", ""]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
@@ -208,6 +200,9 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "random"]
+- !private ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SF", ""]
 - !private ["SF", "random"]
 - ["So11NSFormatterC", ""]
@@ -238,27 +233,24 @@ depends-member:
 - ["s12IdentifiableP", "_Default_ID"]
 - ["s12IdentifiableP", "_Default_ObjectWillChangePublisher"]
 - !private ["s12IdentifiableP", "_activities"]
-- !private ["s12IdentifiableP", "_hours"]
-- !private ["s12IdentifiableP", "_minutes"]
-- !private ["s12IdentifiableP", "_seconds"]
 - !private ["s12IdentifiableP", "_totalHours"]
 - !private ["s12IdentifiableP", "_totalMinutes"]
 - !private ["s12IdentifiableP", "_totalSeconds"]
+- !private ["s12IdentifiableP", "_totalTime"]
 - !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "adjustTime"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
 - !private ["s12IdentifiableP", "displayDate"]
 - !private ["s12IdentifiableP", "generateRandomColor"]
-- !private ["s12IdentifiableP", "hours"]
 - ["s12IdentifiableP", "id"]
-- !private ["s12IdentifiableP", "minutes"]
 - !private ["s12IdentifiableP", "name"]
 - ["s12IdentifiableP", "objectWillChange"]
-- !private ["s12IdentifiableP", "seconds"]
 - !private ["s12IdentifiableP", "slideColor"]
 - !private ["s12IdentifiableP", "totalHours"]
 - !private ["s12IdentifiableP", "totalMinutes"]
 - !private ["s12IdentifiableP", "totalSeconds"]
+- !private ["s12IdentifiableP", "totalTime"]
+- !private ["s25LosslessStringConvertibleP", ""]
 - !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dateFormat"]
 - !private ["So8NSCodingP", "dateFormatFromTemplate"]
@@ -325,38 +317,39 @@ depends-member:
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_activities"]
 - !private ["7Combine16ObservableObjectP", "_days"]
-- !private ["7Combine16ObservableObjectP", "_hours"]
-- !private ["7Combine16ObservableObjectP", "_minutes"]
-- !private ["7Combine16ObservableObjectP", "_seconds"]
 - !private ["7Combine16ObservableObjectP", "_totalHours"]
 - !private ["7Combine16ObservableObjectP", "_totalMinutes"]
 - !private ["7Combine16ObservableObjectP", "_totalSeconds"]
+- !private ["7Combine16ObservableObjectP", "_totalTime"]
 - !private ["7Combine16ObservableObjectP", "activities"]
 - !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "calculateTotalTime"]
 - !private ["7Combine16ObservableObjectP", "days"]
 - !private ["7Combine16ObservableObjectP", "displayDate"]
 - !private ["7Combine16ObservableObjectP", "generateRandomColor"]
-- !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "id"]
-- !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "name"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
-- !private ["7Combine16ObservableObjectP", "seconds"]
 - !private ["7Combine16ObservableObjectP", "slideColor"]
 - !private ["7Combine16ObservableObjectP", "totalHours"]
 - !private ["7Combine16ObservableObjectP", "totalMinutes"]
 - !private ["7Combine16ObservableObjectP", "totalSeconds"]
+- !private ["7Combine16ObservableObjectP", "totalTime"]
 - ["7Combine9PublishedV", "init"]
+- ["7Combine9PublishedV", "projectedValue"]
+- ["7Combine9PublishedV", "subscript"]
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
+- !private ["ST", ""]
 - !private ["7SwiftUI10ShapeStyleP", "init"]
 - ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["s13SignedNumericP", ""]
 - !private ["s13SignedNumericP", "random"]
 - !private ["Sx", ""]
 - !private ["Sx", "random"]
+- !private ["s16TextOutputStreamP", ""]
+- !private ["s20TextOutputStreamableP", ""]
 - !private ["So7UIColorC", "init"]
 - ["10Foundation4UUIDV", "init"]
 - ["10Foundation4UUIDV", "uuidString"]
@@ -379,9 +372,11 @@ depends-member:
 - !private ["s15_CVarArgAlignedP", "random"]
 - !private ["s22_CVarArgPassedAsDoubleP", "random"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["7SwiftUI18_FormatSpecifiableP", "random"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
@@ -397,10 +392,12 @@ depends-member:
 depends-nominal:
 - "9Clockwork8ActivityC"
 - !private "s18AdditiveArithmeticP"
+- !private "SK"
 - !private "SB"
 - !private "12CoreGraphics7CGFloatV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
+- !private "Sl"
 - "7SwiftUI5ColorV"
 - !private "SL"
 - "s28CustomDebugStringConvertibleP"
@@ -413,12 +410,17 @@ depends-nominal:
 - "SE"
 - "SQ"
 - "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
 - "So11NSFormatterC"
 - "SH"
 - "s12IdentifiableP"
+- !private "s25LosslessStringConvertibleP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -430,9 +432,12 @@ depends-nominal:
 - "7Combine16ObservableObjectP"
 - "7Combine9PublishedV"
 - "10Foundation20ReferenceConvertibleP"
+- !private "ST"
 - "7SwiftUI10ShapeStyleP"
 - !private "s13SignedNumericP"
 - !private "Sx"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So7UIColorC"
 - "10Foundation4UUIDV"
 - "9Clockwork8UserDataC"
@@ -441,9 +446,11 @@ depends-nominal:
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "7SwiftUI18_FormatSpecifiableP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
@@ -469,6 +476,7 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
@@ -491,4 +499,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3b63cf276151ef0ac3dc35c8bc194371"
+interface-hash: "5917df82aadd434c36cf2d74af68ded0"

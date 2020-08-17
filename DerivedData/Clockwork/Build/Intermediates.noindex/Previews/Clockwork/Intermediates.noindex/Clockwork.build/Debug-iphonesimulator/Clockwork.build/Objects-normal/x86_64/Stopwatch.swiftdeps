@@ -9,27 +9,20 @@ provides-member:
 - ["9Clockwork13StopwatchModeO", ""]
 - ["9Clockwork16StopwatchManagerC", ""]
 provides-dynamic-lookup:
-- "$hours"
-- "$minutes"
 - "$mode"
-- "$secondsElapsed"
-- "_hours"
-- "_minutes"
+- "$totalRunningTime"
 - "_mode"
-- "_secondsElapsed"
-- "hours"
-- "minutes"
+- "_totalRunningTime"
 - "mode"
 - "pause"
 - "reset"
-- "secondsElapsed"
 - "start"
 - "stop"
 - "timer"
+- "totalRunningTime"
 depends-top-level:
 - "+="
 - "=="
-- ">"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "FloatLiteralType"
@@ -38,13 +31,12 @@ depends-top-level:
 - "Published"
 - "StopwatchManager"
 - "StopwatchMode"
+- "TimeInterval"
 - "Timer"
-- !private "hours"
-- !private "minutes"
 - !private "mode"
 - !private "reset"
-- !private "secondsElapsed"
 - !private "timer"
+- !private "totalRunningTime"
 depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "invalidate"]
@@ -98,49 +90,40 @@ depends-member:
 - ["7Combine16ObservableObjectP", "Timer"]
 - ["7Combine16ObservableObjectP", ""]
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
-- !private ["7Combine16ObservableObjectP", "_hours"]
-- !private ["7Combine16ObservableObjectP", "_minutes"]
 - !private ["7Combine16ObservableObjectP", "_mode"]
-- !private ["7Combine16ObservableObjectP", "_secondsElapsed"]
-- !private ["7Combine16ObservableObjectP", "hours"]
-- !private ["7Combine16ObservableObjectP", "minutes"]
+- !private ["7Combine16ObservableObjectP", "_totalRunningTime"]
 - !private ["7Combine16ObservableObjectP", "mode"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["7Combine16ObservableObjectP", "pause"]
 - !private ["7Combine16ObservableObjectP", "reset"]
-- !private ["7Combine16ObservableObjectP", "secondsElapsed"]
 - !private ["7Combine16ObservableObjectP", "start"]
 - !private ["7Combine16ObservableObjectP", "stop"]
 - !private ["7Combine16ObservableObjectP", "timer"]
+- !private ["7Combine16ObservableObjectP", "totalRunningTime"]
 - ["7Combine9PublishedV", "init"]
 - ["7Combine9PublishedV", "wrappedValue"]
-- ["9Clockwork16StopwatchManagerC", "$hours"]
-- ["9Clockwork16StopwatchManagerC", "$minutes"]
 - ["9Clockwork16StopwatchManagerC", "$mode"]
-- ["9Clockwork16StopwatchManagerC", "$secondsElapsed"]
+- ["9Clockwork16StopwatchManagerC", "$totalRunningTime"]
 - ["9Clockwork16StopwatchManagerC", "Default_ObjectWillChangePublisher"]
 - ["9Clockwork16StopwatchManagerC", "ObjectWillChangePublisher"]
 - ["9Clockwork16StopwatchManagerC", "Published"]
 - ["9Clockwork16StopwatchManagerC", "StopwatchMode"]
+- ["9Clockwork16StopwatchManagerC", "TimeInterval"]
 - ["9Clockwork16StopwatchManagerC", "Timer"]
 - ["9Clockwork16StopwatchManagerC", ""]
 - ["9Clockwork16StopwatchManagerC", "_Default_ObjectWillChangePublisher"]
-- !private ["9Clockwork16StopwatchManagerC", "_hours"]
-- !private ["9Clockwork16StopwatchManagerC", "_minutes"]
 - !private ["9Clockwork16StopwatchManagerC", "_mode"]
-- !private ["9Clockwork16StopwatchManagerC", "_secondsElapsed"]
+- !private ["9Clockwork16StopwatchManagerC", "_totalRunningTime"]
 - ["9Clockwork16StopwatchManagerC", "deinit"]
-- ["9Clockwork16StopwatchManagerC", "hours"]
 - ["9Clockwork16StopwatchManagerC", "init"]
-- ["9Clockwork16StopwatchManagerC", "minutes"]
 - ["9Clockwork16StopwatchManagerC", "mode"]
 - ["9Clockwork16StopwatchManagerC", "objectWillChange"]
 - ["9Clockwork16StopwatchManagerC", "pause"]
 - ["9Clockwork16StopwatchManagerC", "reset"]
-- ["9Clockwork16StopwatchManagerC", "secondsElapsed"]
 - ["9Clockwork16StopwatchManagerC", "start"]
 - ["9Clockwork16StopwatchManagerC", "stop"]
 - ["9Clockwork16StopwatchManagerC", "timer"]
+- ["9Clockwork16StopwatchManagerC", "totalRunningTime"]
 - ["9Clockwork13StopwatchModeO", "=="]
 - ["9Clockwork13StopwatchModeO", ""]
 - ["9Clockwork13StopwatchModeO", "__derived_enum_equals"]
@@ -202,6 +185,7 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/DeveloperToolsSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
@@ -224,4 +208,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "69555b00d274b76f65ebe82b7d998cf2"
+interface-hash: "1a3db5662b08c34bacd7977dda90b7d7"

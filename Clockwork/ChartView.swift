@@ -20,29 +20,32 @@ struct ChartView: View {
         self.day = day
         let activities = Array(day.activities.values)
         let activityTimes = day.activities.values.map {
-           Double(($0.hours * 60 * 60) + ($0.minutes * 60) + $0.seconds)
+            $0.totalTime
         }
         self._activityTimes = State(initialValue: activityTimes)
         self._activities = State(initialValue: activities)
     }
     
     func getSlideColor(activityName: String)-> Color {
-        let activity = self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0)
+        let activity = self.day.activities[activityName] ?? Activity(name: "Default", activityTime: 20)
         return activity.slideColor
     }
     
     func getDisplayTime(activityName: String)-> String {
-        let activity = self.day.activities[activityName] ?? Activity(name: "Default", hours: 20, minutes: 0, seconds: 0)
-        if (activity.hours > 0) {
-            return String(activity.hours) + "h " + String(activity.minutes) + "m"
+        let activity = self.day.activities[activityName] ?? Activity(name: "Default", activityTime: 20)
+        let hours = Int(activity.totalTime) / 3600
+        let minutes = Int(activity.totalTime) / 60 % 60
+        let seconds = Int(activity.totalTime) % 60
+        if (hours > 0) {
+            return String("\(hours)h \(minutes)m")
         }
-        else if (activity.minutes > 0) {
-            return String(activity.minutes) + " minutes"
+        else if (minutes > 0) {
+            return String("\(minutes) minutes")
         }
-        else if (activity.seconds >= 0) {
-            return String(activity.seconds) + " seconds"
+        else if (seconds >= 0) {
+            return String("\(seconds) seconds")
         }
-        return "Default"
+        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
         
     var body: some View {
@@ -75,46 +78,6 @@ struct ChartView: View {
                 .padding(.top, 70)
             Spacer()
         } //ScrollView
-    }
-}
-
-struct DrawShape: View {
-    var center: CGPoint
-    var activity: Activity
-    var activityTime: Double {
-        Double(activity.hours * 60 + activity.minutes * 60 + activity.seconds)
-    }
-    var dayTotal: Double
-    var index: Int
-    static var currentAngle: Double = -90
-    
-    
-    var body: some View {
-        Path {path in
-            path.move(to: self.center)
-
-            path.addArc(center: self.center,
-                        radius: 180,
-                        startAngle: .degrees(self.from()),
-                        endAngle: .degrees(self.to()),
-                        clockwise: false)
-        }
-        .fill(self.activity.slideColor)
-        
-    }
-    
-    func from()->Double {
-        return Double(DrawShape.currentAngle)
-    }
-    
-    func to()->Double {
-        var endAngle: Double = 0
-        
-        let angle = Double(activityTime / dayTotal) * 360
-        DrawShape.currentAngle += angle
-        endAngle = DrawShape.currentAngle
-        
-        return endAngle
     }
 }
 

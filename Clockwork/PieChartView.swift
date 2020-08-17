@@ -10,7 +10,7 @@ import SwiftUI
 
 class PieData : ObservableObject {
     @Published var data: [Double]
-    var activities: [Activity]
+    @Published var activities: [Activity]
     
     public init(data: [Double], activities: [Activity]) {
         self.data = data
@@ -20,7 +20,7 @@ class PieData : ObservableObject {
 
 
 struct PieChartView : View {
-    public var data: PieData
+    @ObservedObject var data: PieData
     public var title: String
     public var legend: String?
     public var style: ChartStyle

@@ -17,6 +17,7 @@ class Day: ObservableObject, Identifiable {
     let uuid = UUID().uuidString
     @Published var activities: [String:Activity] = [:]
     var displayDate: String
+    @Published var totalTime: TimeInterval = 0
     @Published var totalHours: Int = 0
     @Published var totalMinutes: Int = 0
     @Published var totalSeconds: Int = 0
@@ -28,11 +29,12 @@ class Day: ObservableObject, Identifiable {
         self.displayDate = formatter.string(from: date)
     }
     
-    func calculateTotalTime(hours: Int, minutes: Int, seconds: Int) {
-        totalHours += hours
-        totalMinutes += minutes
-        totalSeconds += seconds
-        adjustTime()
+    func calculateTotalTime(timeAccumulated: TimeInterval) {
+        totalTime += timeAccumulated
+//        totalHours += hours
+//        totalMinutes += minutes
+//        totalSeconds += seconds
+//        adjustTime()
     }
     
     func adjustTime() {
@@ -51,31 +53,38 @@ class Day: ObservableObject, Identifiable {
 
 class Activity: ObservableObject, Identifiable {
     var name: String
-    @Published var hours: Int
-    @Published var minutes: Int
-    @Published var seconds: Int
+    @Published var totalTime: TimeInterval = 0
+//    @Published var hours: Int
+//    @Published var minutes: Int
+//    @Published var seconds: Int
     let uuid = UUID().uuidString
     var slideColor = Color.white
     
     
-    init(name: String, hours: Int, minutes: Int, seconds: Int) {
+//    init(name: String, hours: Int, minutes: Int, seconds: Int) {
+//        self.name = name
+//        self.hours = hours
+//        self.minutes = minutes
+//        self.seconds = seconds
+//        self.slideColor = generateRandomColor()
+//    }
+    
+    init(name: String, activityTime: TimeInterval) {
         self.name = name
-        self.hours = hours
-        self.minutes = minutes
-        self.seconds = seconds
+        self.totalTime = activityTime
         self.slideColor = generateRandomColor()
     }
     
-    func adjustTime() {
-        if (self.seconds >= 60) {
-            minutes += seconds / 60
-            seconds += seconds % 60
-        }
-        if (self.minutes >= 60) {
-            hours += minutes / 60
-            minutes += minutes % 60
-        }
-    }
+//    func adjustTime() {
+//        if (self.seconds >= 60) {
+//            minutes += seconds / 60
+//            seconds += seconds % 60
+//        }
+//        if (self.minutes >= 60) {
+//            hours += minutes / 60
+//            minutes += minutes % 60
+//        }
+//    }
     
     func generateRandomColor() -> Color {
         let redValue = CGFloat.random(in: 0...1)

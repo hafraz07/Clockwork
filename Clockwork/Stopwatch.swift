@@ -17,22 +17,12 @@ enum StopwatchMode {
 class StopwatchManager: ObservableObject {
     @Published var mode: StopwatchMode = .stopped
     var timer = Timer()
-    @Published var hours = 0
-    @Published var minutes = 0
-    @Published var secondsElapsed = 0
+    @Published var totalRunningTime: TimeInterval = 0
         
     func start() {
         mode = .running
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {timer in
-            self.secondsElapsed += 1;
-            if (self.secondsElapsed > 59) {
-                self.secondsElapsed = 0
-                self.minutes += 1
-            }
-            if (self.minutes > 59) {
-                self.minutes = 0
-                self.hours += 1
-            }
+            self.totalRunningTime += 1
         }
     }
     
@@ -48,8 +38,6 @@ class StopwatchManager: ObservableObject {
     }
     
     func reset() {
-        secondsElapsed = 0
-        hours = 0
-        minutes = 0
+        totalRunningTime = 0
     }
 }

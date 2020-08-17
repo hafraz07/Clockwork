@@ -9,7 +9,7 @@
 import SwiftUI
 
 public struct PieChartRow : View {
-    var pieData: PieData
+    @ObservedObject var pieData: PieData
     var backgroundColor: Color
     var accentColor: Color
     var slices: [PieSlice] {
@@ -70,7 +70,7 @@ public struct PieChartRow : View {
 struct PieChartRow_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            PieChartRow(pieData: PieData(data: [8,23,54,32,12,37,7,23,43], activities: [Activity(name: "Gym", hours: 0, minutes: 25, seconds: 34)]), backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0), showValue: Binding.constant(false), currentValue: Binding.constant(0))
+            PieChartRow(pieData: PieData(data: [8,23,54,32,12,37,7,23,43], activities: [Activity(name: "Gym", activityTime: 20)]), backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0), showValue: Binding.constant(false), currentValue: Binding.constant(0))
                 .frame(width: 100, height: 100)
 //            PieChartRow(pieData: PieData(data: [0], activities: []), backgroundColor: Color(red: 252.0/255.0, green: 236.0/255.0, blue: 234.0/255.0), accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0), showValue: Binding.constant(false), currentValue: Binding.constant(0))
 //                .frame(width: 100, height: 100)

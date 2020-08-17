@@ -3,21 +3,19 @@ provides-top-level:
 - "ContentView"
 - "ContentView_Previews"
 - "TimerButton"
-- "DisplayTime"
 provides-nominal:
 - "9Clockwork11ContentViewV"
 - "9Clockwork20ContentView_PreviewsV"
 - "9Clockwork11TimerButtonV"
-- "9Clockwork11DisplayTimeV"
 provides-member:
 - ["9Clockwork11ContentViewV", ""]
 - ["9Clockwork20ContentView_PreviewsV", ""]
 - ["9Clockwork11TimerButtonV", ""]
-- ["9Clockwork11DisplayTimeV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "+"
+- !private "%"
 - !private "+="
+- !private "/"
 - "=="
 - !private "Activity"
 - "AssignmentPrecedence"
@@ -27,9 +25,9 @@ depends-top-level:
 - "ContentView"
 - "ContentView_Previews"
 - "Day"
-- "DisplayTime"
 - "Environment"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
+- !private "Int"
 - !private "IntegerLiteralType"
 - "ObservedObject"
 - "PresentationMode"
@@ -39,26 +37,24 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Text"
+- "TimeInterval"
 - "TimerButton"
-- !private "UnicodeScalarType"
 - !private "VStack"
 - "View"
 - "activityName"
 - !private "buttonColor"
-- !private "displayHours"
-- !private "displayMinutes"
-- !private "displaySeconds"
 - !private "label"
 - "stopWatch"
+- "timeString"
 depends-member:
-- !private ["9Clockwork8ActivityC", "adjustTime"]
-- !private ["9Clockwork8ActivityC", "hours"]
 - !private ["9Clockwork8ActivityC", "init"]
-- !private ["9Clockwork8ActivityC", "minutes"]
-- !private ["9Clockwork8ActivityC", "seconds"]
+- !private ["9Clockwork8ActivityC", "totalTime"]
 - !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "init"]
 - !private ["SK", ""]
 - !private ["SK", "init"]
+- !private ["Sz", ""]
+- !private ["Sz", "init"]
 - !private ["7SwiftUI7BindingV", "wrappedValue"]
 - !private ["7SwiftUI6ButtonV", "init"]
 - !private ["7SwiftUI6ButtonV", "offset"]
@@ -66,10 +62,8 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", ""]
-- !private ["Sl", "_copyToContiguousArray"]
 - !private ["Sl", "init"]
 - !private ["Sl", "subscript"]
-- !private ["Sl", "underestimatedCount"]
 - !private ["7SwiftUI5ColorV", "blue"]
 - !private ["7SwiftUI5ColorV", "red"]
 - !private ["7SwiftUI5ColorV", "white"]
@@ -84,14 +78,15 @@ depends-member:
 - !private ["9Clockwork11ContentViewV", "Color"]
 - ["9Clockwork11ContentViewV", "Day"]
 - ["9Clockwork11ContentViewV", "Default_Body"]
-- !private ["9Clockwork11ContentViewV", "DisplayTime"]
 - ["9Clockwork11ContentViewV", "Environment"]
+- !private ["9Clockwork11ContentViewV", "Int"]
 - ["9Clockwork11ContentViewV", "ObservedObject"]
 - ["9Clockwork11ContentViewV", "PresentationMode"]
 - !private ["9Clockwork11ContentViewV", "Spacer"]
 - ["9Clockwork11ContentViewV", "StopwatchManager"]
 - ["9Clockwork11ContentViewV", "String"]
 - !private ["9Clockwork11ContentViewV", "Text"]
+- ["9Clockwork11ContentViewV", "TimeInterval"]
 - !private ["9Clockwork11ContentViewV", "TimerButton"]
 - !private ["9Clockwork11ContentViewV", "VStack"]
 - ["9Clockwork11ContentViewV", "View"]
@@ -110,6 +105,7 @@ depends-member:
 - ["9Clockwork11ContentViewV", "init"]
 - ["9Clockwork11ContentViewV", "presentationMode"]
 - ["9Clockwork11ContentViewV", "stopWatch"]
+- ["9Clockwork11ContentViewV", "timeString"]
 - !private ["9Clockwork20ContentView_PreviewsV", "ContentView"]
 - !private ["9Clockwork20ContentView_PreviewsV", "Day"]
 - ["9Clockwork20ContentView_PreviewsV", "Default_Previews"]
@@ -155,21 +151,6 @@ depends-member:
 - !private ["Se", "subscript"]
 - !private ["Se", "white"]
 - !private ["SD", "subscript"]
-- ["9Clockwork11DisplayTimeV", "Body"]
-- ["9Clockwork11DisplayTimeV", "Default_Body"]
-- ["9Clockwork11DisplayTimeV", "String"]
-- !private ["9Clockwork11DisplayTimeV", "Text"]
-- ["9Clockwork11DisplayTimeV", "View"]
-- ["9Clockwork11DisplayTimeV", ""]
-- ["9Clockwork11DisplayTimeV", "_Default_Body"]
-- ["9Clockwork11DisplayTimeV", "_makeView"]
-- ["9Clockwork11DisplayTimeV", "_makeViewList"]
-- ["9Clockwork11DisplayTimeV", "_viewListCount"]
-- ["9Clockwork11DisplayTimeV", "body"]
-- ["9Clockwork11DisplayTimeV", "displayHours"]
-- ["9Clockwork11DisplayTimeV", "displayMinutes"]
-- ["9Clockwork11DisplayTimeV", "displaySeconds"]
-- ["9Clockwork11DisplayTimeV", "init"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
 - !private ["SE", "headline"]
@@ -227,6 +208,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["7SwiftUI4FontV", "headline"]
 - !private ["7SwiftUI4FontV", "largeTitle"]
 - !private ["7SwiftUI7GestureP", "headline"]
@@ -248,32 +230,26 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "white"]
 - !private ["s12IdentifiableP", "activities"]
-- !private ["s12IdentifiableP", "adjustTime"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
-- !private ["s12IdentifiableP", "hours"]
 - !private ["s12IdentifiableP", "init"]
-- !private ["s12IdentifiableP", "minutes"]
-- !private ["s12IdentifiableP", "seconds"]
+- !private ["s12IdentifiableP", "totalTime"]
+- !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSObjectP", ""]
+- ["So8NSObjectP", ""]
 - !private ["Sj", ""]
+- !private ["Sj", "init"]
 - !private ["7Combine16ObservableObjectP", "activities"]
-- !private ["7Combine16ObservableObjectP", "adjustTime"]
 - !private ["7Combine16ObservableObjectP", "calculateTotalTime"]
-- !private ["7Combine16ObservableObjectP", "hours"]
 - ["7Combine16ObservableObjectP", "init"]
-- !private ["7Combine16ObservableObjectP", "minutes"]
 - !private ["7Combine16ObservableObjectP", "mode"]
 - !private ["7Combine16ObservableObjectP", "pause"]
-- !private ["7Combine16ObservableObjectP", "seconds"]
-- !private ["7Combine16ObservableObjectP", "secondsElapsed"]
 - !private ["7Combine16ObservableObjectP", "start"]
 - !private ["7Combine16ObservableObjectP", "stop"]
+- !private ["7Combine16ObservableObjectP", "totalRunningTime"]
+- !private ["7Combine16ObservableObjectP", "totalTime"]
 - ["7SwiftUI14ObservedObjectV", "init"]
-- ["7SwiftUI14ObservedObjectV", "projectedValue"]
-- ["7SwiftUI14ObservedObjectV", "subscript"]
 - ["7SwiftUI14ObservedObjectV", "wrappedValue"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["s9OptionSetP", "top"]
@@ -299,15 +275,10 @@ depends-member:
 - !private ["SY", "horizontal"]
 - !private ["SY", "top"]
 - !private ["SY", "vertical"]
+- !private ["s10SIMDScalarP", "init"]
 - !private ["ST", ""]
-- !private ["ST", "_copyContents"]
-- !private ["ST", "_copyToContiguousArray"]
-- !private ["ST", "_customContainsEquatableElement"]
 - !private ["ST", "init"]
-- !private ["ST", "makeIterator"]
 - !private ["ST", "subscript"]
-- !private ["ST", "underestimatedCount"]
-- !private ["ST", "withContiguousStorageIfAvailable"]
 - !private ["7SwiftUI4EdgeO3SetV", "horizontal"]
 - !private ["7SwiftUI4EdgeO3SetV", "top"]
 - !private ["7SwiftUI4EdgeO3SetV", "vertical"]
@@ -318,24 +289,23 @@ depends-member:
 - !private ["7SwiftUI10ShapeStyleP", "blue"]
 - !private ["7SwiftUI10ShapeStyleP", "red"]
 - !private ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "init"]
 - !private ["7SwiftUI6SpacerV", "init"]
 - ["9Clockwork16StopwatchManagerC", ""]
-- !private ["9Clockwork16StopwatchManagerC", "hours"]
 - ["9Clockwork16StopwatchManagerC", "init"]
-- !private ["9Clockwork16StopwatchManagerC", "minutes"]
 - !private ["9Clockwork16StopwatchManagerC", "mode"]
 - !private ["9Clockwork16StopwatchManagerC", "pause"]
-- !private ["9Clockwork16StopwatchManagerC", "secondsElapsed"]
 - !private ["9Clockwork16StopwatchManagerC", "start"]
 - !private ["9Clockwork16StopwatchManagerC", "stop"]
+- !private ["9Clockwork16StopwatchManagerC", "totalRunningTime"]
 - !private ["9Clockwork13StopwatchModeO", ""]
 - !private ["9Clockwork13StopwatchModeO", "paused"]
 - !private ["9Clockwork13StopwatchModeO", "running"]
 - !private ["9Clockwork13StopwatchModeO", "stopped"]
 - !private ["Sx", ""]
-- !private ["Sx", "_step"]
-- !private ["Sx", "advanced"]
-- !private ["Sx", "distance"]
+- !private ["Sx", "init"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["7SwiftUI4TextV", "font"]
@@ -362,14 +332,15 @@ depends-member:
 - ["9Clockwork11TimerButtonV", "buttonColor"]
 - ["9Clockwork11TimerButtonV", "init"]
 - ["9Clockwork11TimerButtonV", "label"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["7SwiftUI6VStackV", "init"]
 - !private ["7SwiftUI4ViewP", "Activity"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
 - !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Default_Body"]
-- !private ["7SwiftUI4ViewP", "DisplayTime"]
 - ["7SwiftUI4ViewP", "Environment"]
+- !private ["7SwiftUI4ViewP", "Int"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Spacer"]
 - ["7SwiftUI4ViewP", "StopwatchManager"]
@@ -390,9 +361,6 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "buttonColor"]
 - !private ["7SwiftUI4ViewP", "cornerRadius"]
 - !private ["7SwiftUI4ViewP", "day"]
-- !private ["7SwiftUI4ViewP", "displayHours"]
-- !private ["7SwiftUI4ViewP", "displayMinutes"]
-- !private ["7SwiftUI4ViewP", "displaySeconds"]
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "foregroundColor"]
 - !private ["7SwiftUI4ViewP", "headline"]
@@ -406,6 +374,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "red"]
 - !private ["7SwiftUI4ViewP", "some"]
 - !private ["7SwiftUI4ViewP", "stopWatch"]
+- !private ["7SwiftUI4ViewP", "timeString"]
 - !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildEither"]
@@ -420,7 +389,9 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "headline"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -443,6 +414,7 @@ depends-nominal:
 - !private "9Clockwork8ActivityC"
 - !private "s18AdditiveArithmeticP"
 - !private "SK"
+- !private "Sz"
 - !private "7SwiftUI7BindingV"
 - !private "7SwiftUI6ButtonV"
 - !private "8CloudKit21CKRecordValueProtocolP"
@@ -458,7 +430,6 @@ depends-nominal:
 - "9Clockwork3DayC"
 - !private "Se"
 - !private "SD"
-- "9Clockwork11DisplayTimeV"
 - "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - "7SwiftUI11EnvironmentV"
@@ -472,13 +443,15 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - !private "7SwiftUI4FontV"
 - !private "7SwiftUI7GestureP"
 - !private "SH"
 - !private "s12IdentifiableP"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSObjectP"
+- "So8NSObjectP"
 - !private "Sj"
 - "7Combine16ObservableObjectP"
 - "7SwiftUI14ObservedObjectV"
@@ -488,10 +461,13 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - !private "Sm"
 - !private "SY"
+- !private "s10SIMDScalarP"
 - !private "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
 - !private "7SwiftUI10ShapeStyleP"
+- !private "SZ"
+- !private "s13SignedNumericP"
 - !private "7SwiftUI6SpacerV"
 - "9Clockwork16StopwatchManagerC"
 - !private "9Clockwork13StopwatchModeO"
@@ -502,6 +478,7 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "9Clockwork11TimerButtonV"
+- "So18UIFocusEnvironmentP"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
@@ -510,6 +487,7 @@ depends-nominal:
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -534,6 +512,7 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CloudKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/DeveloperToolsSupport.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
@@ -556,4 +535,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "969e1f36d8eb03cae3c2e787432df7ec"
+interface-hash: "45591cd9451c6127470f1cde4d48184b"
