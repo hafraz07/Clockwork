@@ -57,11 +57,9 @@ struct PieChartView : View {
                     if(!showValue){
                         Text(self.title)
                             .font(.headline)
-//                            .foregroundColor(self.style.textColor)
                     }else{
                         Text("\(self.currentValue, specifier: self.valueSpecifier)")
                             .font(.headline)
-//                            .foregroundColor(self.style.textColor)
                     }
                     Spacer()
                     Image(systemName: "chart.pie.fill")
@@ -69,7 +67,6 @@ struct PieChartView : View {
                         .foregroundColor(self.style.legendTextColor)
                 }.padding()
                 PieChartRow(pieData: data, backgroundColor: self.style.backgroundColor, accentColor: self.style.accentColor, showValue: $showValue, currentValue: $currentValue)
-//                    .foregroundColor(self.style.accentColor)
                     .padding(self.legend != nil ? 0 : 12).offset(y:self.legend != nil ? 0 : -10)
                 if(self.legend != nil) {
                     Text(self.legend!)

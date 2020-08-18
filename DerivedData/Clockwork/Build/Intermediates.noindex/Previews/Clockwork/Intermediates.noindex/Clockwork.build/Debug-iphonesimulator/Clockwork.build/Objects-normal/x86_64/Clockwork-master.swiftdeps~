@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.25.2 clang-1200.0.27.1)"
 options: "da556c9624c25ccc076348930e2d2c56"
-build_time: [1597674039, 867644000]
+build_time: [1597729462, 549624000]
 inputs:
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryRow.swift": [1597644751, 329658487]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/Stopwatch.swift": [1597673850, 227461100]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/Stopwatch.swift": [1597674091, 447893073]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Activity.swift": [1597666954, 818410587]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/AppDelegate.swift": [1595168972, 766032736]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/HistoryListView.swift": [1597644751, 485946323]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/SceneDelegate.swift": [1595485519, 531507797]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/PieChartRow.swift": [1597644805, 98649733]
-  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift": [1597674031, 668190515]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/PieChartRow.swift": [1597729462, 234119272]
+  "/Users/afrazhasan/Documents/Clockwork/Clockwork/ContentView.swift": [1597729462, 178319996]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/PieChartView.swift": [1597562949, 454104181]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/PieChartCell.swift": [1597560618, 620034121]
   "/Users/afrazhasan/Documents/Clockwork/Clockwork/Helpers.swift": [1596819450, 918920726]

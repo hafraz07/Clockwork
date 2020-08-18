@@ -18,9 +18,6 @@ class Day: ObservableObject, Identifiable {
     @Published var activities: [String:Activity] = [:]
     var displayDate: String
     @Published var totalTime: TimeInterval = 0
-    @Published var totalHours: Int = 0
-    @Published var totalMinutes: Int = 0
-    @Published var totalSeconds: Int = 0
     
     init() {
         let date = Date()
@@ -54,8 +51,6 @@ class Activity: ObservableObject, Identifiable {
         let blueValue = CGFloat.random(in: 0...1)
         
         let randomColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
-        
         return Color(randomColor)
     }
-    
 }

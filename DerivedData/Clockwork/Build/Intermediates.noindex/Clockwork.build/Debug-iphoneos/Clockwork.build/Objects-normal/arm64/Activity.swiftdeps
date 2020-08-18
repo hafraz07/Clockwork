@@ -14,15 +14,9 @@ provides-member:
 provides-dynamic-lookup:
 - "$activities"
 - "$days"
-- "$totalHours"
-- "$totalMinutes"
-- "$totalSeconds"
 - "$totalTime"
 - "_activities"
 - "_days"
-- "_totalHours"
-- "_totalMinutes"
-- "_totalSeconds"
 - "_totalTime"
 - "activities"
 - "calculateTotalTime"
@@ -31,9 +25,6 @@ provides-dynamic-lookup:
 - "generateRandomColor"
 - "name"
 - "slideColor"
-- "totalHours"
-- "totalMinutes"
-- "totalSeconds"
 - "totalTime"
 - "uuid"
 depends-top-level:
@@ -49,7 +40,6 @@ depends-top-level:
 - "Dictionary"
 - "FloatLiteralType"
 - "Identifiable"
-- "Int"
 - "IntegerLiteralType"
 - "ObservableObject"
 - "Published"
@@ -129,9 +119,6 @@ depends-member:
 - !private ["So15NSDateFormatterC", "init"]
 - !private ["So15NSDateFormatterC", "string"]
 - ["9Clockwork3DayC", "$activities"]
-- ["9Clockwork3DayC", "$totalHours"]
-- ["9Clockwork3DayC", "$totalMinutes"]
-- ["9Clockwork3DayC", "$totalSeconds"]
 - ["9Clockwork3DayC", "$totalTime"]
 - ["9Clockwork3DayC", "Activity"]
 - !private ["9Clockwork3DayC", "Date"]
@@ -139,7 +126,6 @@ depends-member:
 - ["9Clockwork3DayC", "Default_ID"]
 - ["9Clockwork3DayC", "Default_ObjectWillChangePublisher"]
 - ["9Clockwork3DayC", "ID"]
-- ["9Clockwork3DayC", "Int"]
 - ["9Clockwork3DayC", "ObjectWillChangePublisher"]
 - ["9Clockwork3DayC", "Published"]
 - ["9Clockwork3DayC", "String"]
@@ -149,9 +135,6 @@ depends-member:
 - ["9Clockwork3DayC", "_Default_ID"]
 - ["9Clockwork3DayC", "_Default_ObjectWillChangePublisher"]
 - !private ["9Clockwork3DayC", "_activities"]
-- !private ["9Clockwork3DayC", "_totalHours"]
-- !private ["9Clockwork3DayC", "_totalMinutes"]
-- !private ["9Clockwork3DayC", "_totalSeconds"]
 - !private ["9Clockwork3DayC", "_totalTime"]
 - ["9Clockwork3DayC", "activities"]
 - ["9Clockwork3DayC", "calculateTotalTime"]
@@ -160,9 +143,6 @@ depends-member:
 - ["9Clockwork3DayC", "id"]
 - ["9Clockwork3DayC", "init"]
 - ["9Clockwork3DayC", "objectWillChange"]
-- ["9Clockwork3DayC", "totalHours"]
-- ["9Clockwork3DayC", "totalMinutes"]
-- ["9Clockwork3DayC", "totalSeconds"]
 - ["9Clockwork3DayC", "totalTime"]
 - ["9Clockwork3DayC", "uuid"]
 - ["Se", "init"]
@@ -219,9 +199,6 @@ depends-member:
 - ["s12IdentifiableP", "_Default_ID"]
 - ["s12IdentifiableP", "_Default_ObjectWillChangePublisher"]
 - !private ["s12IdentifiableP", "_activities"]
-- !private ["s12IdentifiableP", "_totalHours"]
-- !private ["s12IdentifiableP", "_totalMinutes"]
-- !private ["s12IdentifiableP", "_totalSeconds"]
 - !private ["s12IdentifiableP", "_totalTime"]
 - !private ["s12IdentifiableP", "activities"]
 - !private ["s12IdentifiableP", "calculateTotalTime"]
@@ -231,9 +208,6 @@ depends-member:
 - !private ["s12IdentifiableP", "name"]
 - ["s12IdentifiableP", "objectWillChange"]
 - !private ["s12IdentifiableP", "slideColor"]
-- !private ["s12IdentifiableP", "totalHours"]
-- !private ["s12IdentifiableP", "totalMinutes"]
-- !private ["s12IdentifiableP", "totalSeconds"]
 - !private ["s12IdentifiableP", "totalTime"]
 - !private ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "dateFormat"]
@@ -301,9 +275,6 @@ depends-member:
 - ["7Combine16ObservableObjectP", "_Default_ObjectWillChangePublisher"]
 - !private ["7Combine16ObservableObjectP", "_activities"]
 - !private ["7Combine16ObservableObjectP", "_days"]
-- !private ["7Combine16ObservableObjectP", "_totalHours"]
-- !private ["7Combine16ObservableObjectP", "_totalMinutes"]
-- !private ["7Combine16ObservableObjectP", "_totalSeconds"]
 - !private ["7Combine16ObservableObjectP", "_totalTime"]
 - !private ["7Combine16ObservableObjectP", "activities"]
 - !private ["7Combine16ObservableObjectP", "calculateTotalTime"]
@@ -314,13 +285,8 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "name"]
 - ["7Combine16ObservableObjectP", "objectWillChange"]
 - !private ["7Combine16ObservableObjectP", "slideColor"]
-- !private ["7Combine16ObservableObjectP", "totalHours"]
-- !private ["7Combine16ObservableObjectP", "totalMinutes"]
-- !private ["7Combine16ObservableObjectP", "totalSeconds"]
 - !private ["7Combine16ObservableObjectP", "totalTime"]
 - ["7Combine9PublishedV", "init"]
-- ["7Combine9PublishedV", "projectedValue"]
-- ["7Combine9PublishedV", "subscript"]
 - ["7Combine9PublishedV", "wrappedValue"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
 - ["10Foundation20ReferenceConvertibleP", "uuidString"]
@@ -465,4 +431,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "49e0664dc18d3e3bbb5e224269ccd244"
+interface-hash: "2d139adebf2cec6a08740b9ac44526e7"

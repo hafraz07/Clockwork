@@ -15,15 +15,6 @@ struct HistoryRow: View {
             Text(activity.name)
             Spacer()
             Text(timeString(accumulatedTime: self.activity.totalTime))
-//            if (activity.hours > 0) {
-//                Text(String(activity.hours) + "h " + String(activity.minutes) + "m")
-//            }
-//            else if (activity.minutes > 0) {
-//                Text(String(activity.minutes) + " minutes")
-//            }
-//            else if (activity.seconds >= 0) {
-//                Text(String(activity.seconds) + " seconds")
-//            }
         }
         .padding()
     }

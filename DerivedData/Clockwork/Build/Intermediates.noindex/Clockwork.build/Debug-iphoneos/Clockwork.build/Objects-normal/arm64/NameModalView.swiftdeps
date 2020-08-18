@@ -26,7 +26,8 @@ depends-top-level:
 - !private "activityName"
 - "buttonColor"
 depends-member:
-- !private ["SK", ""]
+- ["7SwiftUI10AnimatableP", ""]
+- ["SK", ""]
 - !private ["SK", "isEmpty"]
 - ["7SwiftUI7BindingV", "init"]
 - ["7SwiftUI7BindingV", "projectedValue"]
@@ -39,16 +40,16 @@ depends-member:
 - !private ["8CloudKit21CKRecordValueProtocolP", "toggle"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "toggle"]
-- !private ["Sl", ""]
+- ["Sl", ""]
 - !private ["Sl", "isEmpty"]
 - !private ["7SwiftUI5ColorV", "gray"]
 - !private ["7SwiftUI5ColorV", "pink"]
-- !private ["SL", ""]
+- ["SL", ""]
 - !private ["SL", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "toggle"]
-- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "pink"]
@@ -66,7 +67,7 @@ depends-member:
 - ["7SwiftUI11EnvironmentV", "wrappedValue"]
 - ["7SwiftUI11EnvironmentV", "wrapperValue"]
 - ["7SwiftUI17EnvironmentValuesV", "presentationMode"]
-- !private ["SQ", ""]
+- ["SQ", ""]
 - !private ["SQ", "default"]
 - !private ["SQ", "gray"]
 - !private ["SQ", "init"]
@@ -74,28 +75,28 @@ depends-member:
 - !private ["SQ", "pink"]
 - !private ["SQ", "toggle"]
 - !private ["s27ExpressibleByBooleanLiteralP", "toggle"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
-- !private ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
 - !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
-- !private ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["7SwiftUI4FormV", "init"]
-- !private ["SH", ""]
+- ["SH", ""]
 - !private ["SH", "default"]
 - !private ["SH", "gray"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "pink"]
 - !private ["SH", "toggle"]
-- !private ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s25LosslessStringConvertibleP", "toggle"]
 - !private ["s10MirrorPathP", "isEmpty"]
-- !private ["So8NSCodingP", ""]
+- ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "isEmpty"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
@@ -141,7 +142,7 @@ depends-member:
 - !private ["Sm", "isEmpty"]
 - !private ["SY", "default"]
 - !private ["7SwiftUI7SectionV", "init"]
-- !private ["ST", ""]
+- ["ST", ""]
 - !private ["ST", "isEmpty"]
 - !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["7SwiftUI10ShapeStyleP", "pink"]
@@ -150,9 +151,9 @@ depends-member:
 - !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI9TextFieldV", "init"]
 - !private ["7SwiftUI9TextFieldV", "keyboardType"]
-- !private ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", ""]
 - !private ["s16TextOutputStreamP", "isEmpty"]
-- !private ["s20TextOutputStreamableP", ""]
+- ["s20TextOutputStreamableP", ""]
 - !private ["s20TextOutputStreamableP", "isEmpty"]
 - !private ["So14UIKeyboardTypeV", "default"]
 - !private ["7SwiftUI4ViewP", "$activityName"]
@@ -192,30 +193,36 @@ depends-member:
 - !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "toggle"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "toggle"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
 - !private ["s19_HasContiguousBytesP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "_ObjectiveCType"]
+- !private ["s21_ObjectiveCBridgeableP", "_bridgeToObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_conditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_forceBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "toggle"]
 - !private ["So13CKRecordValueP", "isEmpty"]
 depends-nominal:
-- !private "SK"
+- "7SwiftUI10AnimatableP"
+- "SK"
 - "7SwiftUI7BindingV"
 - !private "Sb"
 - !private "7SwiftUI6ButtonV"
 - !private "8CloudKit21CKRecordValueProtocolP"
 - !private "s7CVarArgP"
-- !private "Sl"
+- "Sl"
 - !private "7SwiftUI5ColorV"
-- !private "SL"
+- "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -224,17 +231,17 @@ depends-nominal:
 - !private "SE"
 - "7SwiftUI11EnvironmentV"
 - "7SwiftUI17EnvironmentValuesV"
-- !private "SQ"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "7SwiftUI4FormV"
-- !private "SH"
-- !private "s25LosslessStringConvertibleP"
+- "SH"
+- "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
+- "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
@@ -249,22 +256,23 @@ depends-nominal:
 - !private "Sm"
 - !private "SY"
 - !private "7SwiftUI7SectionV"
-- !private "ST"
+- "ST"
 - !private "7SwiftUI10ShapeStyleP"
 - !private "SS"
 - !private "Sy"
 - !private "7SwiftUI4TextV"
 - !private "7SwiftUI9TextFieldV"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So14UIKeyboardTypeV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"

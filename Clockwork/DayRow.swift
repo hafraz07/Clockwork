@@ -15,15 +15,6 @@ struct DayRow: View {
             Text(day.displayDate)
             Spacer()
             Text(timeString(accumulatedTime: day.totalTime))
-//            if (day.totalHours > 0) {
-//                Text(String(day.totalHours) + "h " + String(day.totalMinutes) + "m")
-//            }
-//            else if (day.totalMinutes > 0) {
-//                Text(String(day.totalMinutes) + " minutes")
-//            }
-//            else if (day.totalSeconds >= 0) {
-//                Text(String(day.totalSeconds) + " seconds")
-//            }
         }
         .padding()
     }

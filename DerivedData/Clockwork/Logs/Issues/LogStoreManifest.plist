@@ -34,7 +34,7 @@
 			<key>uniqueIdentifier</key>
 			<string>5D22E809-7DDB-43BF-90F7-A1EA3D93BBB4</string>
 		</dict>
-		<key>6631BC6E-14BD-497F-85DE-83FC55269AFA</key>
+		<key>7226D09E-3F33-4E6C-809F-7A4A3F7B63B0</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>6631BC6E-14BD-497F-85DE-83FC55269AFA.xcactivitylog</string>
+			<string>7226D09E-3F33-4E6C-809F-7A4A3F7B63B0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +54,13 @@
 			<key>signature</key>
 			<string>Clockwork-dgezncfggqbhyeampshnbyvanudc</string>
 			<key>timeStartedRecording</key>
-			<real>619367013.73843503</real>
+			<real>619422648.43738604</real>
 			<key>timeStoppedRecording</key>
-			<real>619367020.05617499</real>
+			<real>619422653.94390202</real>
 			<key>title</key>
 			<string>Build target Clockwork</string>
 			<key>uniqueIdentifier</key>
-			<string>6631BC6E-14BD-497F-85DE-83FC55269AFA</string>
+			<string>7226D09E-3F33-4E6C-809F-7A4A3F7B63B0</string>
 		</dict>
 		<key>8D9DEB97-761B-46DD-BD62-11686EE88FBC</key>
 		<dict>

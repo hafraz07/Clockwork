@@ -12,9 +12,6 @@ struct ChartView: View {
     @ObservedObject var day: Day
     @State var activityTimes: [Double] = []
     @State var activities: [Activity] = []
-    var dayTotalTime: Double {
-        Double(day.totalHours * 60 + day.totalMinutes * 60 + day.totalSeconds)
-    }
     
     init(day: Day) {
         self.day = day

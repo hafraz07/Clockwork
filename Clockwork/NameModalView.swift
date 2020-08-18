@@ -31,11 +31,11 @@ struct NameModalView: View {
                         .disabled(self.activityName.isEmpty)
                         .foregroundColor(buttonColor)
                     )
-                }
-            }
-        }
-    }
-}
+                } //Section
+            } //Form
+        } // NavigationView
+    } //body
+} //NameModalView
 
 //struct NameModalView_Previews: PreviewProvider {
 //    static var previews: some View {

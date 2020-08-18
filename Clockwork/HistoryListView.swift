@@ -42,7 +42,6 @@ struct HistoryListView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50, alignment: .trailing)
-//                        .padding()
                         .foregroundColor(.pink)
                         .onTapGesture {
                             self.showModal.toggle()
